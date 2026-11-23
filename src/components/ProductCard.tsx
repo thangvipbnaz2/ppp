@@ -13,6 +13,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, onClick, onAddToQuote }: ProductCardProps) {
   const [imgError, setImgError] = useState(false);
+  const specs = product.specs;
 
   return (
     <div
@@ -21,7 +22,7 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
     >
       {/* Top Header Badge */}
       <div className="flex items-center justify-between gap-2 mb-3">
-        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-slate-100 text-slate-700 border border-black/[0.04] tracking-tight truncate max-w-[70%]">
+        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-slate-100 text-slate-700 border border-black/[0.04] tracking-tight truncate max-w-[65%]">
           {product.category}
         </span>
         {product.vatRate > 0 && (
@@ -32,7 +33,7 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
       </div>
 
       {/* Product Image Container */}
-      <div className="relative aspect-square w-full rounded-2xl bg-gradient-to-b from-slate-50 to-slate-100/60 p-4 flex items-center justify-center overflow-hidden mb-4 border border-black/[0.03]">
+      <div className="relative aspect-square w-full rounded-2xl bg-gradient-to-b from-slate-50 to-slate-100/60 p-4 flex items-center justify-center overflow-hidden mb-3 border border-black/[0.03]">
         {product.image && !imgError ? (
           <div className="relative w-full h-full">
             <Image
@@ -55,16 +56,33 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
         )}
       </div>
 
-      {/* Info */}
+      {/* Info & Micro Specs Pill */}
       <div className="flex flex-col flex-grow justify-between">
         <div>
           <h3 className="font-semibold text-slate-900 text-sm leading-snug line-clamp-2 mb-2 group-hover:text-blue-600 transition-colors">
             {product.name}
           </h3>
-          <p className="text-[11px] text-blue-600/80 font-medium mb-3 flex items-center gap-1">
-            <span>Chi tiết sản phẩm</span>
-            <span className="group-hover:translate-x-1 transition-transform">→</span>
-          </p>
+
+          {/* Key Specs Pills from Excel */}
+          {specs && (
+            <div className="flex flex-wrap items-center gap-1.5 mb-3">
+              {specs.power && (
+                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+                  ⚡ {specs.power}
+                </span>
+              )}
+              {specs.cct && (
+                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+                  💡 {specs.cct}
+                </span>
+              )}
+              {specs.ipRating && (
+                <span className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-blue-50 text-blue-700">
+                  🛡️ {specs.ipRating}
+                </span>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Pricing */}
@@ -82,9 +100,16 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
               <span>{formatCurrency(product.priceNoVAT)}</span>
             </div>
           )}
+
+          {product.retailPrice > 0 && (
+            <div className="flex items-center justify-between text-[11px] text-slate-400">
+              <span>Giá lẻ hãng:</span>
+              <span className="line-through">{formatCurrency(product.retailPrice)}</span>
+            </div>
+          )}
         </div>
 
-        {/* Quick Add Button */}
+        {/* Action Button */}
         {onAddToQuote && (
           <button
             onClick={(e) => {

@@ -1,3 +1,19 @@
+export interface ProductSpecs {
+  power?: string;
+  voltage?: string;
+  cri?: string;
+  cct?: string;
+  lumen?: string;
+  chipLed?: string;
+  lifespan?: string;
+  dimensions?: string;
+  cutout?: string;
+  ipRating?: string;
+  warranty?: string;
+  discountNote?: string;
+  rawSpecs?: string;
+}
+
 export interface Product {
   id: number;
   name: string;
@@ -7,7 +23,13 @@ export interface Product {
   vatRate: number;
   retailPrice: number;
   finalPrice: number;
+  supportAmount?: number;
+  supportMechanism?: string;
+  giftSupport?: string;
+  originalPriceNoVAT?: number;
+  originalPriceVAT?: number;
   image?: string;
+  specs?: ProductSpecs;
 }
 
 export interface QuoteItem {
