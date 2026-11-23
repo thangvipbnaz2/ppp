@@ -1,21 +1,84 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="border-t border-black/[0.06] bg-slate-50/50 mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-xl bg-slate-900 flex items-center justify-center text-white text-xs font-bold">
-              AP
+    <footer className="border-t border-black/[0.06] bg-slate-900 text-slate-300 mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Col 1: Company Profile */}
+          <div className="md:col-span-2 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-white flex items-center justify-center text-slate-950 font-black text-sm shadow-md">
+                AP
+              </div>
+              <div>
+                <h3 className="text-sm font-extrabold text-white tracking-tight">
+                  CÔNG TY TNHH MTV TM THIẾT BỊ ĐIỆN AN PHÚ VINA
+                </h3>
+                <p className="text-[11px] text-slate-400">
+                  Nhà phân phối thiết bị chiếu sáng Rạng Đông chính hãng
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="text-xs font-bold text-slate-900 tracking-tight">CÔNG TY TNHH AN PHÚ</p>
-              <p className="text-[11px] text-slate-400">Nhà phân phối thiết bị điện & đèn LED Rạng Đông</p>
+
+            <p className="text-xs text-slate-400 leading-relaxed max-w-md font-normal">
+              Được Sở Kế hoạch và Đầu tư TP. Hà Nội cấp phép ngày 02/03/2023. Chuyên phân phối đèn LED Rạng Đông, giải pháp chiếu sáng Smart Bluetooth Mesh, công trình dự án đô thị và dân dụng.
+            </p>
+
+            <div className="space-y-1.5 text-xs text-slate-300">
+              <p>📋 <strong className="text-white">Mã số thuế:</strong> 0110271235</p>
+              <p>📞 <strong className="text-white">Hotline / Zalo:</strong> <a href="tel:0827955888" className="text-yellow-400 font-bold hover:underline">0827.955.888</a></p>
+              <p>✉️ <strong className="text-white">Email:</strong> <a href="mailto:Chinh982@gmail.com" className="text-slate-300 hover:text-white">Chinh982@gmail.com</a></p>
+              <p>🌐 <strong className="text-white">Website chính thức:</strong> <a href="https://rangdongapvina.com.vn/" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">rangdongapvina.com.vn</a></p>
             </div>
           </div>
 
-          <p className="text-[11px] text-slate-400">
-            Dữ liệu tổng hợp từ 4 file Excel quản lý giá và mẫu báo giá. © {new Date().getFullYear()} An Phú.
-          </p>
+          {/* Col 2: Navigation */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white">
+              Khám Phá Nhanh
+            </h4>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <Link href="/products" className="text-slate-400 hover:text-white transition-colors">
+                  Bảng giá 672 sản phẩm
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects" className="text-slate-400 hover:text-white transition-colors">
+                  Dự án & Công trình đã bàn giao
+                </Link>
+              </li>
+              <li>
+                <Link href="/quote" className="text-slate-400 hover:text-white transition-colors">
+                  Tạo đơn báo giá chuẩn hợp đồng
+                </Link>
+              </li>
+              <li>
+                <Link href="/compare" className="text-slate-400 hover:text-white transition-colors">
+                  Báo cáo đối chiếu LD03
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 3: Cam kết */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white">
+              Cam Kết Chất Lượng
+            </h4>
+            <ul className="space-y-2 text-xs text-slate-400">
+              <li>✓ 100% chính hãng Rạng Đông</li>
+              <li>✓ Bảo hành 2 năm tận nơi</li>
+              <li>✓ Giá đại lý & chiết khấu dự án</li>
+              <li>✓ Cung cấp CO, CQ đầy đủ</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="pt-8 mt-10 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <p>© {new Date().getFullYear()} Công ty TNHH MTV TM Thiết Bị Điện An Phú Vina. Bảo lưu mọi quyền.</p>
+          <p>Hệ thống demo đồng bộ dữ liệu trực tuyến & 4 file Excel quản lý</p>
         </div>
       </div>
     </footer>

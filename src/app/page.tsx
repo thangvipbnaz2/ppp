@@ -4,18 +4,18 @@ import { completedProjects } from "@/lib/projects";
 
 export default function HomePage() {
   const stats = [
-    { label: "Sản phẩm xác thực", value: "438", sub: "Đầy đủ ảnh, thông số & giá", icon: "⚡" },
-    { label: "Dự án & Hợp đồng", value: "3+", sub: "Đã bàn giao nghiệm thu", icon: "🏛️" },
-    { label: "Thương hiệu phân phối", value: "Rạng Đông", sub: "Chính hãng 100%", icon: "⭐" },
-    { label: "Bảng giá áp dụng", value: "T9/2026", sub: "Đã cập nhật cơ chế", icon: "📅" },
+    { label: "Sản phẩm trực tuyến", value: "672+", sub: "Từ rangdongapvina.com.vn & Excel", icon: "⚡" },
+    { label: "Hồ sơ dự án", value: "3+", sub: "Biên bản bàn giao thực tế", icon: "🏛️" },
+    { label: "Hotline kinh doanh", value: "0827.955.888", sub: "Hỗ trợ kỹ thuật 24/7", icon: "📞" },
+    { label: "Mã số thuế", value: "0110271235", sub: "Sở KH&ĐT TP Hà Nội", icon: "🏢" },
   ];
 
   const highlights = [
     {
-      title: "Bảng giá thông minh",
-      desc: "Tra cứu tức thì 438 sản phẩm đèn LED Rạng Đông. 100% có hình ảnh thực tế, thông số kỹ thuật đầy đủ và giá bán niêm yết.",
+      title: "Kho sản phẩm 672+ model",
+      desc: "Tích hợp đầy đủ từ website công ty rangdongapvina.com.vn và bảng giá tổng hợp nội bộ. 100% ảnh thật sắc nét, thông số và đơn giá.",
       href: "/products",
-      tag: "438 Model Đầy Đủ",
+      tag: "672 Model Toàn Diện",
       gradient: "from-blue-600/10 via-indigo-600/5 to-transparent",
       accent: "text-blue-600",
     },
@@ -38,12 +38,12 @@ export default function HomePage() {
   ];
 
   const featuredCats = [
-    { name: "Đèn LED Downlight", count: 68, img: "/images/products/image281.png" },
+    { name: "Đèn LED Downlight", count: 61, img: "/images/products/image281.png" },
     { name: "Đèn LED Panel", count: 54, img: "/images/products/image1002.png" },
     { name: "Đèn LED Chiếu pha", count: 24, img: "/images/products/image847.png" },
-    { name: "Đèn LED Ốp trần", count: 47, img: "/images/products/image923.png" },
-    { name: "Đèn Chiếu sáng đường", count: 35, img: "/images/products/image585.png" },
-    { name: "Bóng đèn LED", count: 43, img: "/images/products/image1105.png" },
+    { name: "Đèn LED Ốp trần", count: 45, img: "/images/products/image923.png" },
+    { name: "Đèn Chiếu sáng đường", count: 33, img: "/images/products/image585.png" },
+    { name: "Bóng đèn LED", count: 41, img: "/images/products/image1105.png" },
   ];
 
   return (
@@ -56,19 +56,19 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/[0.04] border border-black/[0.06] backdrop-blur-md mb-8 hover:bg-slate-900/[0.07] transition-all cursor-pointer">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-xs font-medium text-slate-700">
-              Đồng bộ dữ liệu: Đầy đủ Ảnh thực tế • Thông số kỹ thuật • Dự án hoàn thành
+              Đồng bộ toàn diện: rangdongapvina.com.vn & 4 File Excel Báo Giá
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-950 max-w-4xl mx-auto leading-[1.12]">
             Hệ thống Báo giá & Chiếu sáng
             <span className="block bg-gradient-to-r from-slate-900 via-blue-700 to-indigo-600 bg-clip-text text-transparent mt-2">
-              An Phú Distribution
+              An Phú Vina Distribution
             </span>
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-slate-500 max-w-2xl mx-auto font-normal leading-relaxed">
-            Nhà phân phối thiết bị chiếu sáng Rạng Đông chính hãng. Cung cấp giải pháp đèn LED toàn diện cho các công trình đô thị, nhà xưởng và biệt thự liền kề.
+            Công ty TNHH MTV TM Thiết Bị Điện An Phú Vina (MST: 0110271235). Cung cấp đầy đủ 672+ thiết bị chiếu sáng Rạng Đông chính hãng cho các công trình dự án đô thị, văn phòng và nhà xưởng.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -76,7 +76,7 @@ export default function HomePage() {
               href="/products"
               className="px-7 py-3.5 rounded-full text-sm font-semibold bg-slate-950 text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] hover:shadow-[0_16px_32px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 active:scale-98 transition-all duration-300"
             >
-              Xem 438 sản phẩm →
+              Xem 672+ sản phẩm →
             </Link>
             <Link
               href="/projects"
@@ -97,7 +97,7 @@ export default function HomePage() {
               className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-6 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500"
             >
               <div className="text-xl mb-3">{s.icon}</div>
-              <div className="text-3xl font-extrabold tracking-tight text-slate-900">{s.value}</div>
+              <div className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">{s.value}</div>
               <div className="text-xs font-semibold text-slate-700 mt-1">{s.label}</div>
               <div className="text-[11px] text-slate-400 mt-0.5">{s.sub}</div>
             </div>
@@ -105,7 +105,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Projects Section - "Làm màu" cho web */}
+      {/* Featured Projects Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
           <div>
@@ -213,7 +213,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Categories with Verified Clean Native Images */}
+      {/* Featured Categories */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between mb-8">
           <div>
@@ -221,14 +221,14 @@ export default function HomePage() {
               Danh mục nổi bật
             </h2>
             <p className="text-sm text-slate-500 mt-1">
-              Hình ảnh thực tế chuẩn từ file mẫu báo giá
+              Hình ảnh thực tế chuẩn từ website công ty & file mẫu báo giá
             </p>
           </div>
           <Link
             href="/products"
             className="hidden sm:inline-flex text-xs font-semibold text-slate-700 hover:text-slate-950 items-center gap-1"
           >
-            Tất cả 18 danh mục <span>→</span>
+            Tất cả danh mục <span>→</span>
           </Link>
         </div>
 
