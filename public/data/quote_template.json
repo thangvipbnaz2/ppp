@@ -1,0 +1,115 @@
+{
+  "companyInfo": {
+    "name": "Công ty TNHH Thiết Bị Điện Phương Phú",
+    "address": "Số 8 hẻm 02 ngách 44 ngõ 222 Đường 19/5, Phường Hà Đông, Thành phố Hà Nội",
+    "taxCode": "0110698330",
+    "phone": ""
+  },
+  "sampleOrder": [
+    {
+      "type": "item",
+      "stt": 1,
+      "name": "Đèn LED ốp trần LN29N 220/18W 6500K",
+      "unit": "Cái",
+      "quantity": 307,
+      "unitPrice": 143000,
+      "totalPrice": 43901000
+    },
+    {
+      "type": "item",
+      "stt": 2,
+      "name": "Bộ đèn LED chống nổ CN01 1200/40W.PLUS 6500K",
+      "unit": "Cái",
+      "quantity": 20,
+      "unitPrice": 1255000,
+      "totalPrice": 25100000
+    },
+    {
+      "type": "item",
+      "stt": 3,
+      "name": "Bộ đèn LED M26 600/25W 6500K",
+      "unit": "Cái",
+      "quantity": 10,
+      "unitPrice": 89000,
+      "totalPrice": 890000
+    },
+    {
+      "type": "item",
+      "stt": 4,
+      "name": "Bộ đèn LED M26 1200/50W 6500K",
+      "unit": "Cái",
+      "quantity": 68,
+      "unitPrice": 128000,
+      "totalPrice": 8704000
+    },
+    {
+      "type": "item",
+      "stt": 5,
+      "name": "Đèn LED Panel P06 600x600/50W 6500K",
+      "unit": "Cái",
+      "quantity": 134,
+      "unitPrice": 448000,
+      "totalPrice": 60032000
+    },
+    {
+      "type": "item",
+      "stt": 6,
+      "name": "Đèn LED Downlight AT04 110/12W 6500K",
+      "unit": "Cái",
+      "quantity": 48,
+      "unitPrice": 89000,
+      "totalPrice": 4272000
+    },
+    {
+      "type": "item",
+      "stt": 7,
+      "name": "Đèn LED Downlight AT04 90/10W 6500K",
+      "unit": "Cái",
+      "quantity": 149,
+      "unitPrice": 73500,
+      "totalPrice": 10951500
+    },
+    {
+      "type": "item",
+      "stt": 8,
+      "name": "Đèn LED ốp trần LN12.RAD 220/18W (HL) 6500K",
+      "unit": "Cái",
+      "quantity": 60,
+      "unitPrice": 205000,
+      "totalPrice": 12300000
+    },
+    {
+      "type": "item",
+      "stt": 9,
+      "name": "Đèn LED Chiếu pha CP10 150W 6500K",
+      "unit": "Cái",
+      "quantity": 62,
+      "unitPrice": 832000,
+      "totalPrice": 51584000
+    },
+    {
+      "type": "item",
+      "stt": 10,
+      "name": "Đèn LED High Bay HB03 290/100W 6500K SS",
+      "unit": "Cái",
+      "quantity": 3,
+      "unitPrice": 888000,
+      "totalPrice": 2664000
+    },
+    {
+      "type": "summary",
+      "label": "Tổng trước thuế",
+      "amount": 220398500
+    },
+    {
+      "type": "summary",
+      "label": "Thuế VAT 8%",
+      "amount": 17631880
+    },
+    {
+      "type": "summary",
+      "label": "Tổng cộng đã bao gồm thuế",
+      "amount": 238030380
+    }
+  ]
+}

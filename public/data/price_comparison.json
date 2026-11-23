@@ -1,0 +1,50 @@
+[
+  {
+    "stt": 1,
+    "productName": "LED dây ngoài trời LD03 1000/7W",
+    "webPrice": 51000,
+    "specs": "300 lm/m, IP65, 25.000h",
+    "match": "—",
+    "conclusion": "THIẾU trong bảng T9 — chỉ còn giá T8 cũ"
+  },
+  {
+    "stt": 2,
+    "productName": "LED dây ngoài trời LD03 1000/8W",
+    "webPrice": 51000,
+    "specs": "380 lm/m, IP65, 25.000h",
+    "match": "KHỚP",
+    "conclusion": "Có trong T9, giá lẻ khớp web 100%"
+  },
+  {
+    "stt": 3,
+    "productName": "LED dây ngoài trời LD03 1000/9W",
+    "webPrice": 76000,
+    "specs": "700 lm/m, IP65, 25.000h",
+    "match": "—",
+    "conclusion": "THIẾU trong bảng T9 — chỉ còn giá T8 cũ"
+  },
+  {
+    "stt": 4,
+    "productName": "LED dây ngoài trời LD03 1000/10W",
+    "webPrice": 76000,
+    "specs": "900 lm/m, IP65, 25.000h",
+    "match": "KHỚP",
+    "conclusion": "Có trong T9, giá lẻ khớp web 100%"
+  },
+  {
+    "stt": 5,
+    "productName": "LED dây đổi màu LD03 1000/9W",
+    "webPrice": 84000,
+    "specs": "600 lm/m, IP65, 25.000h",
+    "match": "—",
+    "conclusion": "THIẾU trong bảng T9 — chỉ còn giá T8 cũ"
+  },
+  {
+    "stt": 6,
+    "productName": "LED dây đổi màu LD03 1000/10W",
+    "webPrice": 84000,
+    "specs": "700 lm/m, IP65, 25.000h",
+    "match": "KHỚP",
+    "conclusion": "Có trong T9, giá lẻ khớp web 100%"
+  }
+]

@@ -1,0 +1,2740 @@
+[
+  {
+    "sheetName": "SPM (2)",
+    "products": [
+      {
+        "name": "Đèn LED chiếu gương cảm biến G04.PIR 8W\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 450/400lm\nTuổi thọ: 25.000h, L70\nKích thước (LxWxH): (600x154x123)mm\nPhạm vi hđ cảm biến: 1-2m\nThời gian sáng: 180s\n2 chế độ On, Off - Auto",
+        "quantity": 1,
+        "listPrice": 253703,
+        "totalListPrice": 253703
+      },
+      {
+        "name": "Cảm biến chuyển động \nCB09.PIR (AC)\n\nĐiện áp: 220V/50Hz\nCông suất tải max: ≤300W\nPhạm vi cảm biến: 7m\nThời gian giữ sáng: 3-900s\nCảm biến ánh sáng: <80-100lux\nKích thước (ØxH): (110x62)mm\nĐường kính khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 300000,
+        "totalListPrice": 300000
+      },
+      {
+        "name": "Công tắc cảm biến\nCT01.PIR 300W\n\nĐiện áp: 220V/50Hz\nCông suất tải max: ≤300W\nPhạm vi cảm biến: 3m-6m\nThời gian giữ sáng: 3s-15 phút\nCảm biến ánh sáng: 30-2000 lux\nTuổi thọ: 30.000 giờ\nKích thước (DxRxC):\n(113x70x70)mm",
+        "quantity": 1,
+        "listPrice": 194444,
+        "totalListPrice": 194444
+      },
+      {
+        "name": "Đèn LED Thả trần đổi màu TTR01.BLE 12W\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChuẩn kết nối: Bluetooth Mesh\nNhiệt độ màu: 6500K - 3000K\nThay đổi cường độ: 10% - 100%\nQuang thông: 650lm - 560lm\nTuổi thọ: 25,000h L70\nKích thước (ØxH): (60x300)mm\nPhần mềm điều khiển:\nRALLI SMART",
+        "quantity": 1,
+        "listPrice": 600000,
+        "totalListPrice": 600000
+      },
+      {
+        "name": "Đèn LED ốp tường đổi màu \nLN18.V2 ĐM 110x75/6W\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: Đổi 3 màu 6500/4000/3000K\nQuang thông: 200 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (110x75x150)mm",
+        "quantity": 1,
+        "listPrice": 215740,
+        "totalListPrice": 215740
+      },
+      {
+        "name": "Đèn LED ốp tường đổi màu LN18 83x60/6W\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: Đổi 3 màu 6500/4000/3000K\nQuang thông: 350 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (83x60x151)mm",
+        "quantity": 1,
+        "listPrice": 182407,
+        "totalListPrice": 182407
+      },
+      {
+        "name": "Đèn LED gắn tường \nGT19 5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/6500K\nQuang thông: 400/450 lm\nCấp bảo vệ: IP20\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH): \n(123x102x98) mm",
+        "quantity": 1,
+        "listPrice": 570370,
+        "totalListPrice": 570370
+      },
+      {
+        "name": "Đèn LED gắn tường \nGT18.3M 6W\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/3000K\nQuang thông: 440/400 lm\nChip LED: Hàn Quốc\nCấp bảo vệ: IP20\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH): \n(168x42x80) mm\nVật liệu: Vỏ nhôm",
+        "quantity": 1,
+        "listPrice": 400000,
+        "totalListPrice": 400000
+      },
+      {
+        "name": "Đèn LED gắn tường \nGT18.4M 8W\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/3000K\nQuang thông: 580/520 lm\nChip LED: Hàn Quốc\nCấp bảo vệ: IP20\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH): \n(220x44x80) mm\nVật liệu: Vỏ nhôm",
+        "quantity": 1,
+        "listPrice": 479629,
+        "totalListPrice": 479629
+      },
+      {
+        "name": "Đèn LED gắn tường cảm biến\nGT16.PIR 220x100/15W\n\nCông suất: 15W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/6500K\nQuang thông: 900/950 lm\nKhoảng cách phát hiện: 2-5m\nCấp bảo vệ: IP54\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): \n(220x100x55) mm",
+        "quantity": 1,
+        "listPrice": 279629,
+        "totalListPrice": 279629
+      },
+      {
+        "name": "Đèn LED gắn tường \nGT16.PIR 180/15W\n\nCông suất: 15W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/6500K\nQuang thông: 900/950 lm\nKhoảng cách phát hiện: 2-5m\nCấp bảo vệ: IP54\nTuổi thọ: 25,000h, L70\nKích thước (ØxC): (220x55) mm",
+        "quantity": 1,
+        "listPrice": 339814,
+        "totalListPrice": 339814
+      },
+      {
+        "name": "Bộ ray tracklight RAY TRL01/1000 (1m)",
+        "quantity": 1,
+        "listPrice": 229629,
+        "totalListPrice": 229629
+      },
+      {
+        "name": "Đèn LED tracklight\nTRL05 20W\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 4000K/5000K\nQuang thông: 1800lm/1660lm\nTuổi thọ: 25,000h L70\nGóc chiếu tùy chỉnh: 24°\nMàu sắc: Trắng / Đen",
+        "quantity": 1,
+        "listPrice": 389814,
+        "totalListPrice": 389814
+      },
+      {
+        "name": "Đèn LED tracklight\nTRL05 15W (xoay góc)\n\nCông suất: 15W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 4000K/5000K\nQuang thông: 1080lm/1155lm\nTuổi thọ: 25,000h L70\nGóc chiếu tùy chỉnh: 15° - 36°\nMàu sắc: Trắng / Đen",
+        "quantity": 1,
+        "listPrice": 460185,
+        "totalListPrice": 460185
+      }
+    ]
+  },
+  {
+    "sheetName": "Máng LED",
+    "products": [
+      {
+        "name": "Máng đèn FS-40/36x2-M9-k/balát (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 108333,
+        "totalListPrice": 108333
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 2,
+        "listPrice": 100925,
+        "totalListPrice": 201851
+      },
+      {
+        "name": "Máng đèn FS40/36x2-M9-koBL,ko nắp (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 94444,
+        "totalListPrice": 94444
+      },
+      {
+        "name": "Chao Inox 1,2m đôi trần",
+        "quantity": 1,
+        "listPrice": 142593,
+        "totalListPrice": 142593
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 2,
+        "listPrice": 100925,
+        "totalListPrice": 201851
+      },
+      {
+        "name": "Máng đèn FS-40/36x1-M9-k/balát (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 86111,
+        "totalListPrice": 86111
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 1,
+        "listPrice": 100925,
+        "totalListPrice": 100925
+      },
+      {
+        "name": "Máng đèn FS40/36x1-M9-koBL,ko nắp (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 75925,
+        "totalListPrice": 75925
+      },
+      {
+        "name": "Chao Inox 1,2m đơn trần",
+        "quantity": 1,
+        "listPrice": 111111,
+        "totalListPrice": 111111
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 1,
+        "listPrice": 100925,
+        "totalListPrice": 100925
+      },
+      {
+        "name": "Máng đèn FS-20/18x1-M9-k/balát (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 59999,
+        "totalListPrice": 59999
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 600/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 870lm\nChip LED: Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (ØxL): (26x600)mm",
+        "quantity": 1,
+        "listPrice": 75925,
+        "totalListPrice": 75925
+      },
+      {
+        "name": "Máng FS 20/18Wx1 TG\nLắp với bóng đèn: LED TUBE 1,2mx1\nKhông Balat: \nKích thước (DxRxC): (1247x116x88) mm",
+        "quantity": 1,
+        "listPrice": 314814,
+        "totalListPrice": 314814
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 1,
+        "listPrice": 100925,
+        "totalListPrice": 100925
+      },
+      {
+        "name": "Máng FS 20/18Wx2 TG\nLắp với bóng đèn: LED TUBE 1,2mx2\nKhông Balat\nKích thước (DxRxC): ((1247x160x72) mm",
+        "quantity": 1,
+        "listPrice": 384259,
+        "totalListPrice": 384259
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 2,
+        "listPrice": 100925,
+        "totalListPrice": 201851
+      }
+    ]
+  },
+  {
+    "sheetName": "UFO",
+    "products": [
+      {
+        "name": "Đèn LED Highbay\nHB03 290/100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 11000/10500 lm\nHiệu suất quang: 110/105 lm/W\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (290x160) mm\nTrọng lượng: 2,4 kg",
+        "quantity": 1,
+        "listPrice": 1711818,
+        "totalListPrice": 1711818
+      },
+      {
+        "name": "Đèn LED Highbay\nHB03 350/120w\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 13200/12600lm\nHiệu suất quang: 110/105 lm/W\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (345x160) mm\nTrọng lượng: 3,2 kg",
+        "quantity": 1,
+        "listPrice": 2561818,
+        "totalListPrice": 2561818
+      },
+      {
+        "name": "Đèn LED Highbay\nHB03 350/150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 16500lm/15750lm\nHiệu suất quang: 110/105 lm/W\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (345x160) mm\nTrọng lượng: 3,2 kg",
+        "quantity": 1,
+        "listPrice": 2603636,
+        "totalListPrice": 2603636
+      },
+      {
+        "name": "Đèn LED Highbay\nHB03 390/200w\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 22000lm/21000lm\nHiệu suất quang: 110/105 lm/W\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (390x160) mm\nTrọng lượng: 4,5kg",
+        "quantity": 1,
+        "listPrice": 3310000,
+        "totalListPrice": 3310000
+      },
+      {
+        "name": "Đèn LED Highbay\nHB03 390/250W\n\nCông suất: 250W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nQuang thông: 30000lm\nHiệu suất quang: 120 lm/W\nChip LED: Lumileds\nCấp bảo vệ: IP65\nTuổi thọ: 50.000h, L70\nKích thước (ØxH): (395x160) mm\nTrọng lượng: 4,9kg",
+        "quantity": 1,
+        "listPrice": 4200000,
+        "totalListPrice": 4200000
+      }
+    ]
+  },
+  {
+    "sheetName": "Downlight (2)",
+    "products": [
+      {
+        "name": "Đèn LED Downlight \nAT06.V2 90/7W\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 700lm\nChip LED: Hàn Quốc\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (114x44)mm\nĐường kính lỗ khoét trần: 90 mm",
+        "quantity": 1,
+        "listPrice": 130000,
+        "totalListPrice": 130000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT06.V2 110/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 900lm\nChip LED: Hàn Quốc\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (134x44)mm\nĐường kính lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 186364,
+        "totalListPrice": 186364
+      },
+      {
+        "name": "Đèn LED Downlight cảm biến\nAT04.PIR 90/7W\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 480lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm\nTích hợp cảm biến thân nhiệt PIR chỉ bật sáng khi phát hiện người chuyển động trong vùng làm việc",
+        "quantity": 1,
+        "listPrice": 233999,
+        "totalListPrice": 233999
+      },
+      {
+        "name": "Đèn LED Downlight cảm biến\nAT04.PIR 110/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 650lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 115mm\nTích hợp cảm biến thân nhiệt PIR chỉ bật sáng khi phát hiện người chuyển động trong vùng làm việc",
+        "quantity": 1,
+        "listPrice": 261999,
+        "totalListPrice": 261999
+      },
+      {
+        "name": "Đèn LED Downlight xoay góc AT22 60/7W \n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 90\nNhiệt độ màu: 3000/4000/5000K\nQuang thông: 300lm/350lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (72x93)mm\nĐường kính lỗ khoét trần: 60mm",
+        "quantity": 1,
+        "listPrice": 450000,
+        "totalListPrice": 450000
+      },
+      {
+        "name": "Đèn LED Downlight xoay góc AT22 60/9W \n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 90\nNhiệt độ màu: 3000/4000/5000K\nQuang thông: 500lm/550lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (72x93)mm\nĐường kính lỗ khoét trần: 60mm",
+        "quantity": 1,
+        "listPrice": 470000,
+        "totalListPrice": 470000
+      },
+      {
+        "name": "Đèn LED Downlight xoay góc AT22 60/12W \n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 90\nNhiệt độ màu: 3000/4000/5000K\nQuang thông: 630lm/700lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (72x93)mm\nĐường kính lỗ khoét trần: 60mm",
+        "quantity": 1,
+        "listPrice": 500000,
+        "totalListPrice": 500000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 90/5w\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 500lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 150000,
+        "totalListPrice": 150000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 90/8W\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 800lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 158182,
+        "totalListPrice": 158182
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 110/7W\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 700lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 176364,
+        "totalListPrice": 176364
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 90/10W\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1000lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 168182,
+        "totalListPrice": 168182
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 110/10W\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1000lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 188182,
+        "totalListPrice": 188182
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 110/12W\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1200 lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 200000,
+        "totalListPrice": 200000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 155/16W\n\nCông suất: 16W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1600 lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (180x44)mm\nĐường kính lỗ khoét trần: 155mm",
+        "quantity": 1,
+        "listPrice": 348182,
+        "totalListPrice": 348182
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 155/25W\n\nCông suất: 25W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2500 lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (180x44)mm\nĐường kính lỗ khoét trần: 155mm",
+        "quantity": 1,
+        "listPrice": 405455,
+        "totalListPrice": 405455
+      },
+      {
+        "name": "Đèn LED Downlight \nAT30 155/20W \n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2100lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000 h, L70\nKích thước (ØxC): (180x40)mm\nĐường kính khoét trần: 155mm",
+        "quantity": 1,
+        "listPrice": 290000,
+        "totalListPrice": 290000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT30 195/30W \n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 3150lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000 h, L70\nKích thước (ØxC): (220x45)mm\nĐường kính khoét trần: 195mm",
+        "quantity": 1,
+        "listPrice": 360000,
+        "totalListPrice": 360000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT12 125x125/9wx1.DA\n\nCông suất: 1x9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 900 lm\nTuổi thọ: 25.000h, L70\nGóc chùm tia: 24º\nKích thước (LxWxH): (140x140x144)mm\nKích thước khoét lỗ:\n(125x125)mm",
+        "quantity": 1,
+        "listPrice": 797000,
+        "totalListPrice": 797000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT12 240x125/9wx2.DA\n\nCông suất: 2x9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 1710 lm\nTuổi thọ: 25.000h, L70\nGóc chùm tia: 24º\nKích thước (LxWxH): (260x140x143)mm\nKích thước khoét lỗ:\n(240x125)mm",
+        "quantity": 1,
+        "listPrice": 1340000,
+        "totalListPrice": 1340000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT12 360x125/9wx3.DA\n\nCông suất: 3x9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 2900 lm\nTuổi thọ: 25.000h, L70\nGóc chùm tia: 24º\nKích thước (LxWxH): (370x140x143)mm\nKích thước khoét lỗ:\n(360x125)mm",
+        "quantity": 1,
+        "listPrice": 2100000,
+        "totalListPrice": 2100000
+      },
+      {
+        "name": "Đèn LED Downlight đổi màu\nAT02 90/7w\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 510lm/550lm/470lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 183636,
+        "totalListPrice": 183636
+      },
+      {
+        "name": "Đèn LED Downlight đổi màu\nAT02 110/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 650lm/700lm/630lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 218182,
+        "totalListPrice": 218182
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT10 90/7w\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 700lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (118x33)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 183636,
+        "totalListPrice": 183636
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT10 110/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 900lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (138x36)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 218182,
+        "totalListPrice": 218182
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT20 90/8w\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 800lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (103x45)mm\nĐường kính lỗ khoét trần: 90mm\nMàu viền: Vàng/Bạc",
+        "quantity": 1,
+        "listPrice": 188182,
+        "totalListPrice": 188182
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT20 90/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1000lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (103x45)mm\nĐường kính lỗ khoét trần: 90mm\nMàu viền: Vàng/Bạc",
+        "quantity": 1,
+        "listPrice": 191818,
+        "totalListPrice": 191818
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT20 110/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1000lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (123x45)mm\nĐường kính lỗ khoét trần: 110mm\nMàu viền: Vàng/Bạc",
+        "quantity": 1,
+        "listPrice": 216364,
+        "totalListPrice": 216364
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT20 110/12w\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1200lm\nChip LED: Hàn Quốc\nTuổi thọ: 30.000h, L70\nKích thước (ØxH): (123x45)mm\nĐường kính lỗ khoét trần: 110mm\nMàu viền: Vàng/Bạc",
+        "quantity": 1,
+        "listPrice": 223636,
+        "totalListPrice": 223636
+      },
+      {
+        "name": "Đèn LED downlight\nAT14 76/7w\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 560lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nĐường kính lỗ khoét trần: 76mm",
+        "quantity": 1,
+        "listPrice": 162000,
+        "totalListPrice": 162000
+      },
+      {
+        "name": "Đèn LED downlight\nAT14 90/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 850lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 185000,
+        "totalListPrice": 185000
+      },
+      {
+        "name": "Đèn LED downlight\nAT14 110/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 850lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 216000,
+        "totalListPrice": 216000
+      },
+      {
+        "name": "Đèn LED downlight\nAT14 110/12w\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K\nQuang thông: 1050lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 224000,
+        "totalListPrice": 224000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT11 90/7w\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 630lm/610lm\nChip LED: Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 97000,
+        "totalListPrice": 97000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT11 110/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 780lm/760lm\nChip LED: Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 137000,
+        "totalListPrice": 137000
+      }
+    ]
+  },
+  {
+    "sheetName": "Downlight",
+    "products": [
+      {
+        "name": "Đèn LED downlight \nAT24 90/8W.PLUS \n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 840lm\nChip LED: SSC\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (115x39)mm\nĐường kính khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 130000,
+        "totalListPrice": 130000
+      },
+      {
+        "name": "Đèn LED downlight \nAT24 90/10W.PLUS \n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1050lm\nChip LED: SSC\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (115x39)mm\nĐường kính khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 144545,
+        "totalListPrice": 144545
+      },
+      {
+        "name": "Đèn LED downlight \nAT24 110/10W.PLUS \n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1050lm\nChip LED: SSC\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (135x39)mm\nĐường kính khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 185455,
+        "totalListPrice": 185455
+      },
+      {
+        "name": "Đèn LED downlight \nAT24 110/12W.PLUS \n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1260lm\nChip LED: SSC\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (135x39)mm\nĐường kính khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 200000,
+        "totalListPrice": 200000
+      },
+      {
+        "name": "Đèn LED downlight \nAT25 80x80/10Wx1.PLUS \n\nCông suất: 10Wx1\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000/3000K\nQuang thông: 750lm\nChip LED: Hàn Quốc\nGóc chiếu: 27 độ\nTuổi thọ: 30.000 h, L70\nKích thước (DxRxC): (88x88x76)mm\nKích thước khoét trần: 80x80mm",
+        "quantity": 1,
+        "listPrice": 400000,
+        "totalListPrice": 400000
+      },
+      {
+        "name": "Đèn LED downlight \nAT25 80x160/10Wx2.PLUS \n\nCông suất: 10Wx2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000/3000K\nQuang thông: 1500lm\nChip LED: Hàn Quốc\nGóc chiếu: 27 độ\nTuổi thọ: 30.000 h, L70\nKích thước (DxRxC): (88x168x76)mm\nKích thước khoét trần: 80x160mm",
+        "quantity": 1,
+        "listPrice": 789815,
+        "totalListPrice": 789815
+      },
+      {
+        "name": "Đèn LED downlight \nAT25 80x240/10Wx3.PLUS  \n\nCông suất: 10Wx3\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000/3000K\nQuang thông: 2250lm\nChip LED: Hàn Quốc\nGóc chiếu: 27 độ\nTuổi thọ: 30.000 h, L70\nKích thước (DxRxC): (88x248x76)mm\nKích thước khoét trần: 80x240mm",
+        "quantity": 1,
+        "listPrice": 1194444,
+        "totalListPrice": 1194444
+      },
+      {
+        "name": "Đèn LED downlight \nAT16 90/7W.DA\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 600lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (108x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 161000,
+        "totalListPrice": 161000
+      },
+      {
+        "name": "Đèn LED downlight \nAT16 110/7W.DA\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 600lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (130x40)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 185999,
+        "totalListPrice": 185999
+      },
+      {
+        "name": "Đèn LED downlight \nAT16 90/9W.DA\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 760lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (108x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 168000,
+        "totalListPrice": 168000
+      },
+      {
+        "name": "Đèn LED downlight \nAT16 110/9W.DA\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 765lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (130x40)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 190999,
+        "totalListPrice": 190999
+      },
+      {
+        "name": "Đèn LED downlight \nAT16 110/12W.DA\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1020/920lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (130x40)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 195999,
+        "totalListPrice": 195999
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT16 DM 90/7W.DA\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 600/560lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (108x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 178000,
+        "totalListPrice": 178000
+      },
+      {
+        "name": "Đèn LED downlight đổi màu\nAT16 DM 110/9W.DA\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 760/700lm\nChip LED: Samsung\nTuổi thọ: 30.000 h, L70\nKích thước (ØxH): (130x40)mm\nĐường kính lỗ khoét trần: 110mm",
+        "quantity": 1,
+        "listPrice": 206000,
+        "totalListPrice": 206000
+      },
+      {
+        "name": "Đèn LED Downlight \nAT04 90/5W.DA\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 375lm/350lm\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 139000,
+        "totalListPrice": 139000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 90/7W.DA\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 525lm/500lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 146000,
+        "totalListPrice": 146000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 110/7W.DA\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 525lm/500lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 115mm",
+        "quantity": 1,
+        "listPrice": 162000,
+        "totalListPrice": 162000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 90/9W.DA\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 675lm/630lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 155000,
+        "totalListPrice": 155000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 110/9W.DA\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 675lm/630lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 115mm",
+        "quantity": 1,
+        "listPrice": 174000,
+        "totalListPrice": 174000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 110/12W.DA\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1000lm/960lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 115mm",
+        "quantity": 1,
+        "listPrice": 185000,
+        "totalListPrice": 185000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 155/16W.DA\n\nCông suất: 16W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1360lm/1280lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (180x44)mm\nĐường kính lỗ khoét trần: 155mm",
+        "quantity": 1,
+        "listPrice": 331000,
+        "totalListPrice": 331000
+      },
+      {
+        "name": "Đèn LED downlight \nAT04 155/25W.DA\n\nCông suất: 25W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 2125lm/2000lm\nChip LED: Samsung\nTuổi thọ: 25.000 h, L70\nKích thước (ØxH): (180x44)mm\nĐường kính lỗ khoét trần: 155mm",
+        "quantity": 1,
+        "listPrice": 386000,
+        "totalListPrice": 386000
+      },
+      {
+        "name": "Đèn LED downlight xoay góc \nAT02 XG 76/4,5W.DA\n\nCông suất: 4,5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/4000K\nQuang thông: 350lm\nGóc chiếu: 38°\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (90 x 45)mm\nĐường kính lỗ khoét trần: 76mm",
+        "quantity": 1,
+        "listPrice": 117999,
+        "totalListPrice": 117999
+      },
+      {
+        "name": "Đèn LED downlight xoay góc \nAT02 XG 76/6,5W.DA\n\nCông suất: 6,5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/4000K\nQuang thông: 500lm\nGóc chiếu: 38°\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (90 x 45)mm\nĐường kính lỗ khoét trần: 76mm",
+        "quantity": 1,
+        "listPrice": 122999,
+        "totalListPrice": 122999
+      },
+      {
+        "name": "Đèn LED downlight\nAT09 76/9w.DA Vivid\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 95\nNhiệt độ màu: 4000K\nQuang thông: 765lm\nChip LED: Vivid Citizen-Nhật Bản\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (98 x 46)mm\nĐường kính lỗ khoét trần: 76mm",
+        "quantity": 1,
+        "listPrice": 316000,
+        "totalListPrice": 316000
+      },
+      {
+        "name": "Đèn LED downlight\nAT09 90/12w.DA Vivid\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 95\nNhiệt độ màu: 4000K\nQuang thông: 960lm\nChip LED: Vivid Citizen-Nhật Bản\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (118 x 51)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 360999,
+        "totalListPrice": 360999
+      }
+    ]
+  },
+  {
+    "sheetName": "CSD",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 13000 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (725x285x100)mm",
+        "quantity": 11,
+        "listPrice": 2040500,
+        "totalListPrice": 22445500
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 19500 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (725x285x100)mm",
+        "quantity": 3,
+        "listPrice": 3031000,
+        "totalListPrice": 9093000
+      }
+    ]
+  },
+  {
+    "sheetName": "CSD (2)",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 30w\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 3300 lm\nHiệu suất phát quang: 110 lm/W\nChip LED: Samsung / Citizen\nTuổi thọ: 30 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 6kV\nKích thước (LxWxH): (340x145x60)mm",
+        "quantity": 1,
+        "listPrice": 858182,
+        "totalListPrice": 858182
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 40w\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 4400 lm\nHiệu suất phát quang: 110 lm/W\nChip LED: Samsung / Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nKích thước (LxWxH): (340x145x60)mm",
+        "quantity": 1,
+        "listPrice": 2900000,
+        "totalListPrice": 2900000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 60w\n\nCông suất: 60W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 6600 lm\nHiệu suất phát quang: 110 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (620x260x100)mm",
+        "quantity": 1,
+        "listPrice": 2900000,
+        "totalListPrice": 2900000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 70w\n\nCông suất: 70W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 7350 lm\nHiệu suất phát quang: 105 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (620x260x100)mm",
+        "quantity": 1,
+        "listPrice": 3100000,
+        "totalListPrice": 3100000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 11000 lm\nHiệu suất phát quang: 110 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (725x285x100)mm",
+        "quantity": 1,
+        "listPrice": 3850000,
+        "totalListPrice": 3850000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 120w\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 13200 lm\nHiệu suất phát quang: 110 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (725x285x100)mm",
+        "quantity": 1,
+        "listPrice": 4070000,
+        "totalListPrice": 4070000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 19500 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (725x285x100)mm",
+        "quantity": 1,
+        "listPrice": 5720000,
+        "totalListPrice": 5720000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD02 200w\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 5000K\nQuang thông: 23000 lm\nHiệu suất phát quang: 115 lm/W\nChip LED: Citizen\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (880x340x100)mm",
+        "quantity": 1,
+        "listPrice": 6566364,
+        "totalListPrice": 6566364
+      }
+    ]
+  },
+  {
+    "sheetName": "SMD03",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD03 30W\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 5000K\nQuang thông: 3600 lm\nHiệu suất phát quang: 120 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 35 000h, L70\nCấp bảo vệ: IP65, IK09\nKhả năng chịu xung sét: 10kV\nKích thước (LxWxH): (284x175x62)mm",
+        "quantity": 1,
+        "listPrice": 1100000,
+        "totalListPrice": 1100000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD03 60W\n\nCông suất: 60W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 7200 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK09\nKhả năng chịu xung sét: 10kV\nKích thước (LxWxH): (450x295x85)mm",
+        "quantity": 1,
+        "listPrice": 2970000,
+        "totalListPrice": 2970000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD03 70W\n\nCông suất: 70W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 9100 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK09\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (450x295x85)mm",
+        "quantity": 1,
+        "listPrice": 3190000,
+        "totalListPrice": 3190000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD03 80W\n\nCông suất: 80W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 10000 lm\nHiệu suất phát quang: 125 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK09\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (450x295x85)mm",
+        "quantity": 1,
+        "listPrice": 3300000,
+        "totalListPrice": 3300000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD03 90W\n\nCông suất: 90W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 10800 lm\nHiệu suất phát quang: 120 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK09\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (450x295x85)mm",
+        "quantity": 1,
+        "listPrice": 3520000,
+        "totalListPrice": 3520000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD03 100W\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 12000 lm\nHiệu suất phát quang: 120 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK09\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (LxWxH): (450x295x85)mm",
+        "quantity": 1,
+        "listPrice": 3740000,
+        "totalListPrice": 3740000
+      }
+    ]
+  },
+  {
+    "sheetName": "SMD04",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD04 75W\n\nCông suất: 75W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 9750 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nCó khả năng điều chỉnh góc nghiêng\nKích thước (LxWxH): (504x316x136)mm",
+        "quantity": 1,
+        "listPrice": 6600000,
+        "totalListPrice": 6600000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD04 80W\n\nCông suất: 80W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 10000 lm\nHiệu suất phát quang: 125 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nCó khả năng điều chỉnh góc nghiêng\nKích thước (LxWxH): (504x316x136)mm",
+        "quantity": 1,
+        "listPrice": 6700000,
+        "totalListPrice": 6700000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD04 100W\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 12500 lm\nHiệu suất phát quang: 125 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nCó khả năng điều chỉnh góc nghiêng\nKích thước (LxWxH): (504x316x136)mm",
+        "quantity": 1,
+        "listPrice": 7100000,
+        "totalListPrice": 7100000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD04 150W\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 18750 lm\nHiệu suất phát quang: 125 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nCó khả năng điều chỉnh góc nghiêng\nKích thước (LxWxH): (577x316x136)mm",
+        "quantity": 1,
+        "listPrice": 8400000,
+        "totalListPrice": 8400000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD04 180W\n\nCông suất: 180W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 22500 lm\nHiệu suất phát quang: 125 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nCó khả năng điều chỉnh góc nghiêng\nKích thước (LxWxH): (650x316x136)mm",
+        "quantity": 1,
+        "listPrice": 8300000,
+        "totalListPrice": 8300000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nD CSD01L/100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 12000 lm\nHiệu suất phát quang: 120 lm/W\nChip LED: Philips lumileds Luxeon T\nTuổi thọ: 50 000h\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (DxRxC): (690x330x91)mm",
+        "quantity": 1,
+        "listPrice": 5800000,
+        "totalListPrice": 5800000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nD CSD01L/120w\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 14400 lm\nHiệu suất phát quang: 120 lm/W\nChip LED: Philips lumileds Luxeon T\nTuổi thọ: 50 000h\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (DxRxC): (690x330x91)mm",
+        "quantity": 1,
+        "listPrice": 6400000,
+        "totalListPrice": 6400000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nD CSD01L/150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000/5000K\nQuang thông: 17250 lm\nHiệu suất phát quang: 115 lm/W\nChip LED: Philips lumileds Luxeon T\nTuổi thọ: 50 000h\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nTích hợp Dimming 5 cấp công suất\nKích thước (DxRxC): (690x330x91)mm",
+        "quantity": 1,
+        "listPrice": 7600000,
+        "totalListPrice": 7600000
+      }
+    ]
+  },
+  {
+    "sheetName": "SMD05",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD05 100W 2M\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 13500 lm\nHiệu suất phát quang: 135 lm/W\nChip LED: SMD Lumiled\nSố module: 2 module\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (702x316x90)mm",
+        "quantity": 1,
+        "listPrice": 5600000,
+        "totalListPrice": 5600000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD05 100W\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 15000 lm\nHiệu suất phát quang: 150 lm/W\nChip LED: SMD Lumiled\nSố module: 3 module\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (702x316x90)mm",
+        "quantity": 1,
+        "listPrice": 6200000,
+        "totalListPrice": 6200000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD05 120W\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 17400 lm\nHiệu suất phát quang: 145 lm/W\nChip LED: SMD Lumiled\nSố module: 3 module\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (702x316x90)mm",
+        "quantity": 1,
+        "listPrice": 6500000,
+        "totalListPrice": 6500000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD05 150W\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 20250 lm\nHiệu suất phát quang: 135 lm/W\nChip LED: SMD Lumiled\nSố module: 3 module\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (702x316x90)mm",
+        "quantity": 1,
+        "listPrice": 6800000,
+        "totalListPrice": 6800000
+      }
+    ]
+  },
+  {
+    "sheetName": "SMD06",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD06 80W\n\nCông suất: 80W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 10400 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (622x259x181) mm",
+        "quantity": 1,
+        "listPrice": 5595000,
+        "totalListPrice": 5595000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD06 100W\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 13000 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (622x259x181) mm",
+        "quantity": 1,
+        "listPrice": 6041000,
+        "totalListPrice": 6041000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD06 120W\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 15600 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): \n(693x310x183)mm",
+        "quantity": 1,
+        "listPrice": 6490000,
+        "totalListPrice": 6490000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD06 150W\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K/5000K\nQuang thông: 19500 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumiled\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nCó thể Dimming 5 cấp công suất\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): \n(693x310x183)mm",
+        "quantity": 1,
+        "listPrice": 6710000,
+        "totalListPrice": 6710000
+      }
+    ]
+  },
+  {
+    "sheetName": "CSD08 (2)",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD08 100W\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K\nQuang thông: 13000 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumileds\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (740x300x150) mm\nCó chức năng Dimming 5 cấp công suất",
+        "quantity": 1,
+        "listPrice": 6099999,
+        "totalListPrice": 6099999
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD08 120W\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K\nQuang thông: 15600 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumileds\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (740x300x150) mm\nCó chức năng Dimming 5 cấp công suất",
+        "quantity": 1,
+        "listPrice": 6299999,
+        "totalListPrice": 6299999
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD08 150W\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K\nQuang thông: 19500 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumileds\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (740x300x150) mm\nCó chức năng Dimming 5 cấp công suất",
+        "quantity": 1,
+        "listPrice": 6499999,
+        "totalListPrice": 6499999
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường\nCSD08 200W\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 4000K\nQuang thông: 26000 lm\nHiệu suất phát quang: 130 lm/W\nChip LED: SMD Lumileds\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 10kV\nĐiều chỉnh góc nghiêng của đèn\nKích thước (LxWxH): (805x350x150) mm\nCó chức năng Dimming 5 cấp công suất",
+        "quantity": 1,
+        "listPrice": 7999999,
+        "totalListPrice": 7999999
+      }
+    ]
+  },
+  {
+    "sheetName": "HB08",
+    "products": [
+      {
+        "name": "Đèn LED Highbay nhà xưởng \nHB08 300/150W\n\nCông suất: 150W\nĐiện áp: 220V/50-60Hz\nNhiệt độ màu: 6500 K\nQuang thông: 21750 lm\nChỉ số hoàn màu: ≥80\nTuổi thọ: 30000 h\nCấp bảo vệ: IP65\nKích thước (ФxC): (300x180)mm\nKhối lượng: 2,1kg",
+        "quantity": 223,
+        "listPrice": 823000,
+        "totalListPrice": 183529000
+      }
+    ]
+  },
+  {
+    "sheetName": "Highbay.",
+    "products": [
+      {
+        "name": "Đèn LED Highbay\nHB02 350/50w\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5000lm/4750lm\nHiệu suất quang: 100/95 lm/W\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (350x240) mm\nTrọng lượng: 1,1kg",
+        "quantity": 1,
+        "listPrice": 1341818,
+        "totalListPrice": 1341818
+      },
+      {
+        "name": "Đèn LED Highbay\nHB02 350/70w\n\nCông suất: 70W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 6650lm/6300lm\nHiệu suất quang: 95/90 lm/W\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (350x240) mm\nTrọng lượng: 1,5kg",
+        "quantity": 1,
+        "listPrice": 1405455,
+        "totalListPrice": 1405455
+      },
+      {
+        "name": "Đèn LED Highbay\nHB02 430/100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 10000lm/9500lm\nHiệu suất quang: 100/95 lm/W\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (430x345) mm\nTrọng lượng: 2,4kg",
+        "quantity": 1,
+        "listPrice": 2251818,
+        "totalListPrice": 2251818
+      },
+      {
+        "name": "Đèn LED Highbay\nHB02 430/120w\n\nCông suất: 120W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 12000lm/11400 lm\nHiệu suất quang: 100/95 lm/W\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (430x345) mm\nTrọng lượng: 2,6kg",
+        "quantity": 1,
+        "listPrice": 2582727,
+        "totalListPrice": 2582727
+      },
+      {
+        "name": "Đèn LED Highbay\nHB02 430/150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 15000lm/14250lm\nHiệu suất quang: 100/95 lm/W\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (430x345) mm\nTrọng lượng: 2,6kg",
+        "quantity": 1,
+        "listPrice": 2746296,
+        "totalListPrice": 2746296
+      },
+      {
+        "name": "Đèn LED Highbay\nHB02 500/200w\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 21000lm/19000lm\nHiệu suất quang: 105/95 lm/W\nChip LED: Samsung\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (500x350) mm\nTrọng lượng: 3,6kg",
+        "quantity": 1,
+        "listPrice": 3327778,
+        "totalListPrice": 3327778
+      }
+    ]
+  },
+  {
+    "sheetName": "Chiếu pha",
+    "products": [
+      {
+        "name": "Bộ đèn LED M20 AT01 1200/24W \n\nCông suất: 24W\nĐiện áp: 150-250/50Hz\nHiệu suất sáng: 71 lm/W\nQuang thông: 1700 lm\nNhiệt độ màu: 5000K\nChỉ số hoàn màu: 82\nTuổi thọ: 20.000 giờ (L70)\nKích thước (DxRxC): (1200x65x65)mm\nBảo hành: 2 năm",
+        "quantity": 1,
+        "listPrice": 271818,
+        "totalListPrice": 271818
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1550lm/1400lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(136x116x40) mm",
+        "quantity": 1,
+        "listPrice": 400000,
+        "totalListPrice": 400000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 30w\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2300lm/2070lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(200x180x55) mm",
+        "quantity": 1,
+        "listPrice": 501818,
+        "totalListPrice": 501818
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 50w\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 4150lm/3740lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(220x197x55) mm",
+        "quantity": 1,
+        "listPrice": 628182,
+        "totalListPrice": 628182
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 70w\n\nCông suất: 70W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 6300lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(265x220x65) mm",
+        "quantity": 1,
+        "listPrice": 1493636,
+        "totalListPrice": 1493636
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 9500lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(328x282x78) mm",
+        "quantity": 1,
+        "listPrice": 2071818,
+        "totalListPrice": 2071818
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 13500lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(405x335x85) mm",
+        "quantity": 1,
+        "listPrice": 2766364,
+        "totalListPrice": 2766364
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP06 200w\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 20000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(406x377x97) mm",
+        "quantity": 1,
+        "listPrice": 4226364,
+        "totalListPrice": 4226364
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP08 50w\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5500/5000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25 000 h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(248x215x62) mm",
+        "quantity": 1,
+        "listPrice": 570909,
+        "totalListPrice": 570909
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP07 150W\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K\nQuang thông: 20250lm\nChip LED: LumiLed\nTuổi thọ: 50 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(313x232x75) mm",
+        "quantity": 1,
+        "listPrice": 4600000,
+        "totalListPrice": 4600000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP07 200W\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K\nQuang thông: 27000lm\nChip LED: LumiLed\nTuổi thọ: 50 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(313x347x75) mm",
+        "quantity": 1,
+        "listPrice": 5999999,
+        "totalListPrice": 5999999
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP07 250W\n\nCông suất: 250W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K\nQuang thông: 33750lm\nChip LED: LumiLed\nTuổi thọ: 50 000 h, L70\nCấp bảo vệ: IP66\nKích thước (LxWxH):\n(394x347x75) mm",
+        "quantity": 1,
+        "listPrice": 7999999,
+        "totalListPrice": 7999999
+      },
+      {
+        "name": "Đèn LED chiếu pha 300W\nCP07 300W\n\nCông suất: 300w\nDải điện áp hoạt động: (100–277)V\nHiệu suất: 135 lm/W\nQuang thông: 40500 lm\nCấp bảo vệ: IP66, IK08\nHệ số công suất: 0.95\nTuổi thọ: 50.000 giờ",
+        "quantity": 1,
+        "listPrice": 11000000,
+        "totalListPrice": 11000000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 850lm / 760lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(136x116x40) mm\nTrọng lượng: 0,4kg",
+        "quantity": 1,
+        "listPrice": 274000,
+        "totalListPrice": 274000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1550lm / 1400lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(186x156x48) mm\nTrọng lượng: 0,8kg",
+        "quantity": 1,
+        "listPrice": 378000,
+        "totalListPrice": 378000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 30w\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2300lm / 2070lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(186x156x48) mm\nTrọng lượng: 0,8kg",
+        "quantity": 1,
+        "listPrice": 438000,
+        "totalListPrice": 438000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 50w\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 4150lm / 3740lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000 h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(285x240x60) mm\nTrọng lượng: 2,0kg",
+        "quantity": 1,
+        "listPrice": 634000,
+        "totalListPrice": 634000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 70w\n\nCông suất: 70W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5800 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(280x252x85) mm\nTrọng lượng: 3,7kg",
+        "quantity": 1,
+        "listPrice": 1446000,
+        "totalListPrice": 1446000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 100w\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 9500lm / 9000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 2kV\nKích thước (LxWxH):\n(280x252x85) mm\nTrọng lượng: 3,7kg",
+        "quantity": 1,
+        "listPrice": 2005999,
+        "totalListPrice": 2005999
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 150w\n\nCông suất: 150W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 13500 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP65\nKhả năng chịu xung sét: 4kV\nKích thước (LxWxH):\n(345x315x88) mm\nTrọng lượng: 5,0kg",
+        "quantity": 1,
+        "listPrice": 2838000,
+        "totalListPrice": 2838000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP03 200w\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 20000 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP65, IK08\nKhả năng chịu xung sét: 4kV\nKích thước (LxWxH):\n(338x282x49) mm\nTrọng lượng: 6,3kg",
+        "quantity": 1,
+        "listPrice": 4476000,
+        "totalListPrice": 4476000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP04 200w\n\nCông suất: 200W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000/4000/3000K\nQuang thông: 26000 lm\nChip LED: COB Samsung\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 5kV\nSử dụng vỏ kim loại, có khả năng chống ăn mòn muối biển",
+        "quantity": 1,
+        "listPrice": 3590000,
+        "totalListPrice": 3590000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP04 300w\n\nCông suất: 300W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000/4000/3000K\nQuang thông: 39000 lm\nChip LED: COB Samsung\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 5kV\nSử dụng vỏ kim loại, có khả năng chống ăn mòn muối biển",
+        "quantity": 1,
+        "listPrice": 4990000,
+        "totalListPrice": 4990000
+      },
+      {
+        "name": "Đèn LED chiếu pha\nCP04 400w\n\nCông suất: 400W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000/4000/3000K\nQuang thông: 52000 lm\nChip LED: COB Samsung\nTuổi thọ: 20 000h, L70\nCấp bảo vệ: IP66, IK08\nKhả năng chịu xung sét: 5kV\nSử dụng vỏ kim loại, có khả năng chống ăn mòn muối biển",
+        "quantity": 1,
+        "listPrice": 6700000,
+        "totalListPrice": 6700000
+      }
+    ]
+  },
+  {
+    "sheetName": "M15.18",
+    "products": [
+      {
+        "name": "Bộ đèn LED\nM15 600x600/36w\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 3000lm/2800lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (605x605x70)mm",
+        "quantity": 1,
+        "listPrice": 1063636,
+        "totalListPrice": 1063636
+      },
+      {
+        "name": "Bộ đèn LED\nM15 300x1200/36w\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 3000lm/2800lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (1200x300x65)mm",
+        "quantity": 1,
+        "listPrice": 1063636,
+        "totalListPrice": 1063636
+      },
+      {
+        "name": "Bộ đèn LED\nM15 600x1200/72w\n\nCông suất: 72W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5300lm/5000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (1200x605x65)mm",
+        "quantity": 1,
+        "listPrice": 1565455,
+        "totalListPrice": 1565455
+      },
+      {
+        "name": "Bộ đèn LED\nM18 600/18w SS\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (630x80x78)mm",
+        "quantity": 1,
+        "listPrice": 574000,
+        "totalListPrice": 574000
+      },
+      {
+        "name": "Bộ đèn LED\nM18 1200/36w SS\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 3500lm\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (1200x80x78)mm",
+        "quantity": 1,
+        "listPrice": 816000,
+        "totalListPrice": 816000
+      },
+      {
+        "name": "Bộ đèn LED\nM20 TT01 1200/24w.DA\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP40\nKích thước (DxRxC):\n(1210x50x85)mm",
+        "quantity": 1,
+        "listPrice": 751000,
+        "totalListPrice": 751000
+      },
+      {
+        "name": "Bộ đèn LED\nM20 AT01 1200/24w.DA\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP40\nKích thước (DxRxC):\n(1220x65x32)mm",
+        "quantity": 1,
+        "listPrice": 751000,
+        "totalListPrice": 751000
+      }
+    ]
+  },
+  {
+    "sheetName": "M26.36.38",
+    "products": [
+      {
+        "name": "Bộ đèn LED M26\nM26 300/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 750lm/700lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (300x75x25)mm",
+        "quantity": 1,
+        "listPrice": 129999,
+        "totalListPrice": 129999
+      },
+      {
+        "name": "Bộ đèn LED M26\nM26 600/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2000lm/1900lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (600x75x25)mm",
+        "quantity": 1,
+        "listPrice": 203636,
+        "totalListPrice": 203636
+      },
+      {
+        "name": "Bộ đèn LED M26\nM26 1200/50w\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5750lm/5250lm\nChip LED: Hàn Quốc\nTuổi thọ: 35,000h, L70\nKích thước (LxWxH): (1200x75x25)mm",
+        "quantity": 1,
+        "listPrice": 328182,
+        "totalListPrice": 328182
+      },
+      {
+        "name": "Bộ đèn LED M36\nM36 600/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2000lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (573x61x31)mm",
+        "quantity": 1,
+        "listPrice": 203636,
+        "totalListPrice": 203636
+      },
+      {
+        "name": "Bộ đèn LED M36\nM36 1200/40w\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 4000lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): \n(1172x61x31)mm",
+        "quantity": 1,
+        "listPrice": 328182,
+        "totalListPrice": 328182
+      },
+      {
+        "name": "Bộ xoay góc đèn M36",
+        "quantity": 1,
+        "listPrice": 22000,
+        "totalListPrice": 22000
+      },
+      {
+        "name": "Bộ đèn LED cảm biến\nM16.RAD 1200/36w\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 3100lm/2850lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (1200x75x24)mm\nTích hợp cảm biến Radar chỉ bật sáng khi phát hiện người chuyển động trong vùng làm việc",
+        "quantity": 1,
+        "listPrice": 503999,
+        "totalListPrice": 503999
+      }
+    ]
+  },
+  {
+    "sheetName": "Ốp trần",
+    "products": [
+      {
+        "name": "Đèn LED ốp tường\nLN12 70x160/5w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1000/900 lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (195x90x60)mm",
+        "quantity": 1,
+        "listPrice": 116000,
+        "totalListPrice": 116000
+      },
+      {
+        "name": "Đèn LED ốp tường\nLN12 90x195/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1000/900 lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (195x90x60)mm",
+        "quantity": 1,
+        "listPrice": 147000,
+        "totalListPrice": 147000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12N 170/12w\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 900lm/810lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (160x36)mm\nVật liệu thân: Nhựa",
+        "quantity": 1,
+        "listPrice": 232407,
+        "totalListPrice": 232407
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12N 170x170/12w\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 900lm/810lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (160x160x36)mm\nVật liệu thân: Nhựa",
+        "quantity": 1,
+        "listPrice": 232407,
+        "totalListPrice": 232407
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12N 220/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1400lm/1260lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (220x36)mm\nVật liệu thân: Nhựa",
+        "quantity": 1,
+        "listPrice": 315740,
+        "totalListPrice": 315740
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12N 220x220/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1400lm/1260lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (220x220x36)mm\nVật liệu thân: Nhựa",
+        "quantity": 1,
+        "listPrice": 315740,
+        "totalListPrice": 315740
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12N 300/24w\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2000lm/1800lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (280x36)mm\nVật liệu thân: Nhựa",
+        "quantity": 1,
+        "listPrice": 400000,
+        "totalListPrice": 400000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12N 300x300/24w\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2000lm/1800lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (280x280x36)mm\nVật liệu thân: Nhựa",
+        "quantity": 1,
+        "listPrice": 400000,
+        "totalListPrice": 400000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12 170/15w\n\nCông suất: 15W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1100lm/990lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (160x36)mm\nVật liệu thân: Nhôm đúc",
+        "quantity": 1,
+        "listPrice": 274074,
+        "totalListPrice": 274074
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12 170x170/15w\n\nCông suất: 15W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1100lm/990lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (160x160x36)mm\nVật liệu thân: Nhôm đúc",
+        "quantity": 1,
+        "listPrice": 274074,
+        "totalListPrice": 274074
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12 220/22w\n\nCông suất: 22W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1700lm/1530lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (220x36)mm\nVật liệu thân: Nhôm đúc",
+        "quantity": 1,
+        "listPrice": 370370,
+        "totalListPrice": 370370
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12 220x220/22w\n\nCông suất: 22W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1700lm/1530lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (220x220x36)mm\nVật liệu thân: Nhôm đúc",
+        "quantity": 1,
+        "listPrice": 384259,
+        "totalListPrice": 384259
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12 300/30w\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2200lm/1980lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (280x36)mm\nVật liệu thân: Nhôm đúc",
+        "quantity": 1,
+        "listPrice": 453703,
+        "totalListPrice": 453703
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12 300x300/30w\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2200lm/1980lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (280x280x36)mm\nVật liệu thân: Nhôm đúc",
+        "quantity": 1,
+        "listPrice": 484259,
+        "totalListPrice": 484259
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12.RAD 220/18w (HL)\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1400lm/1260lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (220x36)mm\nTích hợp cảm biến RADA\nGóc phát hiện: 120x360°\nThời gian sáng: 60s\nCảm biến ánh sáng: 100 lux",
+        "quantity": 1,
+        "listPrice": 434259,
+        "totalListPrice": 434259
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12.RAD 220/18w (WC)\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1400lm/1260lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (ØxH): (220x36)mm\nTích hợp cảm biến RADA\nGóc phát hiện: 90x360°\nThời gian sáng: 120s\nCảm biến ánh sáng: 100 lux",
+        "quantity": 1,
+        "listPrice": 434259,
+        "totalListPrice": 434259
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12.RAD 220x220/18w (HL)\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1400lm/1260lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (220x220x36)mm\nTích hợp cảm biến RADA\nGóc phát hiện: 120x360°\nThời gian sáng: 60s\nCảm biến ánh sáng: 100 lux",
+        "quantity": 1,
+        "listPrice": 494444,
+        "totalListPrice": 494444
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN12.RAD 220x220/18w (WC)\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1400lm/1260lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nCấp bảo vệ: IP54\nKích thước (LxWxH): (220x220x36)mm\nTích hợp cảm biến RADA\nGóc phát hiện: 90x360°\nThời gian sáng: 120s\nCảm biến ánh sáng: 100 lux",
+        "quantity": 1,
+        "listPrice": 494444,
+        "totalListPrice": 494444
+      },
+      {
+        "name": "Đèn LED ốp trần đổi màu\nLN16 480/40W\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 2800lm/2520lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (480x86)mm\nĐổi 3 màu ánh sáng bằng các Bật/Tắt công tắc",
+        "quantity": 1,
+        "listPrice": 1033999,
+        "totalListPrice": 1033999
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN16 540x540/40W\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500/3000K\nQuang thông: 4000lm/3600lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (540x540x46)mm",
+        "quantity": 1,
+        "listPrice": 880000,
+        "totalListPrice": 880000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN08 170x170/12W\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 780lm\nCấp bảo vệ: IP20\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (162x162x40)mm",
+        "quantity": 1,
+        "listPrice": 274000,
+        "totalListPrice": 274000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN08 230x230/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1260lm\nCấp bảo vệ: IP20\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (212x212x39)mm",
+        "quantity": 1,
+        "listPrice": 384000,
+        "totalListPrice": 384000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN08 300x300/24w\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1800lm\nCấp bảo vệ: IP20\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (290x290x39)mm",
+        "quantity": 1,
+        "listPrice": 483999,
+        "totalListPrice": 483999
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN09 172/12w\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 780lm\nCấp bảo vệ: IP20\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (162x40)mm",
+        "quantity": 1,
+        "listPrice": 274000,
+        "totalListPrice": 274000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN09 225/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1260lm\nCấp bảo vệ: IP20\nTuổi thọ: 15,000h, L70\nKích thước (ØxH): (212x40)mm",
+        "quantity": 1,
+        "listPrice": 370000,
+        "totalListPrice": 370000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN09 300/24w\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1800lm\nCấp bảo vệ: IP20\nTuổi thọ: 15,000h, L70\nKích thước (ØxH): (288x39)mm",
+        "quantity": 1,
+        "listPrice": 454000,
+        "totalListPrice": 454000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN10 220x220/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1500lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (220x220x18)mm",
+        "quantity": 1,
+        "listPrice": 322000,
+        "totalListPrice": 322000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN11 220/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1500lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (220x18)mm",
+        "quantity": 1,
+        "listPrice": 322000,
+        "totalListPrice": 322000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN05 160/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 600lm\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP20\nTuổi thọ: 15,000h, L70\nKích thước (ØxH): (160x48)mm",
+        "quantity": 1,
+        "listPrice": 158000,
+        "totalListPrice": 158000
+      },
+      {
+        "name": "Đèn LED ốp trần\nLN05 220/14w\n\nCông suất: 14W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1100lm\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP20\nTuổi thọ: 15,000h, L70\nKích thước (ØxH): (220x48)mm",
+        "quantity": 1,
+        "listPrice": 245999,
+        "totalListPrice": 245999
+      }
+    ]
+  },
+  {
+    "sheetName": "Panel",
+    "products": [
+      {
+        "name": "Đèn LED Panel\nP06 600x600/50w - KPK \n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt đô màu:\t 3000K/4000K/6500K\nQuang thông:\t5500/5900/5900 lm\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(600x600x35)mm",
+        "quantity": 1,
+        "listPrice": 1021000,
+        "totalListPrice": 1021000
+      },
+      {
+        "name": "Đèn LED Panel\nP06 300x1200/50w - KPK \n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt đô màu:\t 3000K/4000K/6500K\nQuang thông:\t5500/5900/5900 lm\nTuổi thọ: 25,000h L70\nKích thước (LxWxH):\n(1200x300x35)mm",
+        "quantity": 1,
+        "listPrice": 1021000,
+        "totalListPrice": 1021000
+      },
+      {
+        "name": "Đèn LED Panel\nP08 600x600/50w - KPK \n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5750lm/5500lm\nTuổi thọ: 25,000h L70\nKích thước (LxWxH):\n(600x600x10)mm",
+        "quantity": 1,
+        "listPrice": 1140000,
+        "totalListPrice": 1140000
+      },
+      {
+        "name": "Đèn LED Panel\nP08 300x1200/50w - KPK \n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5750lm/5500lm\nTuổi thọ: 25,000h L70\nKích thước (LxWxH):\n(1200x300x10)mm",
+        "quantity": 1,
+        "listPrice": 1140000,
+        "totalListPrice": 1140000
+      },
+      {
+        "name": "Đèn LED Panel\nP08 600x1200/100w - KPK SS\n\nCông suất: 100W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 11500lm\nTuổi thọ: 25,000h L70\nKích thước (LxWxH):\n(1200x600x10)mm",
+        "quantity": 1,
+        "listPrice": 2113636,
+        "totalListPrice": 2113636
+      },
+      {
+        "name": "Bộ phụ kiện tai treo Panel\n(dùng để lắp cho hệ trần thạch cao xương chìm)",
+        "quantity": 1,
+        "listPrice": 47000,
+        "totalListPrice": 47000
+      },
+      {
+        "name": "Đèn LED Panel vuông P06 640x640 50W\n\nCông suất: 50W\nĐiện áp: (150÷250)V/50Hz\nNhiệt đô màu: 3000K/4000K/6500K\nQuang thông: 5520/6000/6000lm\nHiệu suất sáng: 110/120/120 lm/W\nTuổi thọ: 30.000 giờ\nKích thước (DxRxC): (640 x 640 x 25)mm",
+        "quantity": 1,
+        "listPrice": 1733000,
+        "totalListPrice": 1733000
+      },
+      {
+        "name": "Đèn LED Panel chữ nhật P06 320x1280 50W\n\nCông suất: 50W\nĐiện áp: (150÷250)V/50Hz\nNhiệt đô màu: 3000K/4000K/6500K\nQuang thông: 5100/5500/5500 lm\nHiệu suất sáng: 102/110/110 lm/W\nTuổi thọ: 30.000 giờ\nKích thước (DxRxC): (1285 x 320 x 22)mm",
+        "quantity": 1,
+        "listPrice": 1733000,
+        "totalListPrice": 1733000
+      },
+      {
+        "name": "Đèn LED Panel\nPT04.V2 90/7W\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/4000K/6500K\nQuang thông: 450/500/500lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (104x32) mm\nKích thước lỗ khoét trần: 90 mm",
+        "quantity": 1,
+        "listPrice": 136364,
+        "totalListPrice": 136364
+      },
+      {
+        "name": "Đèn LED Panel\nPT04.V2 110/7W\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/4000K/6500K\nQuang thông: 495/550/550lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (122x32) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 148182,
+        "totalListPrice": 148182
+      },
+      {
+        "name": "Đèn LED Panel \nPT04.V2 110/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/4000K/6500K\nQuang thông: 630/700/700lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (122x32) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 151818,
+        "totalListPrice": 151818
+      },
+      {
+        "name": "Đèn LED Panel \nPT04.V2 135/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/4000K/6500K\nQuang thông: 720/800/800lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (147x32) mm\nKích thước lỗ khoét trần: 135 mm",
+        "quantity": 1,
+        "listPrice": 173636,
+        "totalListPrice": 173636
+      },
+      {
+        "name": "Đèn LED Panel \nPT04.V2 135/12W\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/4000K/6500K\nQuang thông: 900/1000/1000lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxH): (147x32) mm\nKích thước lỗ khoét trần: 135 mm",
+        "quantity": 1,
+        "listPrice": 190000,
+        "totalListPrice": 190000
+      },
+      {
+        "name": "Đèn LED Panel\nPT04 90/7w SS\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 350lm/315lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (115x26) mm\nKích thước lỗ khoét trần: 90 mm",
+        "quantity": 1,
+        "listPrice": 136364,
+        "totalListPrice": 136364
+      },
+      {
+        "name": "Đèn LED Panel\nPT04 110/7w SS\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 370lm/330lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (134x26) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 148182,
+        "totalListPrice": 148182
+      },
+      {
+        "name": "Đèn LED Panel \nPT04 110/9w SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 530lm/480lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (134x26) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 151818,
+        "totalListPrice": 151818
+      },
+      {
+        "name": "Đèn LED Panel \nPT04 135/9w SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 555lm/500lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (158x26) mm\nKích thước lỗ khoét trần: 135 mm",
+        "quantity": 1,
+        "listPrice": 173636,
+        "totalListPrice": 173636
+      },
+      {
+        "name": "Đèn LED Panel \nPT04 135/12w SS\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 790lm/750lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (158x26) mm\nKích thước lỗ khoét trần: 135 mm",
+        "quantity": 1,
+        "listPrice": 189999,
+        "totalListPrice": 189999
+      },
+      {
+        "name": "Đèn LED Panel đổi màu\nPT04 90/7w SS\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K/6500K\nQuang thông: 470/570/520 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (115x26) mm\nKích thước lỗ khoét trần: 90 mm",
+        "quantity": 1,
+        "listPrice": 176364,
+        "totalListPrice": 176364
+      },
+      {
+        "name": "Đèn LED Panel đổi màu\nPT04 110/9w SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K/6500K\nQuang thông: 580/680/600lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (134x26) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 206364,
+        "totalListPrice": 206364
+      },
+      {
+        "name": "Đèn LED Panel đổi màu\nPT04 135/9w SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K/6500K\nQuang thông: 600/650/640lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (158x26) mm\nKích thước lỗ khoét trần: 135 mm",
+        "quantity": 1,
+        "listPrice": 220000,
+        "totalListPrice": 220000
+      },
+      {
+        "name": "Đèn LED Panel đổi màu\nPT05 90/7w SS\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K/6500K\nQuang thông: 470/570/520 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (115x26) mm\nKích thước lỗ khoét trần: 90 mm",
+        "quantity": 1,
+        "listPrice": 176000,
+        "totalListPrice": 176000
+      },
+      {
+        "name": "Đèn LED Panel đổi màu\nPT05 110/9w SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K/6500K\nQuang thông: 580/680/600lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (134x26) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 205999,
+        "totalListPrice": 205999
+      },
+      {
+        "name": "Đèn LED Panel đổi màu\nPT05 135/9w SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 4000K/5000K/6500K\nQuang thông: 600/650/640lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (158x26) mm\nKích thước lỗ khoét trần: 135 mm",
+        "quantity": 1,
+        "listPrice": 219999,
+        "totalListPrice": 219999
+      },
+      {
+        "name": "Đèn LED Panel\nPN03 120x120/8w SS\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 420 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH):\n(140x140x16) mm\nKích thước lỗ khoét trần: \n(120x120) mm",
+        "quantity": 1,
+        "listPrice": 210000,
+        "totalListPrice": 210000
+      },
+      {
+        "name": "Đèn LED Panel\nPN03 160x160/12w SS\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 750 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH):\n(180x180x16) mm\nKích thước lỗ khoét trần: (160x160) mm",
+        "quantity": 1,
+        "listPrice": 249999,
+        "totalListPrice": 249999
+      },
+      {
+        "name": "Đèn LED Panel\nPN04 110x110/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/6500K\nQuang thông: 495lm/550lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(120x120x22) mm\nKích thước lỗ khoét trần: \n(110x110) mm",
+        "quantity": 1,
+        "listPrice": 146000,
+        "totalListPrice": 146000
+      },
+      {
+        "name": "Đèn LED Panel\nPN04 160x160/12W\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K/6500K\nQuang thông: 720lm/800lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(170x170x22) mm\nKích thước lỗ khoét trần: (160x160) mm",
+        "quantity": 1,
+        "listPrice": 180000,
+        "totalListPrice": 180000
+      },
+      {
+        "name": "Đèn LED Panel \nPT03 90/6w\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 320lm/300lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (106x20) mm\nKích thước lỗ khoét trần: 90 mm",
+        "quantity": 1,
+        "listPrice": 112000,
+        "totalListPrice": 112000
+      },
+      {
+        "name": "Đèn LED Panel \nPT03 110/6w\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 340lm/320lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (120x20) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 121999,
+        "totalListPrice": 121999
+      },
+      {
+        "name": "Đèn LED Panel \nPT03 110/9w\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 540lm/510lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (120x20) mm\nKích thước lỗ khoét trần: 110 mm",
+        "quantity": 1,
+        "listPrice": 125999,
+        "totalListPrice": 125999
+      }
+    ]
+  },
+  {
+    "sheetName": "Panel (2)",
+    "products": [
+      {
+        "name": "Đèn LED Panel\nP07 300x300/24w.PLUS - KPK\n\nCông suất: 24W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 2520/2400lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(300x300x10)mm\nKích thước khoét trần: (295x295)mm",
+        "quantity": 1,
+        "listPrice": 762037,
+        "totalListPrice": 762037
+      },
+      {
+        "name": "Đèn LED Panel\nP07 300x600/28w.PLUS - KPK\n\nCông suất: 28W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 2660/2520lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(600x300x10)mm\nKích thước khoét trần: (595x295)mm",
+        "quantity": 1,
+        "listPrice": 912037,
+        "totalListPrice": 912037
+      },
+      {
+        "name": "Đèn LED Panel\nP07 150x1200/28w.PLUS - KPK\n\nCông suất: 28W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 2940/2800lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(1200x150x10)mm\nKích thước khoét trần: (1195x145)mm",
+        "quantity": 1,
+        "listPrice": 1037037,
+        "totalListPrice": 1037037
+      },
+      {
+        "name": "Đèn LED Panel\nP07 600x600/35w.PLUS - KPK\n\nCông suất: 35W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 3850/3675lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(600x600x10)mm\nKích thước khoét trần: (595x595)mm",
+        "quantity": 1,
+        "listPrice": 1212963,
+        "totalListPrice": 1212963
+      },
+      {
+        "name": "Đèn LED Panel\nP07 300x1200/35w.PLUS - KPK\n\nCông suất: 35W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 3850/3675lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(1200x300x10)mm\nKích thước khoét trần: (1195x295)mm",
+        "quantity": 1,
+        "listPrice": 1212963,
+        "totalListPrice": 1212963
+      },
+      {
+        "name": "Đèn LED Panel\nP07 600x600/48w.PLUS - KPK\n\nCông suất: 48W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 5280/5040lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(600x600x10)mm\nKích thước khoét trần: (595x595)mm",
+        "quantity": 1,
+        "listPrice": 1501852,
+        "totalListPrice": 1501852
+      },
+      {
+        "name": "Đèn LED Panel\nP07 300x1200/48w.PLUS - KPK\n\nCông suất: 48W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 5280/5040lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(1200x300x10)mm\nKích thước khoét trần: (1195x295)mm",
+        "quantity": 1,
+        "listPrice": 1501852,
+        "totalListPrice": 1501852
+      },
+      {
+        "name": "Đèn LED Panel\nP07 600x1200/75w.PLUS - KPK\n\nCông suất: 75W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 85\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 8250/7875lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(1200x600x10)mm\nKích thước khoét trần: (1195x595)mm",
+        "quantity": 1,
+        "listPrice": 2414815,
+        "totalListPrice": 2414815
+      },
+      {
+        "name": "Đèn LED Panel\nP05 600x600/50w.DA\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng\nQuang thông: 5250 lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(640x640x25)mm",
+        "quantity": 1,
+        "listPrice": 1732999,
+        "totalListPrice": 1732999
+      },
+      {
+        "name": "Đèn LED Panel\nP05 300x1200/50w.DA\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng\nQuang thông: 5250 lm\nChip LED: Samsung\nTuổi thọ: 30,000h L70\nKích thước (LxWxH):\n(1280x320x25)mm",
+        "quantity": 1,
+        "listPrice": 1732999,
+        "totalListPrice": 1732999
+      },
+      {
+        "name": "Đèn LED Panel\nD P01 30x120/48w.DA (KPK)\n\nCông suất: 48W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5000lm/4400lm\nChip LED: Samsung\nCấp bảo vệ: IP40\nTuổi thọ: 30.000h, L70\nKích thước (LxWxH):\n(1200x300x14)mm\nTrọng lượng: 5,0kg",
+        "quantity": 1,
+        "listPrice": 2039999,
+        "totalListPrice": 2039999
+      },
+      {
+        "name": "Đèn LED Panel\nD P01 60x60/48w.DA (KPK)\n\nCông suất: 48W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5000lm/4400lm\nChip LED: Samsung\nCấp bảo vệ: IP40\nTuổi thọ: 30.000h, L70\nKích thước (LxWxH):\n(600x600x14)mm\nTrọng lượng: 5,0kg",
+        "quantity": 1,
+        "listPrice": 2039999,
+        "totalListPrice": 2039999
+      },
+      {
+        "name": "Đèn LED Panel\nD P01 60x120/75w.DA (KPK)\n\nCông suất: 75W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 7500lm/7000lm\nChip LED: Samsung\nCấp bảo vệ: IP40\nTuổi thọ: 30.000h, L70\nKích thước (LxWxH):\n(1200x600x14)mm\nTrọng lượng: 6,8kg",
+        "quantity": 1,
+        "listPrice": 2780000,
+        "totalListPrice": 2780000
+      },
+      {
+        "name": "Đèn LED panel\nD PN03 120x120/8w.DA\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 420 lm\nChip LED: Samsung\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH):\n(140x140x16) mm\nKích thước lỗ khoét trần: \n(120x120) mm",
+        "quantity": 1,
+        "listPrice": 186000,
+        "totalListPrice": 186000
+      },
+      {
+        "name": "Đèn LED panel\nD PN03 160x160/12w.DA\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 750 lm\nChip LED: Samsung\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH):\n(180x180x16) mm\nKích thước lỗ khoét trần: (160x160) mm",
+        "quantity": 1,
+        "listPrice": 246999,
+        "totalListPrice": 246999
+      }
+    ]
+  },
+  {
+    "sheetName": "Liền thân",
+    "products": [
+      {
+        "name": "Bộ đèn LED Tube\nT5 LT03 300/4w SS\n\nCông suất: 4W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 350lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): \n(300x22x35)mm",
+        "quantity": 1,
+        "listPrice": 105000,
+        "totalListPrice": 105000
+      },
+      {
+        "name": "Bộ đèn LED Tube\nT5 LT03 600/8w SS\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): \n(570x22x35)mm",
+        "quantity": 1,
+        "listPrice": 125999,
+        "totalListPrice": 125999
+      },
+      {
+        "name": "Bộ đèn LED Tube\nT5 LT03 1200/16w SS\n\nCông suất: 16W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1300lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): \n(1180x22x35)mm",
+        "quantity": 1,
+        "listPrice": 177000,
+        "totalListPrice": 177000
+      },
+      {
+        "name": "Bộ đèn LED Tube đổi màu\nT5 LT03 1200/16w SS\n\nCông suất: 16W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500/4000/3000K\nQuang thông: 1800/1700/1600lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (1180x22x35)mm\nTính năng chuyển màu ánh sáng khi bật tắt công tắc",
+        "quantity": 1,
+        "listPrice": 214000,
+        "totalListPrice": 214000
+      },
+      {
+        "name": "Bộ đèn LED chống nổ\nCN01 1200/20W.PLUS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nNguồn sáng: Bóng LED tube thủy tinh 1200/20w\nQuang thông bóng: 2600lm\nCấp bảo vệ: IP54\nTuổi thọ: 20,000h, L70\nKích thước (L): 1320 mm",
+        "quantity": 1,
+        "listPrice": 1690000,
+        "totalListPrice": 1690000
+      },
+      {
+        "name": "Bộ đèn LED chống nổ\nCN01 1200/40W.PLUS\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nNguồn sáng: Bóng LED tube thủy tinh 1200/20w\nQuang thông bóng: 2x2600lm\nCấp bảo vệ: IP54\nTuổi thọ: 20,000h, L70\nKích thước (L): 1320 mm",
+        "quantity": 1,
+        "listPrice": 1919999,
+        "totalListPrice": 1919999
+      },
+      {
+        "name": "Bộ đèn LED Tube\nBD LT02 T5 N01 30/4w\n\nCông suất: 4W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 350lm\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(300x23x34)mm",
+        "quantity": 1,
+        "listPrice": 59499,
+        "totalListPrice": 59499
+      },
+      {
+        "name": "Bộ đèn LED Tube\nT8 LT01 600/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 800lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): \n(590x30x38)mm",
+        "quantity": 1,
+        "listPrice": 130999,
+        "totalListPrice": 130999
+      },
+      {
+        "name": "Bộ đèn LED Tube\nT8 LT01 1200/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 1600lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): \n(1198x30x38)mm",
+        "quantity": 1,
+        "listPrice": 200000,
+        "totalListPrice": 200000
+      }
+    ]
+  },
+  {
+    "sheetName": "Bóng LED",
+    "products": [
+      {
+        "name": "Bộ đèn Led Tube\nT8 M11/10Wx1 SS\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 850lm\nChip LED: Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH):\n(628x48x68)mm",
+        "quantity": 1,
+        "listPrice": 184000,
+        "totalListPrice": 184000
+      },
+      {
+        "name": "Bộ đèn Led Tube \nT8 M11/20Wx1 (LPF) SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2300lm\nChip LED: Hàn Quốc\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH):\n(1238x48x68)mm",
+        "quantity": 1,
+        "listPrice": 270000,
+        "totalListPrice": 270000
+      },
+      {
+        "name": "Bộ đèn Led Tube \nT8 TT01 M21.1/10Wx1\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 870lm\nChip LED: Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (DxRxC):\n(614x34x49)mm",
+        "quantity": 1,
+        "listPrice": 120000,
+        "totalListPrice": 120000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 M21.1/20Wx1\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600lm/2400lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (DxRxC):\n(1222x35x51 )mm",
+        "quantity": 1,
+        "listPrice": 152000,
+        "totalListPrice": 152000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 M21.1/22wx1 (NR)\n\nCông suất: 22W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 2500lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (DxRxC):\n(1221x33x45)mm",
+        "quantity": 1,
+        "listPrice": 180000,
+        "totalListPrice": 180000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 N02 M11/10wx1\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 900lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(628x48x62)mm",
+        "quantity": 1,
+        "listPrice": 143000,
+        "totalListPrice": 143000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 N02 M11/18wx1\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(1228x48x62)mm",
+        "quantity": 1,
+        "listPrice": 171000,
+        "totalListPrice": 171000
+      },
+      {
+        "name": "Bóng đèn LED Tube\nT8 600/10w SS\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 850lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxL): (26x603)mm",
+        "quantity": 1,
+        "listPrice": 127000,
+        "totalListPrice": 127000
+      },
+      {
+        "name": "Bóng đèn LED Tube\nT8 1200/20w LPF SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2300lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 30,000h, L70\nKích thước (ØxL): (28x1213)mm",
+        "quantity": 1,
+        "listPrice": 194000,
+        "totalListPrice": 194000
+      },
+      {
+        "name": "Bóng đèn LED Tube\nT8 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 2200lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 30,000h, L70\nKích thước (ØxL): (26x1213)mm",
+        "quantity": 1,
+        "listPrice": 249999,
+        "totalListPrice": 249999
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8.RAD 1200/18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nGóc phát hiện: 120x360 độ\nThời gian tự động tắt: 20s\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (26x1213)mm",
+        "quantity": 1,
+        "listPrice": 297000,
+        "totalListPrice": 297000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 600/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 870lm\nChip LED: Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (ØxL): (26x600)mm",
+        "quantity": 1,
+        "listPrice": 76000,
+        "totalListPrice": 76000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 1,
+        "listPrice": 100800,
+        "totalListPrice": 100800
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w.H (150lm/W)\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 3000/2800 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 1,
+        "listPrice": 144000,
+        "totalListPrice": 144000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 N02 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600lm/2400lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (26x1213)mm",
+        "quantity": 1,
+        "listPrice": 108000,
+        "totalListPrice": 108000
+      },
+      {
+        "name": "Bộ đèn Led Tube \nT8 M11/18Wx1\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH):\n(1238x48x68)mm",
+        "quantity": 1,
+        "listPrice": 238999,
+        "totalListPrice": 238999
+      },
+      {
+        "name": "Bộ đèn Led Tube \nT8 TT01 M21.1/18Wx1\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 2000lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (DxRxC):\n(1221x35x51)mm",
+        "quantity": 1,
+        "listPrice": 138000,
+        "totalListPrice": 138000
+      },
+      {
+        "name": "Bộ đèn Led Tube\nBD T8L N01 M11/10wx1\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 850lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): \n(628x48x68)mm",
+        "quantity": 1,
+        "listPrice": 154000,
+        "totalListPrice": 154000
+      },
+      {
+        "name": "Bộ đèn Led Tube\nBD T8L N01 M11/18wx1\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (1238x48x68)mm",
+        "quantity": 1,
+        "listPrice": 211000,
+        "totalListPrice": 211000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 1200/18w SS\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (ØxL): (26x1213)mm",
+        "quantity": 1,
+        "listPrice": 165000,
+        "totalListPrice": 165000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/ 18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2000lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (26x1213)mm",
+        "quantity": 1,
+        "listPrice": 92000,
+        "totalListPrice": 92000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nLED TUBE T8 N01 60/ 10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 850lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (26x603)mm",
+        "quantity": 1,
+        "listPrice": 97000,
+        "totalListPrice": 97000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nLED TUBE T8 N01 120/ 18w\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 1700lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (26x1213)mm",
+        "quantity": 1,
+        "listPrice": 137000,
+        "totalListPrice": 137000
+      }
+    ]
+  },
+  {
+    "sheetName": "Âm trần LED",
+    "products": [
+      {
+        "name": "Máng đèn âm trần FS20/18x3-M6 (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1134000,
+        "totalListPrice": 1134000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 600/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 870lm\nChip LED: Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (ØxL): (26x600)mm",
+        "quantity": 3,
+        "listPrice": 76000,
+        "totalListPrice": 228000
+      },
+      {
+        "name": "Máng đèn âm trần FS40/36x2-M6 (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1208000,
+        "totalListPrice": 1208000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 2,
+        "listPrice": 100800,
+        "totalListPrice": 201600
+      },
+      {
+        "name": "Máng đèn âm trần FS40/36x3-M6 (lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1683999,
+        "totalListPrice": 1683999
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 3,
+        "listPrice": 100800,
+        "totalListPrice": 302400
+      },
+      {
+        "name": "Máng đèn âm trần FS20/18x4-M6-(lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1160000,
+        "totalListPrice": 1160000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 600/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 870lm\nChip LED: Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (ØxL): (26x600)mm",
+        "quantity": 4,
+        "listPrice": 76000,
+        "totalListPrice": 304000
+      },
+      {
+        "name": "Máng đèn FS20/18x3-M10-k/balát(lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1134000,
+        "totalListPrice": 1134000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 600/10w\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 870lm\nChip LED: Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (ØxL): (26x600)mm",
+        "quantity": 3,
+        "listPrice": 76000,
+        "totalListPrice": 228000
+      },
+      {
+        "name": "Máng đèn FS40/36x2-M10-k/balát(lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1208000,
+        "totalListPrice": 1208000
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 2,
+        "listPrice": 100800,
+        "totalListPrice": 201600
+      },
+      {
+        "name": "Máng đèn FS40/36x3-M10-k/balát(lắp Led Tube)",
+        "quantity": 1,
+        "listPrice": 1683999,
+        "totalListPrice": 1683999
+      },
+      {
+        "name": "Bóng đèn LED TUBE\nT8 TT01 1200/20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2600/2400 lm\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxL): (27x1213)mm",
+        "quantity": 3,
+        "listPrice": 100800,
+        "totalListPrice": 302400
+      }
+    ]
+  },
+  {
+    "sheetName": "OEM",
+    "products": [
+      {
+        "name": "Bộ Driver LED dây LD01.7W",
+        "quantity": 1,
+        "listPrice": 46000,
+        "totalListPrice": 46000
+      },
+      {
+        "name": "Đèn LED dây RD-LD01.7W",
+        "quantity": 1,
+        "listPrice": 44000,
+        "totalListPrice": 44000
+      },
+      {
+        "name": "Bộ phụ kiện nối dài LD01.7W",
+        "quantity": 1,
+        "listPrice": 37000,
+        "totalListPrice": 37000
+      },
+      {
+        "name": "Bộ Driver LED dây LD01.9W",
+        "quantity": 1,
+        "listPrice": 48000,
+        "totalListPrice": 48000
+      },
+      {
+        "name": "Đèn LED dây RD-LD01.9W",
+        "quantity": 1,
+        "listPrice": 66000,
+        "totalListPrice": 66000
+      },
+      {
+        "name": "Bộ phụ kiện nối dài LD01.9W",
+        "quantity": 1,
+        "listPrice": 37000,
+        "totalListPrice": 37000
+      },
+      {
+        "name": "Bộ Driver LED dây LD01.9W CCT",
+        "quantity": 1,
+        "listPrice": 103000,
+        "totalListPrice": 103000
+      },
+      {
+        "name": "Đèn LED dây đổi màu \nRD-LD01.9W",
+        "quantity": 1,
+        "listPrice": 73000,
+        "totalListPrice": 73000
+      },
+      {
+        "name": "Bộ phụ kiện nối dài LD01.9W CCT",
+        "quantity": 1,
+        "listPrice": 37000,
+        "totalListPrice": 37000
+      },
+      {
+        "name": "Bộ phụ kiện cho LED dây 7w",
+        "quantity": 1,
+        "listPrice": 76000,
+        "totalListPrice": 76000
+      },
+      {
+        "name": "Đèn LED dây 100/7w",
+        "quantity": 1,
+        "listPrice": 40000,
+        "totalListPrice": 40000
+      }
+    ]
+  },
+  {
+    "sheetName": "NLMT",
+    "products": [
+      {
+        "name": "Đèn LED chiếu sáng đường CSD01.SL.RF 25W\n\nCông suất: 25W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 2100lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK08\nThời gian duy trì sáng: 12h\nTự động điều chỉnh ánh sáng sau 4 giờ hoạt động\nKích thước (LxWxH): (500x205x80)mm\n- Pin lưu điện: LiFePO4\n+ Dung lượng: 20 Ah\n- Tấm pin NLMT\n+ Công suất: 25W\n+ Công nghệ: Poly-crytalline",
+        "quantity": 1,
+        "listPrice": 2760000,
+        "totalListPrice": 2760000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường NLMT CSD01.SL.RF 30W V2 \n\nCông suất: 30W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 3200lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nThời gian duy trì sáng: 12h\nTự động điều chỉnh ánh sáng sau 4 giờ hoạt động\nKích thước (LxWxH): (650x206x73)mm\n- Pin lưu điện: LiFePO4\n+ Dung lượng: 50 Ah\n- Tấm pin NLMT\n+ Công suất: 65W\n+ Công nghệ: Poly-crytalline",
+        "quantity": 1,
+        "listPrice": 3959999,
+        "totalListPrice": 3959999
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường CSD01.SL.RF 50W V2 \n\nCông suất: 50W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 4600lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nThời gian duy trì sáng: 30h\nTích hợp Dimming 3 cấp công suất\nKích thước (LxWxH): (650x206x73)mm\n- Pin lưu điện: LiFePO4\n+ Dung lượng: 65 Ah\n- Tấm pin NLMT\n+ Công suất: 95W\n+ Công nghệ: Poly-crytalline",
+        "quantity": 1,
+        "listPrice": 5500000,
+        "totalListPrice": 5500000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường NLMT CSD02.SL 70W\n\nCông suất: 70W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 8000lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nThời gian duy trì sáng: 24h\nTích hợp Dimming 3 cấp công suất\nKích thước (LxWxH): (755x280x100)mm\n- Pin lưu điện: LiFePO4\n- Tấm pin NLMT\n+ Công suất: 100W\n+ Công nghệ: Mono-crytalline\n+ Kích thước: (1225x520x30)mm",
+        "quantity": 1,
+        "listPrice": 14410000,
+        "totalListPrice": 14410000
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường NLMT CSD02.SL 100W\n\nCông suất: 100W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 10500lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nThời gian duy trì sáng: 24h\nTích hợp Dimming 3 cấp công suất\nKích thước (LxWxH): (755x280x100)mm\n- Pin lưu điện: LiFePO4\n- Tấm pin NLMT\n+ Công suất: 100W\n+ Công nghệ: Mono-crytalline\n+ Kích thước: (1120x670x35)mm",
+        "quantity": 1,
+        "listPrice": 23020370,
+        "totalListPrice": 23020370
+      },
+      {
+        "name": "Đèn LED chiếu sáng đường NLMT CSD02.SL 120W\n\nCông suất: 120W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 12000lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP66, IK08\nThời gian duy trì sáng: 24h\nTích hợp Dimming 3 cấp công suất\nKích thước (LxWxH): (755x280x100)mm\n- Pin lưu điện: LiFePO4\n- Tấm pin NLMT\n+ Công suất: 100W\n+ Công nghệ: Mono-crytalline\n+ Kích thước: (1480x670x35)mm",
+        "quantity": 1,
+        "listPrice": 20130000,
+        "totalListPrice": 20130000
+      },
+      {
+        "name": "Đèn LED chiếu pha NLMT CP01.SL.RF 50W\n\nCông suất: 50W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 1700lm\nTuổi thọ: 60 000h, L70\nCấp bảo vệ: IP65, IK08\nThời gian duy trì sáng: 12h\nThời gian nạp: 6-8h\nKích thước (LxWxH): (245x210x85)mm\n- Pin lưu điện: LiFePO4\n+ Dung lượng: 25Ah\n- Tấm pin NLMT\n+ Công suất: 40W\n+ Công nghệ: Poly-crytalline\n+ Kích thước: (576x357x30)mm",
+        "quantity": 1,
+        "listPrice": 2400000,
+        "totalListPrice": 2400000
+      },
+      {
+        "name": "Đèn LED chiếu pha NLMT CP01SL 70W\n\nCông suất: 70W\nChỉ số hoàn màu Ra: ≥70\nNhiệt độ màu: 6500K\nQuang thông: 3000lm\nTuổi thọ: 50 000h, L70\nCấp bảo vệ: IP65, IK08\nThời gian duy trì sáng: 12h\nThời gian nạp: 6-8h\nKích thước (LxWxH): (245x210x85)mm\n- Pin lưu điện: LiFePO4\n+ Dung lượng: 50Ah\n- Tấm pin NLMT\n+ Công suất: 70W\n+ Công nghệ: Mono-crytalline\n+ Kích thước: (576x357x30)mm",
+        "quantity": 1,
+        "listPrice": 4069999,
+        "totalListPrice": 4069999
+      }
+    ]
+  },
+  {
+    "sheetName": "SPM",
+    "products": [
+      {
+        "name": "Ổ cắm thông minh wifi đơn\nOC.01.WF 16A\n\nĐiện áp nguồn danh định: 220V/50Hz\nDải điện áp hoạt động: (150-250)V\nCông suất tối đa: 3000W\nDòng điện ổ cắm tối đa: 16A\nSố chu kì bật tắt: 100 000\nDải nhiệt độ hoạt động: (-10-45) độ C\nKích thước (DxRxC): (63x44x49)mm",
+        "quantity": 180,
+        "listPrice": 281818,
+        "totalListPrice": 50727240
+      }
+    ]
+  },
+  {
+    "sheetName": "Chống ẩm",
+    "products": [
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 CA02/20Wx1\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube thuỷ tinh\nQuang thông bóng: 2000lm\nChip LED: Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 20,000h, L70",
+        "quantity": 1,
+        "listPrice": 722000,
+        "totalListPrice": 722000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 CA01/20Wx2\n\nCông suất: 20W x 2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube thuỷ tinh\nQuang thông bóng: 4600lm\nCấp bảo vệ: IP65\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH):\n(1260x120x93)mm",
+        "quantity": 1,
+        "listPrice": 948000,
+        "totalListPrice": 948000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 CA02/20Wx2\n\nCông suất: 20W x 2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 82\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube thuỷ tinh\nQuang thông bóng: 4000lm\nCấp bảo vệ: IP65\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH):\n(1260x120x93)mm",
+        "quantity": 1,
+        "listPrice": 948000,
+        "totalListPrice": 948000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 CA01/20Wx1\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube nhôm nhựa\nQuang thông bóng: 2300lm\nChip LED:  Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH):\n(1260x80x93)mm",
+        "quantity": 1,
+        "listPrice": 800000,
+        "totalListPrice": 800000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 CA01/20Wx2\n\nCông suất: 20W x 2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube nhôm nhựa\nQuang thông bóng: 4600lm\nChip LED:  Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH):\n(1260x120x93)mm",
+        "quantity": 1,
+        "listPrice": 1110000,
+        "totalListPrice": 1110000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 CA01/18Wx1\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube nhôm nhựa\nQuang thông bóng: 1700lm\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH):\n(1260x80x93)mm",
+        "quantity": 1,
+        "listPrice": 725999,
+        "totalListPrice": 725999
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 CA01/18Wx2\n\nCông suất: 18W x 2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube nhôm nhựa\nQuang thông bóng: 3400lm\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH):\n(1260x120x93)mm",
+        "quantity": 1,
+        "listPrice": 1005999,
+        "totalListPrice": 1005999
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 CA01/18Wx1\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube thuỷ tinh\nQuang thông bóng: 2000lm\nChip LED: Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(1260x80x93)mm",
+        "quantity": 1,
+        "listPrice": 654000,
+        "totalListPrice": 654000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 CA01/18Wx2\n\nCông suất: 18W x 2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nMàu ánh sáng: Trắng/Vàng\nBóng sử dụng: Tube thuỷ tinh\nQuang thông bóng: 4000lm\nChip LED: Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(1260x120x93)mm",
+        "quantity": 1,
+        "listPrice": 859999,
+        "totalListPrice": 859999
+      }
+    ]
+  },
+  {
+    "sheetName": "Học đường",
+    "products": [
+      {
+        "name": "Bộ đèn LED Tube T8 CSLH/20Wx1 6500K SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNguồn sáng: LED TUBE T8 120/18W\nQuang thông: 1400 lm\nChỉ số hoàn màu: 82\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nBalat: Không Balat\nKích thước (LxWxH): (1234x190x128) mm",
+        "quantity": 1,
+        "listPrice": 586000,
+        "totalListPrice": 586000
+      },
+      {
+        "name": "Bộ đèn LED Tube T8 CSLH/20Wx2 6500K SS\n\nCông suất: 20Wx2\nĐiện áp: 220V/50Hz\nNguồn sáng: 2 Bóng LED TUBE T8 120/18W\nQuang thông: 2700 lm\nChỉ số hoàn màu: 82\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nBalat: Không Balat\nKích thước (LxWxH): (1234x235x128) mm",
+        "quantity": 1,
+        "listPrice": 881999,
+        "totalListPrice": 881999
+      },
+      {
+        "name": "Bộ đèn LED Tube T8 CSBA/20Wx1 6500K SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNguồn sáng: Bóng LED TUBE T8 120/18W\nQuang thông: 1400 lm\nChỉ số hoàn màu: 82\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nBalat: Không Balat\nKích thước (LxWxH): (1234x190x128) mm",
+        "quantity": 1,
+        "listPrice": 586000,
+        "totalListPrice": 586000
+      },
+      {
+        "name": "Bộ đèn LED Tube \nT8 TT01 CSLH /20Wx1 6500K\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNguồn sáng: LED TUBE T8 TT01 120/20W\nQuang thông: 1600 lm\nChỉ số hoàn màu: 82\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nBalat: Không Balat\nKích thước (LxWxH): (1234x190x128) mm",
+        "quantity": 1,
+        "listPrice": 504999,
+        "totalListPrice": 504999
+      },
+      {
+        "name": "Bộ đèn LED Tube\nT8 TT01 CSLH/20Wx2 6500K\n\nCông suất: 20W x2\nĐiện áp: 220V/50Hz\nNguồn sáng: 2 Bóng LED TUBE T8 TT01 120/20W\nQuang thông: 3200 lm\nChỉ số hoàn màu: 82\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nBalat: Không Balat\nKích thước (LxWxH): (1234x235x128) mm",
+        "quantity": 1,
+        "listPrice": 710000,
+        "totalListPrice": 710000
+      },
+      {
+        "name": "Bộ đèn LED Tube\nT8 TT01 CSBA /20Wx1 6500K\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNguồn sáng: Bóng LED TUBE T8 TT01 120/20W\nQuang thông: 1600 lm\nChỉ số hoàn màu: 82\nChip LED: Hàn Quốc\nTuổi thọ: 20,000h, L70\nBalat: Không Balat\nKích thước (LxWxH): (1234x190x128) mm",
+        "quantity": 1,
+        "listPrice": 504999,
+        "totalListPrice": 504999
+      },
+      {
+        "name": "Bộ đèn LED \nCSLH/20Wx1 SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 6500K\nQuang thông: 2000 lm\nChỉ số hoàn màu: 80\nChip LED: Samsung\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (1200x103x78) mm",
+        "quantity": 1,
+        "listPrice": 645000,
+        "totalListPrice": 645000
+      },
+      {
+        "name": "Bộ đèn LED \nCSLH/36Wx1 SS\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 6500K\nQuang thông: 3780 lm\nChỉ số hoàn màu: 80\nChip LED: Samsung\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH): (1200x103x78) mm",
+        "quantity": 1,
+        "listPrice": 660000,
+        "totalListPrice": 660000
+      },
+      {
+        "name": "Bộ đèn LED \nCSLH 1200/40W SS\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 6500K\nQuang thông: 3600 lm\nChỉ số hoàn màu: 80\nChip LED: Samsung\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH): (1200x103x78) mm",
+        "quantity": 1,
+        "listPrice": 660000,
+        "totalListPrice": 660000
+      },
+      {
+        "name": "Bộ đèn LED \nCSLH 1200/36W DIM SS\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 6500K\nQuang thông: 3780 lm\nChỉ số hoàn màu: 80\nChip LED: Samsung\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH): (1200x103x78) mm\nĐèn được tích hợp cảm biến ánh sáng để tự động phát hiện ánh sáng môi trường xung quanh, từ đó tự động điều chỉnh quang thông và công suất đèn",
+        "quantity": 1,
+        "listPrice": 1210000,
+        "totalListPrice": 1210000
+      },
+      {
+        "name": "Bộ đèn LED\nCSBA 1200/18W SS\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nNhiệt độ màu: 6500K\nQuang thông: 1700 lm\nChỉ số hoàn màu: 80\nChip LED: Samsung\nTuổi thọ: 30,000h, L70\nKích thước (LxWxH):  (1190x40x50) mm",
+        "quantity": 1,
+        "listPrice": 474999,
+        "totalListPrice": 474999
+      }
+    ]
+  },
+  {
+    "sheetName": "PCCC",
+    "products": [
+      {
+        "name": "Đèn LED Khẩn cấp \nKC01 2W - PCCC\n\nCông suất: 2W\nMàu ánh sáng: Trắng/Vàng\nDung lượng pin: 800 mAh\nChiếu sáng dự phòng: 3h\nThời gian nạp đầy pin: 20h\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (265x50x258) mm\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 712963,
+        "totalListPrice": 712963
+      },
+      {
+        "name": "Đèn LED khẩn cấp \nKC02 10W - PCCC\n\nCông suất: 10W\nMàu ánh sáng: Trắng\nDung lượng pin: 4000 mAh\nChiếu sáng dự phòng (1 bóng): 6h\nChiếu sáng dự phòng (2 bóng): 3h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 1000 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (276x71x260) mm\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 740741,
+        "totalListPrice": 740741
+      },
+      {
+        "name": "Đèn LED Khẩn cấp \nKC03 8W - PCCC\n\nCông suất: 8W\nMàu ánh sáng: Trắng\nDung lượng pin: 4000 mAh\nChiếu sáng dự phòng (1 bóng): 6h\nChiếu sáng dự phòng (2 bóng): 3h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 1200 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (196x56x223) mm\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 666667,
+        "totalListPrice": 666667
+      },
+      {
+        "name": "Đèn LED Khẩn cấp \nKC04 6W - PCCC\n\nCông suất: 6W\nMàu ánh sáng: Trắng\nDung lượng pin: 2200 mAh\nChiếu sáng dự phòng (1 bóng): 6h\nChiếu sáng dự phòng (2 bóng): 3h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 500 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (196x56x223) mm\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 527778,
+        "totalListPrice": 527778
+      },
+      {
+        "name": "Đèn LED Khẩn cấp \nKC05 3W - PCCC\n\nCông suất: 3W\nMàu ánh sáng: Trắng\nDung lượng pin: 1200 mAh\nChiếu sáng dự phòng: 6h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 250 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (86x48x187) mm\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 286000,
+        "totalListPrice": 286000
+      },
+      {
+        "name": "Đèn LED Downlight khẩn cấp AT07.KC 90/5W - PCCC\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 70\nMàu ánh sáng: Trắng\nQuang thông: 310 lm\nThời gian nạp đầy: 24h\nThời gian lưu điện: 2h\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 888889,
+        "totalListPrice": 888889
+      },
+      {
+        "name": "Đèn LED Chỉ dẫn CD01 40x20/2.2W (PCCC-1 mặt)\n\nCông suất: 2,2W\nDung lượng pin: 400 mAh\nT/gian c/sáng dự phòng: 180 phút\nThời gian nạp đầy: 20h\nKích thước (LxWxH): (370x25x202) mm\nMarket theo y/cầu khách hàng\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 888889,
+        "totalListPrice": 888889
+      },
+      {
+        "name": "Đèn LED Chỉ dẫn CD01 40x20/2.2W (PCCC-2 mặt)\n\nCông suất: 2,2W\nDung lượng pin: 400 mAh\nT/gian c/sáng dự phòng: 180 phút\nThời gian nạp đầy: 20h\nKích thước (LxWxH): (370x25x202) mm\nMarket theo y/cầu khách hàng\nCó dán tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 907407,
+        "totalListPrice": 907407
+      }
+    ]
+  },
+  {
+    "sheetName": "Emer",
+    "products": [
+      {
+        "name": "Đèn LED Khẩn cấp KC01 2W\n\nCông suất: 2W\nMàu ánh sáng: Trắng/Vàng\nDung lượng pin: 800 mAh\nChiếu sáng dự phòng: 3h\nThời gian nạp đầy pin: 20h\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (265x50x258) mm\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 544000,
+        "totalListPrice": 544000
+      },
+      {
+        "name": "Đèn LED khẩn cấp KC02 10W\n\nCông suất: 10W\nMàu ánh sáng: Trắng/Vàng\nDung lượng pin: 4000 mAh\nChiếu sáng dự phòng (1 bóng): 6h\nChiếu sáng dự phòng (2 bóng): 3h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 1000 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (276x71x260) mm\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 614000,
+        "totalListPrice": 614000
+      },
+      {
+        "name": "Đèn LED Khẩn cấp KC03 8W\n\nCông suất: 8W\nMàu ánh sáng: Trắng/Vàng\nDung lượng pin: 4000 mAh\nChiếu sáng dự phòng (1 bóng): 6h\nChiếu sáng dự phòng (2 bóng): 3h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 1200 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (196x56x223) mm\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 556000,
+        "totalListPrice": 556000
+      },
+      {
+        "name": "Đèn LED Khẩn cấp KC04 6W\n\nCông suất: 6W\nMàu ánh sáng: Trắng/Vàng\nDung lượng pin: 2200 mAh\nChiếu sáng dự phòng (1 bóng): 6h\nChiếu sáng dự phòng (2 bóng): 3h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 500 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (196x56x223) mm\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 412000,
+        "totalListPrice": 412000
+      },
+      {
+        "name": "Đèn LED Khẩn cấp KC05 3W\n\nCông suất: 3W\nMàu ánh sáng: Trắng/Vàng\nDung lượng pin: 1200 mAh\nChiếu sáng dự phòng: 6h\nThời gian nạp đầy pin: 24h\nQuang thông lớn nhất: 250 lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (86x48x187) mm\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 212000,
+        "totalListPrice": 212000
+      },
+      {
+        "name": "Đèn LED Downlight khẩn cấp AT07.KC 90/5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 70\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 310 lm\nThời gian nạp đầy: 24h\nThời gian lưu điện: 2h\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 640000,
+        "totalListPrice": 640000
+      },
+      {
+        "name": "Đèn LED Chỉ dẫn \nCD01 40x20/2.2W (1 mặt)\n\nCông suất: 2,2W\nDung lượng pin: 400 mAh\nT/gian c/sáng dự phòng: 180 phút\nThời gian nạp đầy: 20h\nKích thước (LxWxH): (395x25x202) mm\nMarket theo y/cầu khách hàng\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 694000,
+        "totalListPrice": 694000
+      },
+      {
+        "name": "Đèn LED Chỉ dẫn\nCD01 40x20/2.2W (2 mặt)\n\nCông suất: 2,2W\nDung lượng pin: 400 mAh\nT/gian c/sáng dự phòng: 180 phút\nThời gian nạp đầy: 20h\nKích thước (LxWxH): (395x25x202) mm\nMarket theo y/cầu khách hàng\nKhông có tem kiểm định PCCC",
+        "quantity": 1,
+        "listPrice": 720000,
+        "totalListPrice": 720000
+      },
+      {
+        "name": "Đèn LED Downlight dự phòng AT04.DP 90/7W\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 500 lm Quang thông Power off: 440 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 1090000,
+        "totalListPrice": 1090000
+      },
+      {
+        "name": "Đèn LED Downlight dự phòng\nD AT04L DP 90/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 650 lm Quang thông Power off: 480 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (118x40)mm\nĐường kính lỗ khoét trần: 90mm",
+        "quantity": 1,
+        "listPrice": 1042999,
+        "totalListPrice": 1042999
+      },
+      {
+        "name": "Đèn LED Downlight dự phòng AT04.DP 110/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 650 lm Quang thông Power off: 480 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 115mm",
+        "quantity": 1,
+        "listPrice": 1120000,
+        "totalListPrice": 1120000
+      },
+      {
+        "name": "Đèn LED Downlight dự phòng AT04.DP 110/12W\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 930 lm Quang thông Power off: 550 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (ØxH): (138x50)mm\nĐường kính lỗ khoét trần: 115mm",
+        "quantity": 1,
+        "listPrice": 1160000,
+        "totalListPrice": 1160000
+      },
+      {
+        "name": "Bộ đèn LED Tube dự phòng T8.DP M11/22Wx1\n\nCông suất: 22W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 1700 lm Quang thông Power off: 1000 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(1235x48x63)mm",
+        "quantity": 1,
+        "listPrice": 1204000,
+        "totalListPrice": 1204000
+      },
+      {
+        "name": "Đèn LED tube chống ẩm dự phòng\nD LN CA01L DP/18wx2.DA\n\nCông suất: 18W x 2\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 3200 lm Quang thông Power off: 850 lm\nThời gian nạp đầy: 12-15h\nThời gian c/sáng dự phòng: 2h\nPin: Lithium\nChip LED: Samsung / Hàn Quốc\nCấp bảo vệ: IP65\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(1260x120x93)mm",
+        "quantity": 1,
+        "listPrice": 1770000,
+        "totalListPrice": 1770000
+      },
+      {
+        "name": "Bộ đèn LED Tube dự phòng T8.DP M11/20Wx2\n\nCông suất: 20Wx2\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 3600 lm Quang thông Power off: 1000 lm\nThời gian nạp đầy: 12-15h\nThời gian c/sáng dự phòng: 2h\nPin: Lithium\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70",
+        "quantity": 1,
+        "listPrice": 1490000,
+        "totalListPrice": 1490000
+      },
+      {
+        "name": "Bộ đèn LED M15 dự phòng\nBD M15L DP 60x60/36w.DA\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 2700 lm Quang thông Power off: 1000 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (605x605x70)mm",
+        "quantity": 1,
+        "listPrice": 1600000,
+        "totalListPrice": 1600000
+      },
+      {
+        "name": "Bộ đèn LED M15 dự phòng\nBD M15L DP 30x120/36w.DA\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 2700 lm Quang thông Power off: 1000 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (1200x300x65)mm",
+        "quantity": 1,
+        "listPrice": 1600000,
+        "totalListPrice": 1600000
+      },
+      {
+        "name": "Bộ đèn LED M15 dự phòng\nBD M15L DP 60x120/54w.DA\n\nCông suất: 54W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 4500 lm Quang thông Power off: 1100 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (1200x300x65)mm",
+        "quantity": 1,
+        "listPrice": 2010000,
+        "totalListPrice": 2010000
+      },
+      {
+        "name": "Bộ đèn LED Tube dự phòng\nBD T8L DP M11/18wx1.DA\n\nCông suất: 18W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu Ra: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 1700 lm Quang thông Power off: 1000 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH):\n(1235x48x63)mm",
+        "quantity": 1,
+        "listPrice": 1100000,
+        "totalListPrice": 1100000
+      },
+      {
+        "name": "Đèn LED Panel dự phòng\nD P02 DP 60x60/36w\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 3000 lm Quang thông Power off: 1300 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (600x600x40)mm",
+        "quantity": 1,
+        "listPrice": 1820000,
+        "totalListPrice": 1820000
+      },
+      {
+        "name": "Đèn LED Panel dự phòng\nD P02 DP 30x120/36w\n\nCông suất: 36W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nQuang thông Power on: 3000 lm Quang thông Power off: 1300 lm\nPin: Lithium\nThời gian c/sáng dự phòng: 2h\nThời gian nạp đầy pin: 12-15h\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25,000h, L70\nKích thước (LxWxH): (1200x300x40)mm",
+        "quantity": 1,
+        "listPrice": 1940000,
+        "totalListPrice": 1940000
+      }
+    ]
+  },
+  {
+    "sheetName": "DMST (2)",
+    "products": [
+      {
+        "name": "Đèn LED Tracklight\nTRL03 8w\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/4000K/3000K\nQuang thông: 650/750/700 lm\nGóc chiếu: 38º\nTuổi thọ: 15.000h, L70\nKích thước (ØxC): (60x86)mm\n(không bao gồm thanh ray)",
+        "quantity": 1,
+        "listPrice": 427000,
+        "totalListPrice": 427000
+      },
+      {
+        "name": "Đèn LED Tracklight\nTRL03 14w\n\nCông suất: 14W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/4000K/3000K\nQuang thông: 1400//1500/1400 lm\nGóc chiếu: 38º\nTuổi thọ: 15.000h, L70\nKích thước (ØxC): (85x135)mm\n(không bao gồm thanh ray)",
+        "quantity": 1,
+        "listPrice": 640000,
+        "totalListPrice": 640000
+      },
+      {
+        "name": "Đèn LED Tracklight\nTRL04 12w\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000/4000/3000K\nQuang thông: 1000/900 lm\nGóc chiếu: 24º\nTuổi thọ: 25.000h, L70\nKích thước (LxWxH): (60x140x100)mm\n(không bao gồm thanh ray)",
+        "quantity": 1,
+        "listPrice": 257999,
+        "totalListPrice": 257999
+      },
+      {
+        "name": "Đèn LED Tracklight\nTRL04 20w\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000/4000/3000K\nQuang thông: 1800/1620 lm\nGóc chiếu: 24º\nTuổi thọ: 25.000h, L70\nKích thước (LxWxH): (80x170x120)mm\n(không bao gồm thanh ray)",
+        "quantity": 1,
+        "listPrice": 386000,
+        "totalListPrice": 386000
+      },
+      {
+        "name": "Đèn LED Tracklight\nTRL04 25w\n\nCông suất: 25W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000/4000/3000K\nQuang thông: 1800/1620 lm\nGóc chiếu: 24º\nTuổi thọ: 25.000h, L70\nKích thước (LxWxH): (90x180x140)mm\n(không bao gồm thanh ray)",
+        "quantity": 1,
+        "listPrice": 418000,
+        "totalListPrice": 418000
+      },
+      {
+        "name": "Đèn LED chiếu gương\nG02 8w\n\nCông suất: 8W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nTuổi thọ: 15.000h, L70\nKích thước (LxWxH): (610x48x78)mm",
+        "quantity": 1,
+        "listPrice": 462000,
+        "totalListPrice": 462000
+      },
+      {
+        "name": "Đèn LED chiếu gương\nG02 6w\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 390lm\nTuổi thọ: 20.000h, L70\nKích thước (LxWxH): (575x35x71)mm",
+        "quantity": 1,
+        "listPrice": 270000,
+        "totalListPrice": 270000
+      },
+      {
+        "name": "Đèn LED chiếu gương\nG03 6w\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 390/351lm\nTuổi thọ: 20.000h, L70\nKích thước (LxWxH): (194x49x78)mm",
+        "quantity": 1,
+        "listPrice": 298000,
+        "totalListPrice": 298000
+      },
+      {
+        "name": "Bộ đèn LED thả trần\nBD TT04L 400/9w S\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nTuổi thọ: 15,000h, L70\nChiều dài: 180 mm\nChiều rộng: 400 mm\nChiều dài dây: 1000 mm",
+        "quantity": 1,
+        "listPrice": 637000,
+        "totalListPrice": 637000
+      },
+      {
+        "name": "Bộ đèn LED thả trần\nBD TT02L 220/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 630lm\nTuổi thọ: 15,000h, L70\nChiều dài: 290 mm\nChiều rộng: 220 mm\nChiều dài dây: 1000 mm",
+        "quantity": 1,
+        "listPrice": 639000,
+        "totalListPrice": 639000
+      },
+      {
+        "name": "Bộ đèn LED thả trần\nBD TT01L 240/9W\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 540lm\nTuổi thọ: 15,000h, L70\nChiều dài: 340 mm\nChiều rộng: 240 mm\nChiều dài dây: 1000 mm",
+        "quantity": 1,
+        "listPrice": 639000,
+        "totalListPrice": 639000
+      },
+      {
+        "name": "Đèn LED gắn tường\nD GT01.IP/14W\n\nCông suất: 14W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 945 lm\nTuổi thọ: 15.000h, L70\nCấp bảo vệ: IP65\nKích thước (ØxH): (80x200) mm",
+        "quantity": 1,
+        "listPrice": 1200000,
+        "totalListPrice": 1200000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT04 HG/5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 300lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (203x103x93) mm",
+        "quantity": 1,
+        "listPrice": 290000,
+        "totalListPrice": 290000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT05 T/5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 300lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (213x93x128) mm",
+        "quantity": 1,
+        "listPrice": 230000,
+        "totalListPrice": 230000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT06 CD/5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 300lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (265x95x115) mm",
+        "quantity": 1,
+        "listPrice": 251999,
+        "totalListPrice": 251999
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT07 5w\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 350lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (98x95x306) mm",
+        "quantity": 1,
+        "listPrice": 526000,
+        "totalListPrice": 526000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT08 5w\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 350lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (135x95x183) mm",
+        "quantity": 1,
+        "listPrice": 272000,
+        "totalListPrice": 272000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT12 5w\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000K\nQuang thông: 350lm\nTuổi thọ: 15,000h, L70\nKích thước (LxWxH): (186x177x112) mm",
+        "quantity": 1,
+        "listPrice": 444000,
+        "totalListPrice": 444000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT05 T/2,5w E14\n\nCông suất: 2,5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 2700K\nQuang thông: 300lm\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (265x95x115) mm",
+        "quantity": 1,
+        "listPrice": 177000,
+        "totalListPrice": 177000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT06 CD/2,5w E14\n\nCông suất: 2,5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 2700K\nQuang thông: 150lm\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (265x95x115) mm",
+        "quantity": 1,
+        "listPrice": 177000,
+        "totalListPrice": 177000
+      },
+      {
+        "name": "Đèn LED gắn tường\nGT08 2,5w E14\n\nCông suất: 2,5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 2700K\nQuang thông: 175lm\nTuổi thọ: 20,000h, L70\nKích thước (LxWxH): (135x95x183) mm",
+        "quantity": 1,
+        "listPrice": 177000,
+        "totalListPrice": 177000
+      }
+    ]
+  },
+  {
+    "sheetName": "HD Smart",
+    "products": [
+      {
+        "name": "Bộ đèn học đường LED\nCSLH 120/20w.DIM",
+        "quantity": 9,
+        "listPrice": 1560000,
+        "totalListPrice": 14040000
+      },
+      {
+        "name": "Bộ đèn chiếu bảng LED\nCSBA 120/18w trắng LED SS",
+        "quantity": 2,
+        "listPrice": 390000,
+        "totalListPrice": 780000
+      },
+      {
+        "name": "Cảm biến ánh sáng",
+        "quantity": 3,
+        "listPrice": 3460000,
+        "totalListPrice": 10380000
+      },
+      {
+        "name": "Bộ điều khiển trung tâm",
+        "quantity": 1,
+        "listPrice": 2800000,
+        "totalListPrice": 2800000
+      },
+      {
+        "name": "Dây tín hiệu",
+        "quantity": 100,
+        "listPrice": 34000,
+        "totalListPrice": 3400000
+      }
+    ]
+  },
+  {
+    "sheetName": "Bulb (2)",
+    "products": [
+      {
+        "name": "Đèn LED Bulb\nLED A45N1/3W E27 - LED SS\n\nCông suất: 3W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 255 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 10.000h, L70\nKích thước (ØxH): (45x86) mm",
+        "quantity": 5,
+        "listPrice": 39814,
+        "totalListPrice": 199074
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A55N4/5w E27 - LED SS\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 450 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 10.000h, L70\nKích thước (ØxH): (55x101) mm",
+        "quantity": 1,
+        "listPrice": 50925,
+        "totalListPrice": 50925
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A60N3/7w E27 - LED SS\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 630 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (60x114) mm",
+        "quantity": 1,
+        "listPrice": 59259,
+        "totalListPrice": 59259
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A60N1/9w E27 - LED SS\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 830 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (60x114) mm",
+        "quantity": 1,
+        "listPrice": 67592,
+        "totalListPrice": 67592
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A70N1/12w E27 - LED SS\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng/Vàng\nQuang thông: 1080 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (70x135) mm",
+        "quantity": 1,
+        "listPrice": 85185,
+        "totalListPrice": 85185
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A80N1/15w E27 - LED SS\n\nCông suất: 15W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1350 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (80x150) mm",
+        "quantity": 1,
+        "listPrice": 105555,
+        "totalListPrice": 105555
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A95N1/20w E27 - LED SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1900 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (95x188) mm",
+        "quantity": 1,
+        "listPrice": 146296,
+        "totalListPrice": 146296
+      },
+      {
+        "name": "Đèn LED Bulb\nLED A120N1/30w E27 - LED SS\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2500 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (120x218)mm",
+        "quantity": 1,
+        "listPrice": 220370,
+        "totalListPrice": 220370
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR60N2/10w E27 - LED SS\n\nCông suất: 10W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 850 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (60 x 115) mm",
+        "quantity": 1,
+        "listPrice": 75000,
+        "totalListPrice": 75000
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR60N2/12w E27 - LED SS\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1100 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (60 x 115) mm",
+        "quantity": 1,
+        "listPrice": 85185,
+        "totalListPrice": 85185
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR70N1/14w E27 - LED SS\n\nCông suất: 14W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1250 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (70 x 130) mm",
+        "quantity": 1,
+        "listPrice": 80555,
+        "totalListPrice": 80555
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR80N1/20w E27 - LED SS\n\nCông suất: 20W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 1900lm/1860lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (81x143) mm",
+        "quantity": 1,
+        "listPrice": 137962,
+        "totalListPrice": 137962
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR100N1/30w E27 - LED SS\n\nCông suất: 30W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 2700lm/2600lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (101x185)mm",
+        "quantity": 1,
+        "listPrice": 197222,
+        "totalListPrice": 197222
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR120N1/40w E27 - LED SS\n\nCông suất: 40W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 4000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (120x206)mm",
+        "quantity": 1,
+        "listPrice": 279629,
+        "totalListPrice": 279629
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nLED TR140N1/50w E27 - LED SS\n\nCông suất: 50W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5000lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (140x258)mm",
+        "quantity": 1,
+        "listPrice": 384259,
+        "totalListPrice": 384259
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nTR135/60W E27\n\nCông suất: 60W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 5700lm/5100lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (135x236)mm",
+        "quantity": 1,
+        "listPrice": 463888,
+        "totalListPrice": 463888
+      },
+      {
+        "name": "Đèn LED Bulb trụ\nTR135/80W E27\n\nCông suất: 80W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 7600lm/7400lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 25.000h, L70\nKích thước (ØxH): (135x260)mm",
+        "quantity": 1,
+        "listPrice": 510185,
+        "totalListPrice": 510185
+      },
+      {
+        "name": "Bóng LED Bulb cảm biến A60.RAD/7W E27\n\nCông suất: 7W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 600 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 15.000h, L70\nKích thước (ØxH): (60x113) mm\nThời gian tự động tắt: 20s",
+        "quantity": 1,
+        "listPrice": 151000,
+        "totalListPrice": 151000
+      },
+      {
+        "name": "Bóng LED Bulb cảm biến A60.RAD/9W E27\n\nCông suất: 9W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K/3000K\nQuang thông: 810/720 lm\nChip LED: Samsung / Hàn Quốc\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (60x113) mm\nThời gian tự động tắt: 20s",
+        "quantity": 1,
+        "listPrice": 154000,
+        "totalListPrice": 154000
+      },
+      {
+        "name": "Bóng LED dây tóc \nC35/2.5W E14\n\nCông suất: 2.5 W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Vàng\nQuang thông: 280 lm\nTuổi thọ: 20.000h, L70\nKích thước (ØxH): (35x122) mm\nĐầu đèn: E14",
+        "quantity": 1,
+        "listPrice": 35000,
+        "totalListPrice": 35000
+      }
+    ]
+  },
+  {
+    "sheetName": "Đèn bàn",
+    "products": [
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-10E.LED\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng\nĐộ rọi trên mặt bàn: 600 lux\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 342000,
+        "totalListPrice": 342000
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực\nRD-RL-14.LED\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng\nĐộ rọi trên mặt bàn: 600 lux\nTuổi thọ: 15,000h, L70",
+        "quantity": 1,
+        "listPrice": 270000,
+        "totalListPrice": 270000
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-16.LED\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng\nĐộ rọi trên mặt bàn: 650 lux\nTuổi thọ: 15,000h, L70",
+        "quantity": 1,
+        "listPrice": 230000,
+        "totalListPrice": 230000
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-18.LED\n\nCông suất: 12W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nQuang thông: 600lm\nNhiệt độ màu: 5500K/4000K/3000K\nĐộ rọi trên mặt bàn: 1500 lux\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 1489999,
+        "totalListPrice": 1489999
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-19.LED\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nMàu ánh sáng: Trắng\nĐộ rọi trên mặt bàn: 600 lux\nTuổi thọ: 15,000h, L70",
+        "quantity": 1,
+        "listPrice": 178000,
+        "totalListPrice": 178000
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-20.LED\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 86\nNhiệt độ màu: 5000K\nĐộ rọi trên mặt bàn: 600 lux\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 340000,
+        "totalListPrice": 340000
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-21.LED\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000K\nĐộ rọi trên mặt bàn: 700 lux\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 458000,
+        "totalListPrice": 458000
+      },
+      {
+        "name": "Đèn bàn bảo vệ thị lực \nRD-RL-22.LED\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 5000K\nĐộ rọi trên mặt bàn: 700 lux\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 477999,
+        "totalListPrice": 477999
+      },
+      {
+        "name": "Đèn bàn LED cảm ứng \nRD-RL-36 6W\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nĐộ rọi trung bình: 700 lux\nĐiều kiển 3 cấp công suất:\n30-50-100%\nĐiều khiển 4 màu ánh sáng: 3000÷6500K\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 316000,
+        "totalListPrice": 316000
+      },
+      {
+        "name": "Đèn bàn LED bảo vệ thị lực RD-RL-27 5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000/6500K\nĐộ rọi trung bình: 700 lux\nTuổi thọ: 20,000h, L70",
+        "quantity": 1,
+        "listPrice": 227999,
+        "totalListPrice": 227999
+      },
+      {
+        "name": "Đèn bàn LED bảo vệ thị lực RD-RL-24.V2 5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000/6500K\nĐộ rọi trung bình: 700 lux\nTuổi thọ: 20,000h, L70",
+        "quantity": 1,
+        "listPrice": 227999,
+        "totalListPrice": 227999
+      },
+      {
+        "name": "Đèn bàn LED bảo vệ thị lực RD-RL-16 5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000/6500K\nĐộ rọi trung bình: 650 lux\nTuổi thọ: 15,000h, L70",
+        "quantity": 1,
+        "listPrice": 282000,
+        "totalListPrice": 282000
+      },
+      {
+        "name": "Đèn bàn LED bảo vệ thị lực RD-RL-19 5W\n\nCông suất: 5W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 6500K\nĐộ rọi trung bình: 600 lux\nTuổi thọ: 15,000h, L70",
+        "quantity": 1,
+        "listPrice": 219999,
+        "totalListPrice": 219999
+      },
+      {
+        "name": "Đèn bàn LED cảm ứng \nRD-RL-20V2 6W\n\nCông suất: 6W\nĐiện áp: 220V/50Hz\nChỉ số hoàn màu: 80\nNhiệt độ màu: 3000/6500K\nĐộ rọi trung bình: 700 lux\nTuổi thọ: 25,000h, L70",
+        "quantity": 1,
+        "listPrice": 416000,
+        "totalListPrice": 416000
+      },
+      {
+        "name": "Phích cá nhân RD 0538 N2.E\n\nDung tích: 500 ml\nVật liệu: Vỏ nhựa PP\nNhiệt độ sau 6h: ≥70 ˚C, giữ lạnh sau 24h\nNút bấm thuận tiện, dễ dàng\nNắp bình có thể sử dụng như chiếc ca uống nước xinh xắn\nKiểu dáng đơn giản và sang trọng, cực kì gọn nhẹ, phù hợp với người đi du lịch hay luôn mang theo bên mình",
+        "quantity": 1,
+        "listPrice": 199999,
+        "totalListPrice": 199999
+      }
+    ]
+  }
+]
