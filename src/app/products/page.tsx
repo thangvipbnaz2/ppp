@@ -1,11 +1,9 @@
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo, useCallback, Suspense } from "react";
 import { Product } from "@/lib/types";
-import { formatCurrency } from "@/lib/utils";
 import ProductCard from "@/components/ProductCard";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
 
 function ProductsContent() {
   const searchParams = useSearchParams();
@@ -64,111 +62,119 @@ function ProductsContent() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
+      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-3">
+        <div className="w-8 h-8 rounded-full border-2 border-slate-300 border-t-slate-900 animate-spin" />
+        <span className="text-xs text-slate-500 font-medium">Đang nạp 1,259 sản phẩm...</span>
       </div>
     );
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">Bảng giá sản phẩm</h1>
-        <p className="text-gray-500">
-          {filtered.length} sản phẩm {selectedCategory && `trong "${selectedCategory}"`}
+      <div>
+        <h1 className="text-3xl font-extrabold tracking-tight text-slate-950">
+          Bảng giá sản phẩm
+        </h1>
+        <p className="text-sm text-slate-500 mt-1">
+          Hiển thị {filtered.length} sản phẩm {selectedCategory && `thuộc "${selectedCategory}"`}
         </p>
       </div>
 
-      {/* Filters */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-6 mb-6">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {/* Search */}
-          <div className="relative">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      {/* iOS-Style Search & Filter Bar */}
+      <div className="bg-white/90 backdrop-blur-2xl rounded-3xl p-4 sm:p-5 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {/* iOS Search input */}
+          <div className="relative sm:col-span-2">
+            <svg
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
               type="text"
-              placeholder="Tìm kiếm sản phẩm..."
+              placeholder="Tìm theo tên model (ví dụ: AT04, CP10, LN12, 150W...)"
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
-              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+              className="w-full pl-11 pr-4 py-2.5 rounded-2xl bg-slate-100/70 focus:bg-white border border-transparent focus:border-slate-300 focus:outline-none focus:ring-4 focus:ring-slate-900/5 text-xs text-slate-900 transition-all placeholder:text-slate-400"
             />
           </div>
-
-          {/* Category */}
-          <select
-            value={selectedCategory}
-            onChange={(e) => handleCategoryChange(e.target.value)}
-            className="w-full py-2.5 px-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white"
-          >
-            <option value="">Tất cả danh mục ({products.length})</option>
-            {categories.map((cat) => (
-              <option key={cat} value={cat}>
-                {cat} ({products.filter((p) => p.category === cat).length})
-              </option>
-            ))}
-          </select>
 
           {/* Sort */}
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-            className="w-full py-2.5 px-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white"
+            className="w-full py-2.5 px-4 rounded-2xl bg-slate-100/70 focus:bg-white border border-transparent focus:border-slate-300 focus:outline-none text-xs text-slate-800 transition-all"
           >
-            <option value="name">Sắp xếp: Tên A→Z</option>
-            <option value="priceAsc">Giá: Thấp → Cao</option>
-            <option value="priceDesc">Giá: Cao → Thấp</option>
+            <option value="name">Sắp xếp: Tên A → Z</option>
+            <option value="priceAsc">Giá: Thấp đến Cao</option>
+            <option value="priceDesc">Giá: Cao đến Thấp</option>
           </select>
+        </div>
+
+        {/* Category Pill Carousel - iOS Style */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 pt-1 no-scrollbar">
+          <button
+            onClick={() => handleCategoryChange("")}
+            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 ${
+              selectedCategory === ""
+                ? "bg-slate-900 text-white shadow-sm"
+                : "bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900"
+            }`}
+          >
+            Tất cả ({products.length})
+          </button>
+          {categories.map((cat) => {
+            const count = products.filter((p) => p.category === cat).length;
+            const active = selectedCategory === cat;
+            return (
+              <button
+                key={cat}
+                onClick={() => handleCategoryChange(cat)}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 ${
+                  active
+                    ? "bg-slate-900 text-white shadow-sm"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900"
+                }`}
+              >
+                {cat} ({count})
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {/* Product Grid */}
       {paged.length > 0 ? (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 animate-fade-in">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {paged.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
 
-          {/* Pagination */}
+          {/* iOS Pagination */}
           {totalPages > 1 && (
-            <div className="flex justify-center items-center gap-2 mt-8">
+            <div className="flex justify-center items-center gap-2 pt-8">
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 rounded-lg border border-gray-200 text-sm font-medium disabled:opacity-50 hover:bg-gray-50 transition-colors"
+                className="px-4 py-2 rounded-full border border-black/[0.08] text-xs font-semibold text-slate-700 disabled:opacity-30 hover:bg-white shadow-sm transition-all"
               >
                 ← Trước
               </button>
-              <div className="flex gap-1">
-                {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-                  let page: number;
-                  if (totalPages <= 5) page = i + 1;
-                  else if (currentPage <= 3) page = i + 1;
-                  else if (currentPage >= totalPages - 2) page = totalPages - 4 + i;
-                  else page = currentPage - 2 + i;
-                  return (
-                    <button
-                      key={page}
-                      onClick={() => setCurrentPage(page)}
-                      className={`w-10 h-10 rounded-lg text-sm font-medium transition-colors ${
-                        currentPage === page
-                          ? "bg-blue-600 text-white"
-                          : "border border-gray-200 hover:bg-gray-50"
-                      }`}
-                    >
-                      {page}
-                    </button>
-                  );
-                })}
-              </div>
+
+              <span className="text-xs text-slate-500 px-3">
+                Trang <strong className="text-slate-900">{currentPage}</strong> / {totalPages}
+              </span>
+
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 rounded-lg border border-gray-200 text-sm font-medium disabled:opacity-50 hover:bg-gray-50 transition-colors"
+                className="px-4 py-2 rounded-full border border-black/[0.08] text-xs font-semibold text-slate-700 disabled:opacity-30 hover:bg-white shadow-sm transition-all"
               >
                 Sau →
               </button>
@@ -176,10 +182,10 @@ function ProductsContent() {
           )}
         </>
       ) : (
-        <div className="text-center py-16">
-          <div className="text-5xl mb-4">🔍</div>
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">Không tìm thấy sản phẩm</h3>
-          <p className="text-gray-500">Thử thay đổi bộ lọc hoặc từ khóa tìm kiếm</p>
+        <div className="bg-white rounded-3xl p-16 text-center border border-black/[0.06] shadow-sm">
+          <div className="text-4xl mb-3">🔍</div>
+          <h3 className="text-base font-bold text-slate-900">Không tìm thấy sản phẩm phù hợp</h3>
+          <p className="text-xs text-slate-400 mt-1">Vui lòng thử từ khóa khác hoặc xóa bộ lọc danh mục.</p>
         </div>
       )}
     </div>
@@ -188,11 +194,13 @@ function ProductsContent() {
 
 export default function ProductsPage() {
   return (
-    <Suspense fallback={
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
-      </div>
-    }>
+    <Suspense
+      fallback={
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="w-8 h-8 rounded-full border-2 border-slate-300 border-t-slate-900 animate-spin" />
+        </div>
+      }
+    >
       <ProductsContent />
     </Suspense>
   );

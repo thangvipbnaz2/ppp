@@ -2,6 +2,8 @@
 
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
+import Image from "next/image";
+import { useState } from "react";
 
 interface ProductCardProps {
   product: Product;
@@ -9,60 +11,84 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, onAddToQuote }: ProductCardProps) {
+  const [imgError, setImgError] = useState(false);
+
   return (
-    <div className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
-      {/* Category badge */}
-      <div className="bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-2">
-        <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">
+    <div className="group relative bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 ease-out flex flex-col justify-between">
+      {/* Top Header Badge */}
+      <div className="flex items-center justify-between gap-2 mb-3">
+        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-slate-100 text-slate-700 border border-black/[0.04] tracking-tight truncate max-w-[70%]">
           {product.category}
         </span>
+        {product.vatRate > 0 && (
+          <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/50">
+            VAT {(product.vatRate * 100).toFixed(0)}%
+          </span>
+        )}
       </div>
 
-      <div className="p-5">
-        <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+      {/* Product Image Container - Apple style */}
+      <div className="relative aspect-square w-full rounded-2xl bg-gradient-to-b from-slate-50 to-slate-100/60 p-4 flex items-center justify-center overflow-hidden mb-4 border border-black/[0.03]">
+        {product.image && !imgError ? (
+          <div className="relative w-full h-full">
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              className="object-contain group-hover:scale-108 transition-transform duration-500 ease-out"
+              onError={() => setImgError(true)}
+              unoptimized
+            />
+          </div>
+        ) : (
+          <div className="flex flex-col items-center justify-center text-slate-300">
+            <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+            <span className="text-[10px] mt-1 text-slate-400">Rạng Đông</span>
+          </div>
+        )}
+      </div>
+
+      {/* Info */}
+      <div className="flex flex-col flex-grow justify-between">
+        <h3 className="font-semibold text-slate-900 text-sm leading-snug line-clamp-2 mb-3 group-hover:text-blue-600 transition-colors">
           {product.name}
         </h3>
 
-        <div className="space-y-2">
-          {product.priceWithVAT > 0 && (
-            <div className="flex justify-between items-center">
-              <span className="text-xs text-gray-500">Giá có VAT:</span>
-              <span className="text-lg font-bold text-blue-600">
-                {formatCurrency(product.priceWithVAT)}
-              </span>
-            </div>
-          )}
+        {/* Pricing */}
+        <div className="space-y-1.5 pt-2 border-t border-slate-100">
+          <div className="flex items-baseline justify-between">
+            <span className="text-xs text-slate-500">Giá có VAT:</span>
+            <span className="text-base font-bold text-slate-900 tracking-tight">
+              {product.priceWithVAT > 0 ? formatCurrency(product.priceWithVAT) : "Liên hệ"}
+            </span>
+          </div>
+
           {product.priceNoVAT > 0 && (
-            <div className="flex justify-between items-center">
-              <span className="text-xs text-gray-500">Giá chưa VAT:</span>
-              <span className="text-sm text-gray-700">
-                {formatCurrency(product.priceNoVAT)}
-              </span>
+            <div className="flex items-center justify-between text-xs text-slate-400">
+              <span>Chưa VAT:</span>
+              <span>{formatCurrency(product.priceNoVAT)}</span>
             </div>
           )}
+
           {product.retailPrice > 0 && (
-            <div className="flex justify-between items-center">
-              <span className="text-xs text-gray-500">Giá lẻ:</span>
-              <span className="text-sm text-gray-500 line-through">
-                {formatCurrency(product.retailPrice)}
-              </span>
+            <div className="flex items-center justify-between text-[11px] text-slate-400">
+              <span>Giá lẻ hãng:</span>
+              <span className="line-through">{formatCurrency(product.retailPrice)}</span>
             </div>
           )}
         </div>
 
-        {product.vatRate > 0 && (
-          <div className="mt-3 inline-flex items-center bg-green-50 text-green-700 text-xs font-medium px-2.5 py-1 rounded-full">
-            VAT: {(product.vatRate * 100).toFixed(0)}%
-          </div>
-        )}
-
+        {/* Add button */}
         {onAddToQuote && (
           <button
             onClick={() => onAddToQuote(product)}
-            className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+            className="mt-4 w-full py-2.5 px-4 rounded-xl text-xs font-semibold bg-slate-900 hover:bg-blue-600 text-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(37,99,235,0.25)] transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-98"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
             </svg>
             Thêm vào báo giá
           </button>

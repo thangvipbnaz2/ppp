@@ -7,6 +7,7 @@ export interface Product {
   vatRate: number;
   retailPrice: number;
   finalPrice: number;
+  image?: string;
 }
 
 export interface QuoteItem {
