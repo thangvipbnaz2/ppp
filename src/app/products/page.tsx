@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback, Suspense } from "react";
 import { Product } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
+import ProductModal from "@/components/ProductModal";
 import { useSearchParams } from "next/navigation";
 
 function ProductsContent() {
@@ -14,6 +15,8 @@ function ProductsContent() {
   const [sortBy, setSortBy] = useState<"name" | "priceAsc" | "priceDesc">("name");
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
   const pageSize = 24;
 
   useEffect(() => {
@@ -60,6 +63,28 @@ function ProductsContent() {
     setCurrentPage(1);
   }, []);
 
+  const showToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 2500);
+  };
+
+  const handleAddToQuote = (product: Product, quantity = 1) => {
+    try {
+      const stored = localStorage.getItem("anphu_quote_items");
+      const current = stored ? JSON.parse(stored) : [];
+      const existingIdx = current.findIndex((item: { product: Product }) => item.product.id === product.id);
+      if (existingIdx >= 0) {
+        current[existingIdx].quantity += quantity;
+      } else {
+        current.push({ product, quantity });
+      }
+      localStorage.setItem("anphu_quote_items", JSON.stringify(current));
+      showToast(`✓ Đã thêm ${quantity} x "${product.name.slice(0, 30)}..." vào báo giá!`);
+    } catch {
+      showToast(`✓ Đã thêm vào báo giá!`);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-3">
@@ -71,13 +96,20 @@ function ProductsContent() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.25)] text-xs font-semibold animate-fade-in flex items-center gap-2 border border-white/10">
+          <span>{toastMessage}</span>
+        </div>
+      )}
+
       {/* Header */}
       <div>
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-950">
           Bảng giá sản phẩm
         </h1>
         <p className="text-sm text-slate-500 mt-1">
-          Hiển thị {filtered.length} sản phẩm {selectedCategory && `thuộc "${selectedCategory}"`}
+          Hiển thị {filtered.length} sản phẩm {selectedCategory && `thuộc "${selectedCategory}"`} • Bấm vào sản phẩm để xem chi tiết
         </p>
       </div>
 
@@ -152,7 +184,12 @@ function ProductsContent() {
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {paged.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard
+                key={product.id}
+                product={product}
+                onClick={() => setSelectedProduct(product)}
+                onAddToQuote={() => handleAddToQuote(product, 1)}
+              />
             ))}
           </div>
 
@@ -188,6 +225,13 @@ function ProductsContent() {
           <p className="text-xs text-slate-400 mt-1">Vui lòng thử từ khóa khác hoặc xóa bộ lọc danh mục.</p>
         </div>
       )}
+
+      {/* Product Detail Modal */}
+      <ProductModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+        onAddToQuote={(prod, qty) => handleAddToQuote(prod, qty)}
+      />
     </div>
   );
 }

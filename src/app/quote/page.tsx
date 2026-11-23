@@ -28,7 +28,19 @@ export default function QuotePage() {
     ]).then(([prods, cats]) => {
       setProducts(prods);
       setCategories(cats);
-      // Preload with 2 initial sample products from the Excel order template
+      try {
+        const stored = localStorage.getItem('anphu_quote_items');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            setQuoteItems(parsed);
+            setLoading(false);
+            return;
+          }
+        }
+      } catch (e) {}
+
+      // Default sample products
       if (prods.length > 5) {
         setQuoteItems([
           { product: prods[0], quantity: 10 },

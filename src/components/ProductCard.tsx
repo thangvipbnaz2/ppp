@@ -7,14 +7,18 @@ import { useState } from "react";
 
 interface ProductCardProps {
   product: Product;
+  onClick?: () => void;
   onAddToQuote?: (product: Product) => void;
 }
 
-export default function ProductCard({ product, onAddToQuote }: ProductCardProps) {
+export default function ProductCard({ product, onClick, onAddToQuote }: ProductCardProps) {
   const [imgError, setImgError] = useState(false);
 
   return (
-    <div className="group relative bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 ease-out flex flex-col justify-between">
+    <div
+      onClick={onClick}
+      className="group relative bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 ease-out flex flex-col justify-between cursor-pointer select-none"
+    >
       {/* Top Header Badge */}
       <div className="flex items-center justify-between gap-2 mb-3">
         <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-slate-100 text-slate-700 border border-black/[0.04] tracking-tight truncate max-w-[70%]">
@@ -27,7 +31,7 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
         )}
       </div>
 
-      {/* Product Image Container - Apple style */}
+      {/* Product Image Container */}
       <div className="relative aspect-square w-full rounded-2xl bg-gradient-to-b from-slate-50 to-slate-100/60 p-4 flex items-center justify-center overflow-hidden mb-4 border border-black/[0.03]">
         {product.image && !imgError ? (
           <div className="relative w-full h-full">
@@ -53,9 +57,15 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
 
       {/* Info */}
       <div className="flex flex-col flex-grow justify-between">
-        <h3 className="font-semibold text-slate-900 text-sm leading-snug line-clamp-2 mb-3 group-hover:text-blue-600 transition-colors">
-          {product.name}
-        </h3>
+        <div>
+          <h3 className="font-semibold text-slate-900 text-sm leading-snug line-clamp-2 mb-2 group-hover:text-blue-600 transition-colors">
+            {product.name}
+          </h3>
+          <p className="text-[11px] text-blue-600/80 font-medium mb-3 flex items-center gap-1">
+            <span>Chi tiết sản phẩm</span>
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
+          </p>
+        </div>
 
         {/* Pricing */}
         <div className="space-y-1.5 pt-2 border-t border-slate-100">
@@ -72,19 +82,15 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
               <span>{formatCurrency(product.priceNoVAT)}</span>
             </div>
           )}
-
-          {product.retailPrice > 0 && (
-            <div className="flex items-center justify-between text-[11px] text-slate-400">
-              <span>Giá lẻ hãng:</span>
-              <span className="line-through">{formatCurrency(product.retailPrice)}</span>
-            </div>
-          )}
         </div>
 
-        {/* Add button */}
+        {/* Quick Add Button */}
         {onAddToQuote && (
           <button
-            onClick={() => onAddToQuote(product)}
+            onClick={(e) => {
+              e.stopPropagation();
+              onAddToQuote(product);
+            }}
             className="mt-4 w-full py-2.5 px-4 rounded-xl text-xs font-semibold bg-slate-900 hover:bg-blue-600 text-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(37,99,235,0.25)] transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-98"
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
