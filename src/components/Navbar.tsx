@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -23,15 +24,23 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-slate-900 to-slate-700 flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white font-semibold text-xs tracking-wider">AP</span>
+            <div className="relative w-10 h-10 rounded-2xl bg-white p-1 flex items-center justify-center shadow-[0_4px_14px_rgba(0,0,0,0.08)] border border-black/[0.04] group-hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/images/logo.png"
+                alt="An Phú Vina"
+                width={36}
+                height={36}
+                className="object-contain"
+                priority
+                unoptimized
+              />
             </div>
             <div className="flex flex-col">
-              <span className="text-base font-semibold tracking-tight text-slate-900">
-                An Phú
+              <span className="text-base font-extrabold tracking-tight bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-900 bg-clip-text text-transparent">
+                An Phú Vina
               </span>
-              <span className="text-[10px] uppercase tracking-widest text-slate-400 font-medium">
-                Lighting & Equipment
+              <span className="text-[9px] uppercase tracking-wider text-slate-400 font-semibold truncate max-w-[170px]">
+                Lòng tin & Sự tử tế đồng hành
               </span>
             </div>
           </Link>

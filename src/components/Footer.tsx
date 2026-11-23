@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,15 +9,22 @@ export default function Footer() {
           {/* Col 1: Company Profile */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-white flex items-center justify-center text-slate-950 font-black text-sm shadow-md">
-                AP
+              <div className="w-12 h-12 rounded-2xl bg-white p-1.5 flex items-center justify-center shadow-lg">
+                <Image
+                  src="/images/logo.png"
+                  alt="An Phú Vina"
+                  width={42}
+                  height={42}
+                  className="object-contain"
+                  unoptimized
+                />
               </div>
               <div>
                 <h3 className="text-sm font-extrabold text-white tracking-tight">
                   CÔNG TY TNHH MTV TM THIẾT BỊ ĐIỆN AN PHÚ VINA
                 </h3>
                 <p className="text-[11px] text-slate-400">
-                  Nhà phân phối thiết bị chiếu sáng Rạng Đông chính hãng
+                  Lòng tin, sự tử tế đồng hành cùng bạn • Rạng Đông Official Distributor
                 </p>
               </div>
             </div>
