@@ -14,70 +14,260 @@ export interface BotReply {
 }
 
 /**
- * Intelligent Consultation Engine that dynamically understands:
- * - All 672 products in the catalog
- * - Architectural structures: trần bê tông vs trần thạch cao
- * - Room types & lux standards (phòng khách 300lx, phòng ngủ 150lx, văn phòng 500lx, ngoài trời IP66)
- * - Suitability checks: "nhà tôi có dùng được mẫu X không?"
- * - Catalog model surveys: "trong web có những mẫu nào?"
+ * Intelligent Consultation Engine:
+ * Dynamically answers customer inquiries based on the live catalog of 672 products.
+ * Handles superlatives (đắt nhất/rẻ nhất), suitability (trần bê tông/thạch cao), room areas, and catalog surveys.
  */
 export function processCustomerQuery(query: string, allProducts: Product[]): BotReply {
   const q = query.toLowerCase().trim();
 
-  // 1. Check if asking about concrete ceiling vs recessed downlight (e.g. "trần bê tông có lắp được AT04 không?")
-  const isConcrete = q.includes("bê tông") || q.includes("be tong") || q.includes("không có trần thạch cao") || q.includes("trần đúc");
-  const isGypsum = q.includes("thạch cao") || q.includes("thach cao") || q.includes("trần thả") || q.includes("trần chìm");
-  const isSuitabilityCheck = q.includes("dùng được không") || q.includes("lắp được không") || q.includes("sử dụng được không") || q.includes("hợp không") || q.includes("có được không");
+  // Helper: sort products by price
+  const validProducts = allProducts.filter((p) => p && p.priceWithVAT && p.priceWithVAT > 0);
 
-  // Specific model mentions
-  const mentionsAT04 = q.includes("at04") || q.includes("âm trần") || q.includes("am tran") || q.includes("downlight");
-  const mentionsPanel = q.includes("panel") || q.includes("p06") || q.includes("600x600");
-  const mentionsPha = q.includes("pha") || q.includes("cp06") || q.includes("ngoài trời") || q.includes("chống nước") || q.includes("ip66");
-  const mentionsSmart = q.includes("smart") || q.includes("thông minh") || q.includes("wifi") || q.includes("bluetooth") || q.includes("ble") || q.includes("rallismart") || q.includes("công tắc") || q.includes("rèm");
-  const mentionsFactory = q.includes("xưởng") || q.includes("nhà xưởng") || q.includes("highbay") || q.includes("kho") || q.includes("tuýp") || q.includes("t8");
-  const mentionsCatalogModels = q.includes("có những mẫu") || q.includes("có mẫu nào") || q.includes("những loại nào") || q.includes("danh sách") || q.includes("trong web có") || q.includes("xem mẫu");
+  // -------------------------------------------------------------
+  // 1. SUPERLATIVES (ĐẮT NHẤT / RẺ NHẤT / SÁNG NHẤT / CÔNG SUẤT LỚN NHẤT)
+  // -------------------------------------------------------------
+  const isMostExpensive =
+    q.includes("đắt nhất") ||
+    q.includes("đắt tiền nhất") ||
+    q.includes("dat nhat") ||
+    q.includes("giá cao nhất") ||
+    q.includes("cao tiền nhất") ||
+    q.includes("đắt nhất trên web");
 
-  // CASE 1: Trần bê tông suitability check
-  if (isConcrete && (mentionsAT04 || isSuitabilityCheck)) {
-    const opTran = allProducts.filter((p) => (p.category.includes("Ốp") || p.name.includes("LN12") || p.name.includes("Ốp")) && p.image).slice(0, 3);
-    const tuyp = allProducts.filter((p) => p.name.includes("T8") || p.category.includes("Tuýp")).slice(0, 1);
-    const recommended = [...opTran, ...tuyp];
+  const isCheapest =
+    q.includes("rẻ nhất") ||
+    q.includes("re nhat") ||
+    q.includes("giá thấp nhất") ||
+    q.includes("tiết kiệm nhất") ||
+    q.includes("bình dân nhất");
+
+  const isMostPowerful =
+    q.includes("sáng nhất") ||
+    q.includes("công suất lớn nhất") ||
+    q.includes("mạnh nhất") ||
+    q.includes("sang nhat") ||
+    q.includes("oát cao nhất") ||
+    q.includes("w cao nhất");
+
+  // Category classifiers
+  const isBulb = q.includes("bóng") || q.includes("bong") || q.includes("bulb") || q.includes("búp");
+  const isDownlight = q.includes("âm trần") || q.includes("am tran") || q.includes("downlight") || q.includes("at04") || q.includes("at10");
+  const isPanel = q.includes("panel") || q.includes("p06") || q.includes("trần thả") || q.includes("600x600");
+  const isPha = q.includes("pha") || q.includes("chiếu pha") || q.includes("cp06") || q.includes("ngoài trời") || q.includes("ip66");
+  const isSmart = q.includes("smart") || q.includes("thông minh") || q.includes("wifi") || q.includes("bluetooth") || q.includes("ble") || q.includes("rallismart");
+  const isTuyp = q.includes("tuýp") || q.includes("tuyp") || q.includes("t8") || q.includes("bán nguyệt") || q.includes("m16");
+  const isStreet = q.includes("đường") || q.includes("duong") || q.includes("csd") || q.includes("năng lượng mặt trời") || q.includes("nlmt");
+
+  // --- 1.1: ĐẮT NHẤT ---
+  if (isMostExpensive) {
+    if (isBulb) {
+      // Find bulbs sorted by price descending
+      const bulbs = validProducts
+        .filter((p) => {
+          const t = (p.name + " " + p.category).toLowerCase();
+          return t.includes("bulb") || t.includes("bóng") || t.includes("búp");
+        })
+        .sort((a, b) => b.priceWithVAT - a.priceWithVAT);
+
+      const topBulb = bulbs[0];
+      const secondBulb = bulbs.find((b) => b.id !== topBulb?.id && !b.name.includes("thông minh"));
+
+      return {
+        text: `Dạ trên website An Phú Vina hiện nay, dòng **bóng đèn đắt tiền nhất** chính là:
+
+🥇 **${topBulb?.name}** - Giá: **${formatCurrency(topBulb?.priceWithVAT || 1000000)}** (có VAT)
+• Đây là dòng bóng LED thông minh cao cấp kết nối Wifi trực tiếp, tùy biến 16 triệu màu RGB, điều khiển bật/tắt hẹn giờ và ra lệnh giọng nói qua điện thoại.
+
+🥈 Kế tiếp ở phân khúc bóng đèn chiếu sáng thông dụng công suất cực đại là:
+• **${secondBulb?.name || "Đèn LED Bulb trụ TR135/80W E27"}** - Giá: **${formatCurrency(secondBulb?.priceWithVAT || 374679)}** (Công suất siêu sáng 80W cho nhà xưởng, sân vườn, đui xoáy E27 tiêu chuẩn).
+
+*(Lưu ý: Nếu tính toàn bộ 672 sản phẩm trên website thì thiết bị đắt nhất là dòng **Đèn đường năng lượng mặt trời CSD02.SL 100W** với giá **16.906.159 đ** ạ).*`,
+        products: bulbs.slice(0, 3).map((p) => ({
+          id: p.id,
+          name: p.name,
+          price: p.priceWithVAT,
+          specs: `${p.category} • ${p.specs?.power || "Chính hãng Rạng Đông"}`,
+          image: p.image || "/images/products/image281.png",
+        })),
+        suggestions: [
+          "Bóng đèn rẻ nhất là mẫu nào?",
+          "Xem các mẫu bóng LED Bulb phổ thông",
+          "Tư vấn bóng thông minh đổi màu RGB",
+        ],
+      };
+    }
+
+    if (isDownlight) {
+      const downlights = validProducts
+        .filter((p) => (p.category.includes("Downlight") || p.name.includes("AT04") || p.name.includes("AT10") || p.name.includes("AT20")))
+        .sort((a, b) => b.priceWithVAT - a.priceWithVAT);
+      const top = downlights[0];
+
+      return {
+        text: `Dạ trong dòng đèn âm trần Downlight trên web, mẫu đắt tiền nhất là **${top.name}** (${formatCurrency(top.priceWithVAT)} có VAT).
+Dòng này tích hợp bộ nguồn dự phòng chiếu sáng sự cố khẩn cấp (hoặc công suất lớn 25W lỗ khoét D155mm), tự động bật sáng khi mất điện.
+Đối với dòng âm trần dân dụng thông thường thì mức giá rất mềm, chỉ từ **73.000 đ đến 116.000 đ/bóng** tùy công suất 7W - 12W ạ.`,
+        products: downlights.slice(0, 3).map((p) => ({
+          id: p.id,
+          name: p.name,
+          price: p.priceWithVAT,
+          specs: `Khoét lỗ thạch cao • ${p.specs?.power || "Downlight"}`,
+          image: p.image || "/images/products/image281.png",
+        })),
+        suggestions: ["Mẫu âm trần bán chạy nhất", "Đèn downlight đổi 3 màu giá bao nhiêu?"],
+      };
+    }
+
+    // Overall most expensive product in entire store
+    const sortedAll = [...validProducts].sort((a, b) => b.priceWithVAT - a.priceWithVAT);
+    const topOverall = sortedAll[0];
+    const top2 = sortedAll[1];
 
     return {
-      text: `Chào anh/chị! Về câu hỏi trần bê tông có lắp được đèn không:
-❌ **Không nên dùng đèn âm trần (như Downlight AT04, AT10, AT20)** cho trần bê tông nguyên khối, vì các dòng này bắt buộc phải **khoét lỗ trần (D90mm - D155mm)** và cần khoảng trống bên trên để đẩy tai cài lò xo và tản nhiệt. Việc khoan đục bê tông sẽ làm hỏng kết cấu trần và rất tốn chi phí.
+      text: `Dạ trên toàn bộ hệ thống website An Phú Vina hiện nay, thiết bị **đắt tiền nhất** là:
 
-✅ **Giải pháp tối ưu nhất cho trần bê tông nhà anh/chị:**
-1. **Đèn LED Ốp trần tràn viền (Dòng Rạng Đông LN12 hoặc ốp tròn/vuông)**: Bắt vít ốp nổi trực tiếp lên mặt trần bê tông, chỉ dày 3-4cm, góc chiếu tràn viền 180 độ cực kỳ sang trọng.
-2. **Đèn Tuýp LED bán nguyệt M16 hoặc Tuýp T8 nhôm nhựa**: Lắp sát trần chiếu sáng rộng đều cho phòng khách, bếp hoặc ban công.
-3. **Đèn rọi ray Tracklight**: Thanh ray bắt nổi trần bê tông, tạo phong cách hiện đại kiểu kiến trúc Studio/Cafe.
+🏆 **${topOverall.name}**
+• **Giá niêm yết (có VAT)**: **${formatCurrency(topOverall.priceWithVAT)}**
+• **Đặc điểm**: Dòng đèn đường cao cấp tích hợp tấm pin năng lượng mặt trời dung lượng lớn, pin lưu trữ Lithium LiFePO4 bền bỉ, chiếu sáng tự động cả đêm không tốn 1 đồng tiền điện, chuyên phục vụ các tuyến cao tốc, đại lộ và khu đô thị sinh thái.
 
-Dưới đây là các mẫu ốp trần chính hãng Rạng Đông đang có sẵn trên web phù hợp trực tiếp với trần bê tông nhà mình ạ:`,
-      products: recommended.map((p) => ({
+Đứng thứ hai là **${top2.name}** (${formatCurrency(top2.priceWithVAT)}).
+Còn nếu anh/chị đang tìm bóng đèn hay đèn chiếu sáng gia đình thì mức giá sẽ dao động từ vài chục nghìn đến vài trăm nghìn thôi ạ!`,
+      products: sortedAll.slice(0, 3).map((p) => ({
         id: p.id,
         name: p.name,
         price: p.priceWithVAT,
-        specs: `Ốp nổi trần bê tông • ${p.specs?.power || "10W-24W"} • Bảo hành 2 năm`,
-        image: p.image || "/images/products/image281.png",
+        specs: `${p.category} • Công trình dự án cao cấp`,
+        image: p.image || "/images/products/image585.png",
       })),
       suggestions: [
-        "Xem chi tiết thông số đèn ốp trần LN12",
-        "Tư vấn số lượng đèn cho phòng khách trần bê tông",
-        "Báo giá chiết khấu đại lý",
+        "Bóng đèn đắt tiền nhất trên web đi",
+        "Sản phẩm rẻ nhất trên web là gì?",
+        "Xem danh sách đèn bán chạy nhất",
       ],
     };
   }
 
-  // CASE 2: Trần thạch cao suitability check
-  if (isGypsum && (mentionsAT04 || isSuitabilityCheck || q.includes("phòng khách") || q.includes("phòng ngủ"))) {
-    const downlights = allProducts.filter((p) => (p.name.includes("AT04") || p.name.includes("AT10") || p.category.includes("Downlight")) && p.image).slice(0, 3);
-    return {
-      text: `Dạ hoàn toàn **RẤT PHÙ HỢP** ạ! Với trần thạch cao (trần chìm hoặc trần giật cấp), đèn LED Downlight âm trần Rạng Đông (AT04, AT10, AT20) là lựa chọn chuẩn nhất hiện nay:
-• **Khoét lỗ D90mm (Công suất 7W - 9W)**: Thích hợp cho phòng ngủ, hành lang và phòng khách trần cao 2.6m - 3m. Khoảng cách bố trí giữa 2 bóng từ 1m - 1.2m.
-• **Khoét lỗ D110mm (Công suất 9W - 12W)**: Thích hợp cho phòng khách rộng từ 20m² - 40m² cần độ sáng rực rỡ.
-• **Chế độ màu**: Anh/chị có thể chọn dòng **AT10 đổi 3 màu** (Trắng làm việc - Vàng ấm thư giãn - Trung tính dịu mắt) chỉ bằng thao tác bật/tắt công tắc tường.
+  // --- 1.2: RẺ NHẤT ---
+  if (isCheapest) {
+    const cheapProducts = validProducts
+      .filter((p) => p.priceWithVAT > 10000)
+      .sort((a, b) => a.priceWithVAT - b.priceWithVAT);
+    const topCheap = cheapProducts[0];
 
-Dưới đây là các mẫu Downlight âm trần thạch cao bán chạy nhất có sẵn giá và thông số trên hệ thống:`,
+    return {
+      text: `Dạ trên website, sản phẩm có **mức giá rẻ và tiết kiệm nhất** là:
+
+🏷️ **${topCheap.name}** - Giá chỉ: **${formatCurrency(topCheap.priceWithVAT)}** (có VAT)
+Ngoài ra, các dòng đèn dân dụng phổ thông có giá cực kỳ hợp lý:
+• **Bóng LED Bulb tròn 5W - 7W**: chỉ từ 35.000 đ – 50.000 đ.
+• **Đèn LED Ốp tường LN12 5W**: chỉ từ 63.000 đ.
+• **Đèn âm trần Downlight AT04 5W**: chỉ từ 73.000 đ.
+
+Tất cả đều là hàng chính hãng Rạng Đông 100%, bảo hành 2 năm đổi mới tận nơi ạ!`,
+      products: cheapProducts.slice(0, 3).map((p) => ({
+        id: p.id,
+        name: p.name,
+        price: p.priceWithVAT,
+        specs: `Giá tốt nhất • ${formatCurrency(p.priceWithVAT)}`,
+        image: p.image || "/images/products/image281.png",
+      })),
+      suggestions: [
+        "Xem bảng giá đèn âm trần",
+        "Tư vấn số lượng đèn cho phòng 20m²",
+        "Chính sách chiết khấu đại lý",
+      ],
+    };
+  }
+
+  // --- 1.3: CÔNG SUẤT LỚN NHẤT / SÁNG NHẤT ---
+  if (isMostPowerful) {
+    const powerful = validProducts
+      .filter((p) => (p.name + " " + p.category).toLowerCase().includes("pha") || (p.name + " " + p.category).toLowerCase().includes("highbay") || (p.name + " " + p.category).toLowerCase().includes("đường"))
+      .sort((a, b) => b.priceWithVAT - a.priceWithVAT)
+      .slice(0, 3);
+
+    return {
+      text: `Dạ nếu anh/chị cần các dòng đèn **công suất lớn nhất, chiếu sáng cực mạnh** cho kho bãi, sân thể thao, công trường hay đường giao thông:
+1. **Đèn Chiếu Pha LED Rạng Đông CP06 200W**: Quang thông lên tới gần 20.000 lumens, rọi xa hàng trăm mét, vỏ nhôm đúc IP66 chống nước bão.
+2. **Đèn LED Highbay Nhà Xưởng 150W - 200W**: Chuyên dụng treo trần cao từ 6m – 12m cho xưởng sản xuất, ánh sáng bao phủ rộng.
+3. **Đèn Chiếu Sáng Đường Phố CSD08 120W - 150W**: Chiếu sáng đại lộ, khu đô thị.
+
+Dưới đây là các model công suất cực đại có sẵn trên web:`,
+      products: powerful.map((p) => ({
+        id: p.id,
+        name: p.name,
+        price: p.priceWithVAT,
+        specs: `Siêu sáng • ${p.category} • IP66`,
+        image: p.image || "/images/products/image847.png",
+      })),
+      suggestions: [
+        "Báo giá đèn pha 200W",
+        "Đèn xưởng trần cao 8m dùng loại nào?",
+        "Tư vấn đèn chiếu sáng sân bóng",
+      ],
+    };
+  }
+
+  // -------------------------------------------------------------
+  // 2. SUITABILITY & ARCHITECTURE (NHÀ TÔI CÓ SỬ DỤNG ĐƯỢC MẪU NÀY KHÔNG?)
+  // -------------------------------------------------------------
+  const isConcrete = q.includes("bê tông") || q.includes("be tong") || q.includes("trần đúc") || q.includes("không có thạch cao");
+  const isGypsum = q.includes("thạch cao") || q.includes("thach cao") || q.includes("trần chìm") || q.includes("trần thả");
+  const isSuitabilityCheck =
+    q.includes("có dùng được không") ||
+    q.includes("có sử dụng được không") ||
+    q.includes("lắp được không") ||
+    q.includes("dùng được mẫu này không") ||
+    q.includes("nhà tôi có dùng được") ||
+    q.includes("nhà tôi sử dụng được");
+
+  // CASE: Trần bê tông
+  if (isConcrete || (isSuitabilityCheck && (q.includes("bê tông") || !isGypsum && isDownlight))) {
+    const opTran = validProducts.filter((p) => (p.category.includes("Ốp") || p.name.includes("LN12")) && p.image).slice(0, 3);
+    const tuyp = validProducts.filter((p) => p.name.includes("T8") || p.category.includes("Tuýp")).slice(0, 1);
+
+    return {
+      text: `Dạ em xin trả lời trực tiếp cho anh/chị:
+
+❌ **Nếu nhà mình là trần bê tông nguyên khối:** Anh/chị **KHÔNG NÊN sử dụng mẫu đèn âm trần như AT04 hay AT10** ạ!
+• **Lý do kỹ thuật**: Đèn âm trần bắt buộc phải khoét lỗ âm vào trần (đường kính lỗ D90mm – D155mm, sâu ít nhất 5-8cm) và cần tai cài lò xo bung ra để giữ đèn. Trần bê tông đặc không thể khoét lỗ này (nếu khoan rút lõi sẽ tốn kém và phạm vào sắt thép kết cấu nhà).
+
+✅ **Giải pháp chuẩn xác 100% cho trần bê tông:**
+1. **Đèn LED Ốp trần tràn viền LN12 (hoặc ốp nổi tròn/vuông)**: Bắt vít ốp nổi trực tiếp sát mặt bê tông, bề dày mỏng thẩm mỹ, góc chiếu tràn viền 180 độ rất thoáng phòng.
+2. **Bộ đèn Tuýp LED bán nguyệt M16 hoặc Tuýp T8**: Bắt nổi sát trần, cho ánh sáng tỏa rộng toàn diện.
+3. **Đèn rọi ray Tracklight**: Bắt thanh ray nổi trần bê tông, các đầu đèn chỉnh hướng góc rọi rất hiện đại.
+
+Dưới đây là các mẫu ốp trần Rạng Đông chính hãng chuyên dụng cho trần bê tông nhà mình ạ:`,
+      products: [...opTran, ...tuyp].map((p) => ({
+        id: p.id,
+        name: p.name,
+        price: p.priceWithVAT,
+        specs: `Ốp nổi trần bê tông • Không cần khoét lỗ • ${p.specs?.power || "10W-24W"}`,
+        image: p.image || "/images/products/image281.png",
+      })),
+      suggestions: [
+        "Xem thông số đèn ốp trần LN12",
+        "Phòng khách trần bê tông 20m2 cần mấy đèn?",
+        "Tư vấn đèn tuýp bán nguyệt M16",
+      ],
+    };
+  }
+
+  // CASE: Trần thạch cao
+  if (isGypsum && (isDownlight || isSuitabilityCheck)) {
+    const downlights = validProducts.filter((p) => (p.name.includes("AT04") || p.name.includes("AT10")) && p.image).slice(0, 3);
+
+    return {
+      text: `Dạ với **trần thạch cao**, mẫu **Đèn LED Downlight AT04 hoặc AT10 là LỰA CHỌN HOÀN HẢO NHẤT** cho ngôi nhà của anh/chị ạ!
+
+• **Ưu điểm khi lắp trần thạch cao**: Thợ chỉ cần dùng mũi khoét thạch cao D90mm hoặc D110mm cực kỳ nhanh gọn. Đèn có 2 tai cài lò xo bấm khít vào mặt tấm thạch cao, vành nhôm ôm sát mặt trần phẳng phiu sang trọng.
+• **Gợi ý công suất**:
+  - Trần cao 2.6m – 2.8m: Dùng **AT04 9W (lỗ D90mm)**, khoảng cách 1m – 1.2m giữa 2 bóng.
+  - Trần cao trên 3m hoặc phòng rộng: Dùng **AT04 12W (lỗ D110mm)**.
+  - Nếu muốn linh hoạt thay đổi màu sắc: Chọn **AT10 đổi 3 màu** (Trắng làm việc - Vàng ấm cúng - Trung tính ban ngày).
+
+Dưới đây là các mẫu Downlight âm trần thạch cao bán chạy nhất đang có sẵn trên hệ thống:`,
       products: downlights.map((p) => ({
         id: p.id,
         name: p.name,
@@ -86,172 +276,184 @@ Dưới đây là các mẫu Downlight âm trần thạch cao bán chạy nhất
         image: p.image || "/images/products/image281.png",
       })),
       suggestions: [
-        "Cách tính số lượng bóng cho phòng khách 25m²",
-        "Nên dùng viền vàng hay viền bạc?",
-        "Thêm sản phẩm vào bảng báo giá",
+        "Cách tính số lượng bóng cho phòng 25m²",
+        "Nên chọn viền vàng hay viền trắng bạc?",
+        "Thêm vào bảng báo giá hợp đồng",
       ],
     };
   }
 
-  // CASE 3: Hỏi danh mục mẫu mã ("có những mẫu nào", "trong web có mẫu gì")
-  if (mentionsCatalogModels) {
-    if (mentionsPanel) {
-      const panels = allProducts.filter((p) => (p.name.includes("Panel") || p.name.includes("P06") || p.category.includes("Panel")) && p.image).slice(0, 4);
-      return {
-        text: `Trên website An Phú Vina hiện có đầy đủ **${panels.length > 0 ? "hơn 69 model" : "các model"} đèn LED Panel Rạng Đông** cho cả trần thả, trần chìm và ốp nổi:
-1. **Panel vuông 600x600mm (P06, P07, 40W - 50W)**: Tiêu chuẩn văn phòng, phòng họp, trường học, hiệu suất sáng 5500 - 5900 lm, chống chói UGR < 19.
-2. **Panel tròn đổi màu (PT04.BLE 12W - 18W)**: Dành cho căn hộ cao cấp, điều khiển Bluetooth Mesh đổi màu ánh sáng.
-3. **Panel chữ nhật 300x1200mm và 600x1200mm**: Lắp đặt hành lang dài, sảnh lễ tân hoặc bàn làm việc văn phòng.
+  // -------------------------------------------------------------
+  // 3. CATALOG MODELS SURVEY ("TRONG WEB CÓ NHỮNG MẪU NÀO?")
+  // -------------------------------------------------------------
+  const isCatalogQuery =
+    q.includes("có những mẫu") ||
+    q.includes("có mẫu nào") ||
+    q.includes("những mẫu nào") ||
+    q.includes("những loại nào") ||
+    q.includes("trong web có") ||
+    q.includes("danh mục có gì");
 
-Em gửi anh/chị các mẫu Panel tiêu biểu kèm giá có VAT đang niêm yết trực tiếp trên web:`,
+  if (isCatalogQuery) {
+    if (isPanel) {
+      const panels = validProducts.filter((p) => (p.name + " " + p.category).toLowerCase().includes("panel")).slice(0, 4);
+      return {
+        text: `Dạ trên website An Phú Vina hiện có đầy đủ **các dòng đèn LED Panel Rạng Đông** phục vụ trần thả, trần chìm văn phòng và căn hộ:
+1. **Panel vuông 600x600mm (P06, P07, 40W - 50W)**: Chuyên dụng cho trần thả thạch cao văn phòng, trường học, bệnh viện. Hiệu suất sáng cao 5900 lm, chống chói UGR < 19.
+2. **Panel tròn đổi màu (PT04.BLE 12W - 18W)**: Dành cho biệt thự, căn hộ, đổi màu Bluetooth Mesh theo nhịp sinh học HCL.
+3. **Panel chữ nhật 300x1200mm và 600x1200mm**: Lắp đặt phòng họp lớn, hành lang lễ tân tòa nhà.
+
+Em gửi anh/chị bảng giá một số mẫu tiêu biểu có sẵn hình ảnh trên web:`,
         products: panels.map((p) => ({
           id: p.id,
           name: p.name,
           price: p.priceWithVAT,
-          specs: `${p.specs?.dimensions || "600x600mm"} • ${p.specs?.power || "50W"} • ${p.specs?.lumen || "5900 lm"}`,
+          specs: `${p.specs?.dimensions || "600x600mm"} • ${p.specs?.power || "50W"}`,
           image: p.image || "/images/products/image1002.png",
         })),
         suggestions: ["Báo giá số lượng lớn cho văn phòng", "Panel trần thả hay trần chìm?", "Tư vấn lắp đặt trọn gói"],
       };
     }
 
-    if (mentionsPha) {
-      const phas = allProducts.filter((p) => (p.name.includes("CP06") || p.category.includes("Pha")) && p.image).slice(0, 4);
+    if (isDownlight) {
+      const downs = validProducts.filter((p) => (p.name + " " + p.category).toLowerCase().includes("downlight")).slice(0, 4);
       return {
-        text: `Dạ trên web hiện đang phân phối trọn bộ **Đèn LED Chiếu Pha Rạng Đông CP06 chống nước IP66** từ công suất nhỏ đến công suất lớn công trình:
-• **Công suất dân dụng**: CP06 10W (147.000đ), CP06 20W (202.000đ), CP06 30W (235.000đ), CP06 50W (340.000đ).
-• **Công suất dự án & công trường**: CP06 70W (703.000đ), CP06 100W (976.000đ), CP06 150W (1.380.000đ), CP06 200W (2.176.000đ).
-Tất cả đều sử dụng vỏ nhôm đúc tản nhiệt chống oxy hóa, kính cường lực chịu va đập và van thở chống đọng sương đạt chuẩn IP66 chiếu sáng ngoài trời bền bỉ.`,
-        products: phas.map((p) => ({
+        text: `Dạ về **Đèn LED Âm Trần Downlight**, trên web hiện phân phối hơn **61 model** Rạng Đông với các dòng chính:
+• **Dòng đơn màu AT04**: Bán chạy số 1 thị trường, bền bỉ, công suất 5W, 7W, 9W, 10W, 12W, 16W, 25W (lỗ khoét D90, D110, D155).
+• **Dòng đổi 3 màu AT10**: Bật tắt công tắc đổi 3 màu Trắng - Vàng - Trung tính, có tùy chọn viền vàng hoặc viền trắng bạc sang trọng.
+• **Dòng chỉnh hướng xoay góc AT20.BLE**: Điều khiển thông minh qua điện thoại, chỉnh góc rọi điểm tranh ảnh và hốc tường.
+• **Dòng cảm biến chuyển động AT04.PIR**: Tự động sáng khi có người, thích hợp hành lang và cầu thang.`,
+        products: downs.map((p) => ({
           id: p.id,
           name: p.name,
           price: p.priceWithVAT,
-          specs: `Chống nước mưa IP66 • ${p.specs?.power || "50W-100W"} • Bảo hành 2 năm`,
-          image: p.image || "/images/products/image847.png",
+          specs: `Khoét lỗ thạch cao • ${p.specs?.power || "9W-10W"}`,
+          image: p.image || "/images/products/image281.png",
         })),
-        suggestions: ["Đèn pha 50W rọi xa được bao nhiêu mét?", "Có đèn pha năng lượng mặt trời không?", "Nhận báo giá dự án"],
+        suggestions: ["Báo giá đèn downlight AT04 90/10W", "Tư vấn khoảng cách lắp đặt giữa các đèn"],
       };
     }
 
-    if (mentionsSmart) {
-      const smarts = allProducts.filter((p) => (p.category.includes("Smart") || p.category.includes("Blutooth") || p.name.includes("Smart") || p.name.includes("BLE") || p.name.includes("Wifi")) && p.image).slice(0, 4);
+    if (isBulb) {
+      const bulbs = validProducts.filter((p) => (p.name + " " + p.category).toLowerCase().includes("bulb")).slice(0, 4);
       return {
-        text: `Hệ sinh thái **Rạng Đông Smart Home & IoT (Rallismart)** trên website hiện có hơn **85 sản phẩm** phân theo các nhóm thiết bị:
-1. **Thiết bị điều khiển**: Công tắc cảm ứng thông minh mặt kính cường lực (1-4 nút), công tắc rèm BLE, công tắc cửa cuốn, công tắc chịu tải cao 3000W cho bình nóng lạnh.
-2. **Chiếu sáng thông minh**: Bóng LED bulb RGB đổi màu 16 triệu sắc thái, đèn âm trần xoay góc AT20.BLE, đèn LED dây RGB nháy theo nhạc, đèn Tracklight thông minh.
-3. **Cảm biến & Phụ kiện**: Cảm biến chuyển động PIR, cảm biến cửa sổ, ổ cắm thông minh Wifi đơn OC.01.WF đo điện năng tiêu thụ.`,
+        text: `Dạ đối với **Bóng đèn LED Bulb (búp)**, hệ thống hiện có các nhóm mẫu mã:
+• **Bóng Bulb tròn phổ thông (A60)**: Công suất 5W, 7W, 9W, 12W, đui xoáy E27 tiêu chuẩn, thay thế trực tiếp bóng sợi đốt cũ.
+• **Bóng Bulb trụ công suất cao (TR80, TR100, TR135)**: Công suất lớn 20W, 30W, 40W, 50W, 60W, 80W dùng cho khu bếp, sân vườn, xưởng may.
+• **Bóng Bulb thông minh RGB Bluetooth / Wifi (A60.BLE / A60.WF)**: Đổi 16 triệu màu, điều khiển qua điện thoại và giọng nói.`,
+        products: bulbs.map((p) => ({
+          id: p.id,
+          name: p.name,
+          price: p.priceWithVAT,
+          specs: `Đui xoáy E27 • ${p.specs?.power || "9W-80W"}`,
+          image: p.image || "/images/products/image1105.png",
+        })),
+        suggestions: ["Bóng bulb 9W giá bao nhiêu?", "Bóng đèn nào sáng nhất cho sân vườn?"],
+      };
+    }
+
+    if (isSmart) {
+      const smarts = validProducts.filter((p) => (p.category.includes("Smart") || p.category.includes("Blutooth") || p.name.includes("BLE") || p.name.includes("Wifi"))).slice(0, 4);
+      return {
+        text: `Hệ sinh thái **Rạng Đông Smart Home (Rallismart)** trên website hiện có hơn **85 thiết bị** thông minh:
+1. **Công tắc cảm ứng thông minh**: Mặt kính cường lực chống xước (1-4 nút), công tắc rèm BLE tự động, công tắc cửa cuốn, công tắc chịu tải lớn 3000W cho bình nóng lạnh.
+2. **Đèn chiếu sáng thông minh**: Bóng bulb đổi màu RGB, đèn Panel đổi màu HCL, đèn led dây RGB nháy theo nhạc, đèn rọi tranh xoay góc BLE.
+3. **Cảm biến & Tiện ích**: Cảm biến chuyển động PIR, ổ cắm thông minh Wifi đơn OC.01.WF đo điện năng tiêu thụ.`,
         products: smarts.map((p) => ({
           id: p.id,
           name: p.name,
           price: p.priceWithVAT,
-          specs: `Kết nối Bluetooth Mesh / Wifi • ${p.specs?.power || "Thông minh"}`,
+          specs: `Kết nối Bluetooth Mesh / Wifi • Bảo hành 2 năm`,
           image: p.image || "/images/products/image281.png",
         })),
-        suggestions: ["Chi phí làm Smart Home cho căn hộ 2 phòng ngủ", "Công tắc cảm ứng có cần đi lại dây không?", "Tư vấn điều khiển giọng nói tiếng Việt"],
+        suggestions: ["Chi phí làm Smart Home cho căn hộ 2 phòng ngủ", "Công tắc cảm ứng có cần đi lại dây không?"],
       };
     }
-
-    // Default models listing across categories
-    const highlights = allProducts.filter((p) => [252, 169, 206, 194].includes(p.id));
-    return {
-      text: `Website An Phú Vina hiện phân phối tổng cộng **672+ model thiết bị chiếu sáng Rạng Đông chính hãng**, bao gồm 38 danh mục chuyên biệt:
-• **Đèn LED Downlight âm trần**: 61 model (AT04, AT10, AT20, đổi 3 màu, cảm biến PIR...)
-• **Đèn LED Panel văn phòng**: 69 model (P06 600x600, 300x1200, 600x1200, Panel tròn...)
-• **Hệ Smart Home & IoT Rallismart**: 85 model (Công tắc cảm ứng, bóng RGB, rèm, ổ cắm...)
-• **Đèn Chiếu Pha ngoài trời IP66**: 35 model (CP06 từ 10W đến 200W)
-• **Đèn Chiếu sáng đường & đô thị**: 43 model (CSD08, CSD02 chuyên dự án)
-• **Đèn Tuýp & Máng LED nhà xưởng**: 47 model (T8 nhôm nhựa, bán nguyệt M16, Highbay...)
-
-Anh/chị cần xem chi tiết nhóm sản phẩm nào cứ nhắn em tra cứu và gửi báo giá chính xác ngay nhé!`,
-      products: highlights.map((p) => ({
-        id: p.id,
-        name: p.name,
-        price: p.priceWithVAT,
-        specs: `${p.category} • Chính hãng Rạng Đông`,
-        image: p.image || "/images/products/image281.png",
-      })),
-      suggestions: ["Xem các mẫu đèn âm trần Downlight", "Xem đèn LED Panel văn phòng", "Xem thiết bị Smart Home", "Xem đèn pha chống nước IP66"],
-    };
   }
 
-  // CASE 4: Tính toán số lượng bóng theo diện tích phòng (e.g. "phòng khách 25m2", "phòng 20m2", "bao nhiêu bóng")
-  const areaMatch = q.match(/(\d+)\s*(m2|m²|mét vuông|met vuong)/);
-  if (areaMatch || q.includes("bao nhiêu bóng") || q.includes("bao nhiêu đèn") || q.includes("mấy bóng")) {
+  // -------------------------------------------------------------
+  // 4. DIỆN TÍCH PHÒNG & SỐ LƯỢNG BÓNG (CALCULATOR)
+  // -------------------------------------------------------------
+  const areaMatch = q.match(/(\d+)\s*(m2|m²|mét|met)/);
+  if (areaMatch || q.includes("bao nhiêu bóng") || q.includes("mấy bóng") || q.includes("cần bao nhiêu")) {
     const area = areaMatch ? parseInt(areaMatch[1], 10) : 25;
     const isBedroom = q.includes("ngủ") || q.includes("ngu");
-    const requiredLux = isBedroom ? 150 : 300; // Lux standard
-    const totalLumens = area * requiredLux;
+    const lux = isBedroom ? 150 : 300;
+    const totalLumens = area * lux;
     const bulbWatts = isBedroom ? 7 : 9;
-    const bulbLumens = bulbWatts * 90; // ~90 lm/W
-    const count = Math.ceil(totalLumens / bulbLumens);
+    const count = Math.ceil(totalLumens / (bulbWatts * 95));
 
-    const targetDownlights = allProducts.filter((p) => (p.name.includes("AT04") || p.name.includes("AT10")) && p.image).slice(0, 2);
+    const recDownlights = validProducts.filter((p) => (p.name.includes("AT04") || p.name.includes("AT10")) && p.image).slice(0, 2);
 
     return {
-      text: `Dạ theo Tiêu chuẩn chiếu sáng Việt Nam TCVN 7114:2008 cho ${isBedroom ? "phòng ngủ" : "phòng khách"} diện tích khoảng **${area}m²**:
-• **Độ rọi tiêu chuẩn**: ${requiredLux} Lux (tổng quang thông cần thiết: ~${totalLumens.toLocaleString()} lumens).
-• **Khuyến nghị công suất**: Sử dụng bóng LED Downlight âm trần **${bulbWatts}W - 10W** (quang thông ~${bulbLumens} lm/bóng).
-• **Số lượng bóng cần lắp**: Khoảng **${count} đến ${count + 2} bóng**, bố trí khoảng cách đều từ 1.0m – 1.2m quanh trần giật cấp để ánh sáng tỏa đều, không bị góc tối.
+      text: `Dạ để chiếu sáng chuẩn cho không gian **${area}m²** (${isBedroom ? "Phòng ngủ" : "Phòng khách / Sinh hoạt chung"}):
+• **Độ rọi tiêu chuẩn**: ${lux} Lux theo tiêu chuẩn chiếu sáng dân dụng TCVN.
+• **Tổng quang thông cần thiết**: ~${totalLumens.toLocaleString()} lumens.
+• **Số lượng bóng khuyến nghị**: Khoảng **${count} đến ${count + 2} bóng LED Downlight ${bulbWatts}W - 10W**.
+• **Bố trí lắp đặt**: Nên rải đều theo chu vi trần giật cấp hoặc chia thành 2-3 hàng, khoảng cách giữa 2 bóng từ 1.0m – 1.2m để ánh sáng tỏa đều, không bị chói mắt khi sinh hoạt.
 
-Nếu phòng khách kết hợp xem phim, anh/chị nên chọn loại **đổi 3 màu AT10** hoặc **bóng thông minh Smart BLE** để có thể giảm độ sáng và chuyển sang ánh sáng vàng ấm cúng vào buổi tối:`,
-      products: targetDownlights.map((p) => ({
+Anh/chị tham khảo 2 mẫu Downlight Rạng Đông phù hợp nhất bên dưới:`,
+      products: recDownlights.map((p) => ({
         id: p.id,
         name: p.name,
         price: p.priceWithVAT,
-        specs: `Phù hợp phòng ${area}m² • Cần ~${count} bóng • 1000 lm`,
+        specs: `Phù hợp phòng ${area}m² • Cần khoảng ${count} bóng`,
         image: p.image || "/images/products/image281.png",
       })),
       suggestions: [
         `Thêm ${count} bóng vào đơn báo giá`,
-        "Tư vấn khoảng cách khoét lỗ trần thạch cao",
-        "Xem mẫu công tắc cảm ứng đổi màu",
+        "Tư vấn trần cao 3m nên dùng bóng mấy Oát?",
       ],
     };
   }
 
-  // CASE 5: Tìm kiếm trực tiếp sản phẩm bất kỳ theo từ khóa trong tên & danh mục
-  const keywords = q.split(/\s+/).filter((w) => w.length > 1 && !["cho", "tôi", "mình", "nhà", "này", "cái", "loại", "xem", "hỏi", "được", "không"].includes(w));
-  const matched = allProducts.filter((p) => {
-    const text = (p.name + " " + p.category + " " + JSON.stringify(p.specs || {})).toLowerCase();
-    return keywords.some((k) => text.includes(k));
+  // -------------------------------------------------------------
+  // 5. DIRECT PRODUCT SEARCH & SPECIFIC INQUIRIES
+  // -------------------------------------------------------------
+  const keywords = q
+    .split(/\s+/)
+    .filter((w) => w.length > 1 && !["cho", "tôi", "mình", "nhà", "này", "cái", "loại", "xem", "hỏi", "được", "không", "trên", "web", "đi", "nào"].includes(w));
+
+  const matched = validProducts.filter((p) => {
+    const fullText = (p.name + " " + p.category + " " + JSON.stringify(p.specs || {})).toLowerCase();
+    return keywords.every((k) => fullText.includes(k)) || keywords.filter((k) => fullText.includes(k)).length >= 2;
   }).slice(0, 4);
 
   if (matched.length > 0) {
-    const first = matched[0];
+    const topMatch = matched[0];
     return {
-      text: `Dạ em đã tra cứu thấy trên hệ thống có **${matched.length} model** phù hợp với yêu cầu của anh/chị:
-Mẫu tiêu biểu nhất là **"${first.name}"** (${formatCurrency(first.priceWithVAT)} có VAT):
-• **Công suất / Kích thước**: ${first.specs?.power || "Chuẩn Rạng Đông"} • ${first.specs?.dimensions || "Kích thước tiêu chuẩn"}
-• **Ánh sáng & Cấp bảo vệ**: ${first.specs?.cct || "Trắng / Vàng"} • ${first.specs?.ipRating || "Chính hãng Rạng Đông"}
-• **Chính sách**: Bảo hành 2 năm đổi mới, có sẵn hàng số lượng lớn và hỗ trợ xuất hóa đơn VAT điện tử.
+      text: `Dạ em gửi anh/chị thông tin chính xác về mẫu **"${topMatch.name}"** trên website An Phú Vina:
+• **Đơn giá có VAT**: **${formatCurrency(topMatch.priceWithVAT)}** (Giá trước VAT: ${formatCurrency(topMatch.priceNoVAT || Math.round(topMatch.priceWithVAT / 1.08))})
+• **Thông số kỹ thuật**: Công suất: ${topMatch.specs?.power || "Chuẩn Rạng Đông"} • Kích thước: ${topMatch.specs?.dimensions || "Tiêu chuẩn"} • Ánh sáng: ${topMatch.specs?.cct || "Trắng / Vàng / Đổi màu"}
+• **Bảo hành & Giấy tờ**: Bảo hành chính hãng 2 năm, hỗ trợ xuất hóa đơn điện tử VAT 8% và chứng chỉ CO/CQ xuất xưởng công trình.
 
-Anh/chị có thể bấm trực tiếp vào thẻ sản phẩm bên dưới để xem thông số kỹ thuật chi tiết hoặc thêm vào đơn báo giá ạ:`,
+Anh/chị có thể bấm vào thẻ sản phẩm bên dưới để xem hình ảnh chi tiết hoặc thêm vào đơn báo giá hợp đồng ạ:`,
       products: matched.map((p) => ({
         id: p.id,
         name: p.name,
         price: p.priceWithVAT,
-        specs: `${p.specs?.power || p.category} • ${formatCurrency(p.priceWithVAT)}`,
+        specs: `${p.category} • ${formatCurrency(p.priceWithVAT)}`,
         image: p.image || "/images/products/image281.png",
       })),
       suggestions: [
-        "Xem chi tiết sản phẩm này",
+        "Thêm sản phẩm này vào báo giá",
         "Có kích thước hoặc công suất khác không?",
-        "Tư vấn thêm vào báo giá hợp đồng",
+        "Chính sách chiết khấu số lượng lớn",
       ],
     };
   }
 
-  // Fallback: General polite consultant response
-  const generalBest = allProducts.filter((p) => [252, 102, 169].includes(p.id));
+  // Default intelligent assistant response
+  const topSellers = validProducts.filter((p) => [252, 169, 101, 194].includes(p.id));
   return {
-    text: `Dạ em là Trợ lý kỹ thuật An Phú Vina. Em có thể tư vấn chi tiết cho anh/chị về:
-1. **Kiểm tra tính phù hợp của trần**: Trần thạch cao, trần bê tông, trần nhôm, trần gỗ nên lắp loại đèn nào.
-2. **Tính toán số lượng bóng**: Theo diện tích phòng ngủ, phòng khách, bếp, văn phòng, nhà xưởng.
-3. **Giải pháp Smart Home**: Công tắc cảm ứng, điều khiển rèm, đổi màu RGB qua điện thoại.
-4. **Báo giá & Chiết khấu**: Bảng giá đại lý cho hơn 672+ thiết bị Rạng Đông chính hãng.
+    text: `Dạ em là Trợ lý AI Kỹ thuật An Phú Vina. Em có thể giải đáp chi tiết cho anh/chị về:
+1. **Hỏi mẫu mã**: *"Bóng đèn đắt tiền nhất trên web là gì?"*, *"Trong web có những mẫu đèn Panel nào?"*
+2. **Kiểm tra trần nhà**: *"Nhà tôi trần bê tông có lắp được AT04 không?"*, *"Trần thạch cao phòng khách nên dùng đèn gì?"*
+3. **Tính toán số lượng**: *"Phòng ngủ 15m2 / phòng khách 25m2 cần mấy bóng?"*
+4. **Báo giá & Hợp đồng**: Đơn giá có VAT 8%, chiết khấu dự án cho hơn 672 sản phẩm Rạng Đông chính hãng.
 
-Anh/chị có thể đặt câu hỏi cụ thể (ví dụ: *"Trần bê tông có lắp được AT04 không?"* hoặc *"Phòng khách 25m2 cần bao nhiêu bóng?"*) để em tính toán ngay nhé!`,
-    products: generalBest.map((p) => ({
+Anh/chị cần tư vấn khu vực nào trong nhà cứ nhắn em hỗ trợ ngay nhé!`,
+    products: topSellers.map((p) => ({
       id: p.id,
       name: p.name,
       price: p.priceWithVAT,
@@ -259,10 +461,10 @@ Anh/chị có thể đặt câu hỏi cụ thể (ví dụ: *"Trần bê tông c
       image: p.image || "/images/products/image281.png",
     })),
     suggestions: [
-      "Trần bê tông có lắp được đèn âm trần không?",
+      "Bóng đèn đắt tiền nhất trên web đi",
+      "Trần bê tông có lắp được AT04 không?",
       "Phòng khách 25m2 cần bao nhiêu bóng?",
       "Trong web có những mẫu đèn Panel nào?",
-      "Tư vấn giải pháp Smart Home Rạng Đông",
     ],
   };
 }
