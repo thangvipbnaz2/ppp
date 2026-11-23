@@ -3,65 +3,62 @@ import Image from "next/image";
 
 export default function HomePage() {
   const stats = [
-    { label: "Sản phẩm tra cứu", value: "1,259+", sub: "Từ bảng giá T9/2026", icon: "⚡" },
-    { label: "Phân loại danh mục", value: "21", sub: "Đèn LED & Gia dụng", icon: "📐" },
-    { label: "Thương hiệu đối tác", value: "Rạng Đông", sub: "Chính hãng 100%", icon: "⭐" },
-    { label: "Đối chiếu LD03", value: "Hoàn tất", sub: "Web vs File Excel", icon: "⚖️" },
+    { label: "Sản phẩm xác thực", value: "438", sub: "Đầy đủ ảnh, thông số & giá", icon: "⚡" },
+    { label: "Phân loại danh mục", value: "18", sub: "Chiếu sáng Rạng Đông", icon: "📐" },
+    { label: "Thương hiệu phân phối", value: "Rạng Đông", sub: "Chính hãng 100%", icon: "⭐" },
+    { label: "Bảng giá áp dụng", value: "T9/2026", sub: "Đã cập nhật cơ chế", icon: "📅" },
   ];
 
   const highlights = [
     {
       title: "Bảng giá thông minh",
-      desc: "Tra cứu giá tức thì với bộ lọc 21 danh mục, xem cả giá chưa VAT, giá có VAT và giá bán lẻ đề xuất.",
+      desc: "Tra cứu tức thì 438 sản phẩm đèn LED Rạng Đông. 100% có hình ảnh thực tế, thông số kỹ thuật đầy đủ và giá bán niêm yết.",
       href: "/products",
-      tag: "1,259 Model",
+      tag: "438 Model Đầy Đủ",
       gradient: "from-blue-600/10 via-indigo-600/5 to-transparent",
       accent: "text-blue-600",
     },
     {
       title: "Lập báo giá chuẩn",
-      desc: "Chọn sản phẩm trực quan, tự động tính tổng tiền và mức thuế VAT, xuất PDF in hợp đồng tức thì.",
+      desc: "Chọn sản phẩm trực quan, tự động tính tổng tiền và mức thuế VAT (8%), hỗ trợ in và xuất PDF báo giá hợp đồng tức thì.",
       href: "/quote",
       tag: "Xuất PDF / In",
       gradient: "from-emerald-600/10 via-teal-600/5 to-transparent",
       accent: "text-emerald-600",
     },
     {
-      title: "Đối chiếu chênh lệch",
-      desc: "So sánh trực tiếp model LD03 giữa web rangdong.com.vn và Excel An Phú, phát hiện ngay mã thiếu.",
-      href: "/compare",
-      tag: "Báo cáo chi tiết",
+      title: "Thông số chi tiết",
+      desc: "Bấm vào bất kỳ sản phẩm nào để xem đầy đủ: công suất, điện áp, quang thông, CCT, chip LED, kích thước và cơ chế chiết khấu.",
+      href: "/products",
+      tag: "Thông Số Đầy Đủ",
       gradient: "from-purple-600/10 via-pink-600/5 to-transparent",
       accent: "text-purple-600",
     },
   ];
 
   const featuredCats = [
-    { name: "Đèn LED Downlight", count: 225, img: "/images/products/img_jpg_031.jpg" },
-    { name: "Đèn LED Panel", count: 81, img: "/images/products/img_jpg_062.jpg" },
-    { name: "Đèn LED Chiếu pha", count: 73, img: "/images/products/img_jpg_134.jpg" },
-    { name: "Đèn LED Ốp trần", count: 82, img: "/images/products/img_jpg_141.jpg" },
-    { name: "Đèn Chiếu sáng đường", count: 64, img: "/images/products/img_jpg_116.jpg" },
-    { name: "Ruột phích & Giữ nhiệt", count: 124, img: "/images/products/img_jpg_016.jpg" },
+    { name: "Đèn LED Downlight", count: 68, img: "/images/products/image281.png" },
+    { name: "Đèn LED Panel", count: 54, img: "/images/products/image1002.png" },
+    { name: "Đèn LED Chiếu pha", count: 24, img: "/images/products/image847.png" },
+    { name: "Đèn LED Ốp trần", count: 47, img: "/images/products/image923.png" },
+    { name: "Đèn Chiếu sáng đường", count: 35, img: "/images/products/image585.png" },
+    { name: "Bóng đèn LED", count: 43, img: "/images/products/image1105.png" },
   ];
 
   return (
     <div className="space-y-20 pb-20">
-      {/* Hero Section - Apple Style Ambient Glow */}
+      {/* Hero Section */}
       <section className="relative pt-20 pb-24 overflow-hidden">
-        {/* Subtle radial ambient gradients */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-gradient-to-tr from-blue-200/40 via-indigo-200/30 to-purple-200/20 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Release Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/[0.04] border border-black/[0.06] backdrop-blur-md mb-8 hover:bg-slate-900/[0.07] transition-all cursor-pointer">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-xs font-medium text-slate-700">
-              Cập nhật bảng giá áp dụng tháng 9/2026
+              Đồng bộ dữ liệu: Đầy đủ Ảnh thực tế • Thông số kỹ thuật • Giá bán
             </span>
           </div>
 
-          {/* Heading */}
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-950 max-w-4xl mx-auto leading-[1.12]">
             Hệ thống Báo giá & Chiếu sáng
             <span className="block bg-gradient-to-r from-slate-900 via-blue-700 to-indigo-600 bg-clip-text text-transparent mt-2">
@@ -70,16 +67,15 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-slate-500 max-w-2xl mx-auto font-normal leading-relaxed">
-            Dữ liệu đồng bộ trực tiếp từ 4 file Excel quản lý. Hỗ trợ tra cứu nhanh 1,259 sản phẩm Rạng Đông, đối chiếu giá thị trường và xuất báo giá tự động.
+            Tuyển chọn 438 sản phẩm đèn LED Rạng Đông chính hãng đáp ứng nghiêm ngặt 3 tiêu chí: Có hình ảnh rõ nét, có đầy đủ thông số kỹ thuật và có đơn giá chuẩn.
           </p>
 
-          {/* Action Buttons - iOS style */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/products"
               className="px-7 py-3.5 rounded-full text-sm font-semibold bg-slate-950 text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] hover:shadow-[0_16px_32px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 active:scale-98 transition-all duration-300"
             >
-              Tra cứu bảng giá →
+              Xem 438 sản phẩm →
             </Link>
             <Link
               href="/quote"
@@ -91,7 +87,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Floating iPhone-Style Metric Cards */}
+      {/* Floating Metric Cards */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {stats.map((s) => (
@@ -108,7 +104,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Feature Bento Grid - Apple Style */}
+      {/* Feature Bento Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-950">
@@ -124,7 +120,7 @@ export default function HomePage() {
             <Link
               key={h.title}
               href={h.href}
-              className={`group relative bg-white rounded-3xl p-8 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_24px_48px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between overflow-hidden`}
+              className="group relative bg-white rounded-3xl p-8 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_24px_48px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between overflow-hidden"
             >
               <div className={`absolute top-0 right-0 w-44 h-44 bg-gradient-to-bl ${h.gradient} rounded-full blur-2xl -z-0 pointer-events-none`} />
 
@@ -149,7 +145,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Categories with Real Images from Excel */}
+      {/* Featured Categories with Verified Clean Native Images */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between mb-8">
           <div>
@@ -157,14 +153,14 @@ export default function HomePage() {
               Danh mục nổi bật
             </h2>
             <p className="text-sm text-slate-500 mt-1">
-              Hình ảnh thực tế trích xuất trực tiếp từ file mẫu báo giá
+              Hình ảnh thực tế chuẩn từ file mẫu báo giá
             </p>
           </div>
           <Link
             href="/products"
             className="hidden sm:inline-flex text-xs font-semibold text-slate-700 hover:text-slate-950 items-center gap-1"
           >
-            Tất cả 21 danh mục <span>→</span>
+            Tất cả 18 danh mục <span>→</span>
           </Link>
         </div>
 
@@ -175,13 +171,13 @@ export default function HomePage() {
               href={`/products?category=${encodeURIComponent(cat.name)}`}
               className="group bg-white rounded-2xl p-4 border border-black/[0.05] shadow-[0_6px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
             >
-              <div className="relative w-24 h-24 mb-3 rounded-xl bg-slate-50 p-2 overflow-hidden flex items-center justify-center">
+              <div className="relative w-24 h-24 mb-3 rounded-xl bg-slate-50 p-2 overflow-hidden flex items-center justify-center border border-black/[0.03]">
                 <Image
                   src={cat.img}
                   alt={cat.name}
                   fill
                   sizes="96px"
-                  className="object-contain group-hover:scale-110 transition-transform duration-500 ease-out"
+                  className="object-contain group-hover:scale-110 transition-transform duration-500 ease-out p-1"
                   unoptimized
                 />
               </div>
