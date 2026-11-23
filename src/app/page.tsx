@@ -6,9 +6,9 @@ import BestSellersSection from "@/components/BestSellersSection";
 export default function HomePage() {
   const stats = [
     { label: "Sản phẩm trực tuyến", value: "672+", sub: "Từ rangdongapvina.com.vn & Excel", icon: "⚡" },
-    { label: "Hồ sơ dự án", value: "3+", sub: "Biên bản bàn giao thực tế", icon: "🏛️" },
-    { label: "Hotline kinh doanh", value: "0827.955.888", sub: "Hỗ trợ kỹ thuật & Zalo 24/7", icon: "📞" },
-    { label: "Mã số thuế", value: "0110271235", sub: "Sở KH&ĐT TP Hà Nội", icon: "🏢" },
+    { label: "Chiết khấu dự án", value: "15% - 42%", sub: "Ưu đãi công trình & đại lý", icon: "💎" },
+    { label: "Hotline kinh doanh", value: "0827.955.888", sub: "Hỗ trợ kỹ thuật 24/7", icon: "📞" },
+    { label: "Mã số thuế", value: "0110271235", sub: "Sở KH&ĐT TP Hà Nội cấp", icon: "🏢" },
   ];
 
   return (
@@ -58,15 +58,13 @@ export default function HomePage() {
             >
               Xem toàn bộ 672+ sản phẩm →
             </Link>
-            <a
-              href="https://zalo.me/0827955888"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3.5 rounded-full text-sm font-semibold bg-[#0068ff] text-white shadow-[0_8px_20px_rgba(0,104,255,0.3)] hover:shadow-[0_12px_28px_rgba(0,104,255,0.45)] hover:-translate-y-0.5 active:scale-98 transition-all duration-300 flex items-center gap-2"
+            <Link
+              href="/products?category=smart-home"
+              className="px-7 py-3.5 rounded-full text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-[0_8px_20px_rgba(37,99,235,0.25)] hover:shadow-[0_12px_28px_rgba(37,99,235,0.4)] hover:-translate-y-0.5 active:scale-98 transition-all duration-300 flex items-center gap-2"
             >
-              <span>💬</span>
-              <span>Zalo Sếp: 0827.955.888</span>
-            </a>
+              <span>✨</span>
+              <span>Khám phá Smart Home</span>
+            </Link>
           </div>
         </div>
       </section>
