@@ -62,11 +62,6 @@ export default function Footer() {
                   Tạo đơn báo giá chuẩn hợp đồng
                 </Link>
               </li>
-              <li>
-                <Link href="/compare" className="text-slate-400 hover:text-white transition-colors">
-                  Báo cáo đối chiếu LD03
-                </Link>
-              </li>
             </ul>
           </div>
 

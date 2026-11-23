@@ -105,7 +105,7 @@ export default function HomePage() {
               Cần hồ sơ dự án đã hoàn thành hoặc tạo báo giá tự động?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-              Các mục chuyên sâu đã được tích hợp đầy đủ trên thanh Menu: Dự án KĐT Văn Phú, gói thầu 238 triệu, hệ thống tạo bảng báo giá có VAT và đối chiếu giá LD03.
+              Các mục chuyên sâu đã được tích hợp đầy đủ trên thanh Menu: Dự án KĐT Văn Phú, gói thầu 238 triệu và hệ thống lập bảng báo giá hợp đồng có VAT.
             </p>
           </div>
 

@@ -11,7 +11,6 @@ const navItems = [
   { label: "Smart Home", href: "/products?category=smart-home", highlight: true },
   { label: "Dự án thực tế", href: "/projects" },
   { label: "Tạo báo giá", href: "/quote" },
-  { label: "Đối chiếu LD03", href: "/compare" },
 ];
 
 export default function Navbar() {
