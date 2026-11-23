@@ -21,7 +21,6 @@ export default function QuotePage() {
   const [customerName, setCustomerName] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
   const [customerAddress, setCustomerAddress] = useState("");
-  const [discountPercent, setDiscountPercent] = useState<number>(0);
   const [touched, setTouched] = useState({
     name: false,
     phone: false,
@@ -166,21 +165,18 @@ export default function QuotePage() {
       setCustomerName("");
       setCustomerPhone("");
       setCustomerAddress("");
-      setDiscountPercent(0);
       setTouched({ name: false, phone: false, address: false });
       localStorage.removeItem("anphu_quote_items");
       showToast("Đã làm mới bảng báo giá");
     }
   };
 
-  const subtotalVAT = quoteItems.reduce(
+  const totalVAT = quoteItems.reduce(
     (sum, item) => sum + item.product.priceWithVAT * item.quantity,
     0
   );
-  const discountAmount = Math.round((subtotalVAT * discountPercent) / 100);
-  const finalTotalVAT = subtotalVAT - discountAmount;
-  const totalNoVAT = Math.round(finalTotalVAT / 1.08);
-  const vatAmount = finalTotalVAT - totalNoVAT;
+  const totalNoVAT = Math.round(totalVAT / 1.08);
+  const vatAmount = totalVAT - totalNoVAT;
 
   const handlePrint = () => {
     // Mark all fields touched to show validation errors if any
@@ -428,28 +424,6 @@ export default function QuotePage() {
                   )}
                 </div>
 
-                {/* Discount Stepper (Optional) */}
-                <div className="sm:col-span-2 flex items-center justify-between pt-1">
-                  <span className="text-[11px] font-medium text-slate-600">
-                    Chiết khấu ưu đãi dự án (%):
-                  </span>
-                  <div className="flex items-center gap-2">
-                    {[0, 5, 10, 15, 20].map((pct) => (
-                      <button
-                        key={pct}
-                        type="button"
-                        onClick={() => setDiscountPercent(pct)}
-                        className={`px-2.5 py-1 rounded-lg text-[10px] font-bold transition-all ${
-                          discountPercent === pct
-                            ? "bg-blue-600 text-white shadow-sm"
-                            : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                        }`}
-                      >
-                        {pct === 0 ? "Chuẩn 0%" : `-${pct}%`}
-                      </button>
-                    ))}
-                  </div>
-                </div>
               </div>
 
               {/* Print view only */}
@@ -546,19 +520,7 @@ export default function QuotePage() {
               {quoteItems.length > 0 && (
                 <div className="mt-8 pt-6 border-t border-slate-200 space-y-2">
                   <div className="flex justify-between text-xs text-slate-500">
-                    <span>Tổng tiền sản phẩm (có VAT):</span>
-                    <span>{formatCurrency(subtotalVAT)}</span>
-                  </div>
-
-                  {discountAmount > 0 && (
-                    <div className="flex justify-between text-xs text-emerald-600 font-semibold">
-                      <span>Chiết khấu dự án ({discountPercent}%):</span>
-                      <span>-{formatCurrency(discountAmount)}</span>
-                    </div>
-                  )}
-
-                  <div className="flex justify-between text-xs text-slate-500">
-                    <span>Tổng tiền chưa VAT:</span>
+                    <span>Tổng tiền hàng (chưa VAT):</span>
                     <span>{formatCurrency(totalNoVAT)}</span>
                   </div>
 
@@ -569,7 +531,7 @@ export default function QuotePage() {
 
                   <div className="flex justify-between text-base font-extrabold text-slate-950 pt-2 border-t border-slate-100">
                     <span>Tổng thanh toán đã gồm thuế:</span>
-                    <span className="text-blue-700 text-lg">{formatCurrency(finalTotalVAT)}</span>
+                    <span className="text-blue-700 text-lg">{formatCurrency(totalVAT)}</span>
                   </div>
                 </div>
               )}

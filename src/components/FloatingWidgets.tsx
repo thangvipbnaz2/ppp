@@ -94,7 +94,7 @@ export default function FloatingWidgets() {
   return (
     <>
       {/* Floating Action Buttons Container */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3.5 select-none">
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3.5 select-none print:hidden">
         {/* Zalo Button (Boss Contact) */}
         <a
           href="https://zalo.me/0827955888"
