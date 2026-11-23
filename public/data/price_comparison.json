@@ -4,7 +4,14 @@
     "productName": "LED dây ngoài trời LD03 1000/7W",
     "webPrice": 51000,
     "specs": "300 lm/m, IP65, 25.000h",
+    "retailPriceNoVAT": 0,
+    "retailPriceVAT": 0,
     "match": "—",
+    "excelPriceNoVAT": 0,
+    "excelPriceVAT": 0,
+    "supportAmount": 0,
+    "finalPriceVAT": 0,
+    "oldPriceT8": "22.000 / 23.760",
     "conclusion": "THIẾU trong bảng T9 — chỉ còn giá T8 cũ"
   },
   {
@@ -12,7 +19,14 @@
     "productName": "LED dây ngoài trời LD03 1000/8W",
     "webPrice": 51000,
     "specs": "380 lm/m, IP65, 25.000h",
+    "retailPriceNoVAT": 47222,
+    "retailPriceVAT": 51000,
     "match": "KHỚP",
+    "excelPriceNoVAT": 23500,
+    "excelPriceVAT": 25380,
+    "supportAmount": 1900,
+    "finalPriceVAT": 23480,
+    "oldPriceT8": "22.000 / 23.760",
     "conclusion": "Có trong T9, giá lẻ khớp web 100%"
   },
   {
@@ -20,7 +34,14 @@
     "productName": "LED dây ngoài trời LD03 1000/9W",
     "webPrice": 76000,
     "specs": "700 lm/m, IP65, 25.000h",
+    "retailPriceNoVAT": 0,
+    "retailPriceVAT": 0,
     "match": "—",
+    "excelPriceNoVAT": 0,
+    "excelPriceVAT": 0,
+    "supportAmount": 0,
+    "finalPriceVAT": 0,
+    "oldPriceT8": "33.000 / 35.640",
     "conclusion": "THIẾU trong bảng T9 — chỉ còn giá T8 cũ"
   },
   {
@@ -28,7 +49,14 @@
     "productName": "LED dây ngoài trời LD03 1000/10W",
     "webPrice": 76000,
     "specs": "900 lm/m, IP65, 25.000h",
+    "retailPriceNoVAT": 70370,
+    "retailPriceVAT": 76000,
     "match": "KHỚP",
+    "excelPriceNoVAT": 35300,
+    "excelPriceVAT": 38124,
+    "supportAmount": 2800,
+    "finalPriceVAT": 35324,
+    "oldPriceT8": "33.000 / 35.640",
     "conclusion": "Có trong T9, giá lẻ khớp web 100%"
   },
   {
@@ -36,7 +64,14 @@
     "productName": "LED dây đổi màu LD03 1000/9W",
     "webPrice": 84000,
     "specs": "600 lm/m, IP65, 25.000h",
+    "retailPriceNoVAT": 0,
+    "retailPriceVAT": 0,
     "match": "—",
+    "excelPriceNoVAT": 0,
+    "excelPriceVAT": 0,
+    "supportAmount": 0,
+    "finalPriceVAT": 0,
+    "oldPriceT8": "36.300 / 39.204",
     "conclusion": "THIẾU trong bảng T9 — chỉ còn giá T8 cũ"
   },
   {
@@ -44,7 +79,14 @@
     "productName": "LED dây đổi màu LD03 1000/10W",
     "webPrice": 84000,
     "specs": "700 lm/m, IP65, 25.000h",
+    "retailPriceNoVAT": 77778,
+    "retailPriceVAT": 84000,
     "match": "KHỚP",
+    "excelPriceNoVAT": 38800,
+    "excelPriceVAT": 41904,
+    "supportAmount": 3100,
+    "finalPriceVAT": 38804,
+    "oldPriceT8": "36.300 / 39.204",
     "conclusion": "Có trong T9, giá lẻ khớp web 100%"
   }
 ]

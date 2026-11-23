@@ -19,7 +19,14 @@ export interface PriceComparison {
   productName: string;
   webPrice: number;
   specs: string;
+  retailPriceNoVAT: number;
+  retailPriceVAT: number;
   match: string;
+  excelPriceNoVAT: number;
+  excelPriceVAT: number;
+  supportAmount: number;
+  finalPriceVAT: number;
+  oldPriceT8: string;
   conclusion: string;
 }
 
