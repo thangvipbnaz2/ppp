@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { completedProjects } from "@/lib/projects";
 
 export default function HomePage() {
   const stats = [
     { label: "Sản phẩm xác thực", value: "438", sub: "Đầy đủ ảnh, thông số & giá", icon: "⚡" },
-    { label: "Phân loại danh mục", value: "18", sub: "Chiếu sáng Rạng Đông", icon: "📐" },
+    { label: "Dự án & Hợp đồng", value: "3+", sub: "Đã bàn giao nghiệm thu", icon: "🏛️" },
     { label: "Thương hiệu phân phối", value: "Rạng Đông", sub: "Chính hãng 100%", icon: "⭐" },
     { label: "Bảng giá áp dụng", value: "T9/2026", sub: "Đã cập nhật cơ chế", icon: "📅" },
   ];
@@ -19,20 +20,20 @@ export default function HomePage() {
       accent: "text-blue-600",
     },
     {
+      title: "Dự án đã hoàn thành",
+      desc: "Tham khảo hồ sơ các công trình KĐT Văn Phú, gói thầu 238 triệu và dự án chiếu sáng đường phố thực tế đã bàn giao.",
+      href: "/projects",
+      tag: "Biên Bản Bàn Giao",
+      gradient: "from-amber-600/10 via-yellow-600/5 to-transparent",
+      accent: "text-amber-600",
+    },
+    {
       title: "Lập báo giá chuẩn",
       desc: "Chọn sản phẩm trực quan, tự động tính tổng tiền và mức thuế VAT (8%), hỗ trợ in và xuất PDF báo giá hợp đồng tức thì.",
       href: "/quote",
       tag: "Xuất PDF / In",
       gradient: "from-emerald-600/10 via-teal-600/5 to-transparent",
       accent: "text-emerald-600",
-    },
-    {
-      title: "Thông số chi tiết",
-      desc: "Bấm vào bất kỳ sản phẩm nào để xem đầy đủ: công suất, điện áp, quang thông, CCT, chip LED, kích thước và cơ chế chiết khấu.",
-      href: "/products",
-      tag: "Thông Số Đầy Đủ",
-      gradient: "from-purple-600/10 via-pink-600/5 to-transparent",
-      accent: "text-purple-600",
     },
   ];
 
@@ -55,7 +56,7 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/[0.04] border border-black/[0.06] backdrop-blur-md mb-8 hover:bg-slate-900/[0.07] transition-all cursor-pointer">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-xs font-medium text-slate-700">
-              Đồng bộ dữ liệu: Đầy đủ Ảnh thực tế • Thông số kỹ thuật • Giá bán
+              Đồng bộ dữ liệu: Đầy đủ Ảnh thực tế • Thông số kỹ thuật • Dự án hoàn thành
             </span>
           </div>
 
@@ -67,7 +68,7 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-slate-500 max-w-2xl mx-auto font-normal leading-relaxed">
-            Tuyển chọn 438 sản phẩm đèn LED Rạng Đông chính hãng đáp ứng nghiêm ngặt 3 tiêu chí: Có hình ảnh rõ nét, có đầy đủ thông số kỹ thuật và có đơn giá chuẩn.
+            Nhà phân phối thiết bị chiếu sáng Rạng Đông chính hãng. Cung cấp giải pháp đèn LED toàn diện cho các công trình đô thị, nhà xưởng và biệt thự liền kề.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -78,10 +79,10 @@ export default function HomePage() {
               Xem 438 sản phẩm →
             </Link>
             <Link
-              href="/quote"
+              href="/projects"
               className="px-7 py-3.5 rounded-full text-sm font-semibold bg-white text-slate-900 border border-black/[0.08] shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] hover:-translate-y-0.5 active:scale-98 transition-all duration-300 backdrop-blur-md"
             >
-              Tạo đơn báo giá
+              Xem dự án đã hoàn thành 🏛️
             </Link>
           </div>
         </div>
@@ -99,6 +100,73 @@ export default function HomePage() {
               <div className="text-3xl font-extrabold tracking-tight text-slate-900">{s.value}</div>
               <div className="text-xs font-semibold text-slate-700 mt-1">{s.label}</div>
               <div className="text-[11px] text-slate-400 mt-0.5">{s.sub}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Featured Projects Section - "Làm màu" cho web */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold border border-emerald-200 mb-2">
+              <span>🏛️</span> Hồ sơ năng lực thực tế
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-950">
+              Dự Án Đã Hoàn Thành Bàn Giao
+            </h2>
+            <p className="text-sm text-slate-500 mt-1">
+              Các gói thầu và công trình tiêu biểu trích xuất từ biên bản giao nhận thực tế trong hồ sơ công ty
+            </p>
+          </div>
+          <Link
+            href="/projects"
+            className="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1"
+          >
+            Xem chi tiết tất cả dự án <span>→</span>
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {completedProjects.map((p) => (
+            <div
+              key={p.id}
+              className="group bg-white rounded-3xl p-6 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between gap-2">
+                  <span className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full border ${p.badgeColor}`}>
+                    {p.tag}
+                  </span>
+                  <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">
+                    ✓ {p.status}
+                  </span>
+                </div>
+
+                <h3 className="font-bold text-slate-950 text-base leading-snug group-hover:text-blue-600 transition-colors">
+                  {p.title}
+                </h3>
+
+                <p className="text-xs font-semibold text-blue-700">
+                  {p.contractValue}
+                </p>
+
+                <div className="bg-slate-50 rounded-xl p-3 text-xs space-y-1 text-slate-600">
+                  <p className="truncate"><strong className="text-slate-900">Đối tác:</strong> {p.client}</p>
+                  <p className="truncate"><strong className="text-slate-900">Vị trí:</strong> {p.location}</p>
+                </div>
+
+                <p className="text-xs text-slate-500 line-clamp-2">
+                  {p.scope}
+                </p>
+              </div>
+
+              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span className="text-[11px] text-slate-400">{p.date}</span>
+                <Link href="/projects" className="font-bold text-slate-900 hover:text-blue-600">
+                  Chi tiết thiết bị →
+                </Link>
+              </div>
             </div>
           ))}
         </div>

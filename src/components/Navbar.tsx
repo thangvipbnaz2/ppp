@@ -7,6 +7,7 @@ import { useState } from "react";
 const navItems = [
   { label: "Khám phá", href: "/" },
   { label: "Bảng giá", href: "/products" },
+  { label: "Dự án thực tế", href: "/projects" },
   { label: "Tạo báo giá", href: "/quote" },
   { label: "Đối chiếu LD03", href: "/compare" },
 ];
