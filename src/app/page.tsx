@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { completedProjects } from "@/lib/projects";
+import SmartHomeSection from "@/components/SmartHomeSection";
 
 export default function HomePage() {
   const stats = [
@@ -104,6 +105,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Prominent Smart Home & IoT Showcase */}
+      <SmartHomeSection />
 
       {/* Featured Projects Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

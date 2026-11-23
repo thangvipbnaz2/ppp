@@ -30,11 +30,33 @@ function ProductsContent() {
     });
   }, []);
 
+  useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat !== null) {
+      setSelectedCategory(cat);
+      setCurrentPage(1);
+    }
+  }, [searchParams]);
+
+  const smartHomeCount = useMemo(() => {
+    return products.filter((p) => {
+      const text = (p.name + " " + p.category + " " + JSON.stringify(p.specs || {})).toLowerCase();
+      return ["smart", "thông minh", "mesh", "wifi", "bluetooth", "ble", "công tắc", "cảm biến", "pir", "rgb"].some((k) => text.includes(k));
+    }).length;
+  }, [products]);
+
   const filtered = useMemo(() => {
     let result = products;
 
     if (selectedCategory) {
-      result = result.filter((p) => p.category === selectedCategory);
+      if (selectedCategory === "smart-home") {
+        result = result.filter((p) => {
+          const text = (p.name + " " + p.category + " " + JSON.stringify(p.specs || {})).toLowerCase();
+          return ["smart", "thông minh", "mesh", "wifi", "bluetooth", "ble", "công tắc", "cảm biến", "pir", "rgb"].some((k) => text.includes(k));
+        });
+      } else {
+        result = result.filter((p) => p.category === selectedCategory);
+      }
     }
 
     if (searchQuery) {
@@ -158,6 +180,24 @@ function ProductsContent() {
             }`}
           >
             Tất cả ({products.length})
+          </button>
+
+          {/* Special Smart Home & IoT Pill */}
+          <button
+            onClick={() => handleCategoryChange("smart-home")}
+            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 flex items-center gap-1.5 ${
+              selectedCategory === "smart-home"
+                ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-[0_4px_14px_rgba(37,99,235,0.35)] scale-102"
+                : "bg-blue-50 text-blue-700 hover:bg-blue-100/80 hover:text-blue-900 border border-blue-200/60"
+            }`}
+          >
+            <span>✨</span>
+            <span>Smart Home & IoT</span>
+            <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
+              selectedCategory === "smart-home" ? "bg-white/20 text-white" : "bg-blue-200/60 text-blue-900"
+            }`}>
+              {smartHomeCount}
+            </span>
           </button>
           {categories.map((cat) => {
             const count = products.filter((p) => p.category === cat).length;

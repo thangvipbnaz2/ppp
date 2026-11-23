@@ -29,6 +29,7 @@ export interface Product {
   originalPriceNoVAT?: number;
   originalPriceVAT?: number;
   image?: string;
+  source?: string;
   specs?: ProductSpecs;
 }
 

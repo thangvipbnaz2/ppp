@@ -7,6 +7,7 @@ import { useState } from "react";
 const navItems = [
   { label: "Khám phá", href: "/" },
   { label: "Bảng giá", href: "/products" },
+  { label: "Smart Home", href: "/products?category=smart-home", highlight: true },
   { label: "Dự án thực tế", href: "/projects" },
   { label: "Tạo báo giá", href: "/quote" },
   { label: "Đối chiếu LD03", href: "/compare" },
@@ -43,13 +44,16 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
+                  className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-300 flex items-center gap-1 ${
                     active
                       ? "bg-white text-slate-900 shadow-[0_2px_8px_rgba(0,0,0,0.08)]"
+                      : item.highlight
+                      ? "text-blue-600 hover:text-blue-800 hover:bg-blue-50/60 font-semibold"
                       : "text-slate-600 hover:text-slate-900 hover:bg-white/50"
                   }`}
                 >
-                  {item.label}
+                  {item.highlight && <span>✨</span>}
+                  <span>{item.label}</span>
                 </Link>
               );
             })}
