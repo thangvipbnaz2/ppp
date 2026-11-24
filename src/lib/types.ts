@@ -14,23 +14,45 @@ export interface ProductSpecs {
   rawSpecs?: string;
 }
 
+export interface ProductSpecItem {
+  label: string;
+  value: string;
+}
+
+export interface ProductAttributeOption {
+  name: string;
+  options: string[];
+}
+
 export interface Product {
   id: number;
   name: string;
   category: string;
+  categories?: string[];
+  slug?: string;
+  permalink?: string;
   priceNoVAT: number;
   priceWithVAT: number;
   vatRate: number;
-  retailPrice: number;
+  retailPrice: number; // Strikethrough regular price (giá niêm yết)
   finalPrice: number;
+  regularPrice?: number;
+  salePrice?: number;
   supportAmount?: number;
   supportMechanism?: string;
   giftSupport?: string;
   originalPriceNoVAT?: number;
   originalPriceVAT?: number;
   image?: string;
+  images?: string[]; // Multiple gallery images
   source?: string;
   specs?: ProductSpecs;
+  specsTable?: ProductSpecItem[];
+  shortDescription?: string;
+  description?: string;
+  attributes?: ProductAttributeOption[];
+  brand?: "Rạng Đông" | "Kingled" | "Ledvance" | string;
+  subBrand?: string;
 }
 
 export interface QuoteItem {

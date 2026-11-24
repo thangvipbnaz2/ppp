@@ -10,6 +10,7 @@ function ProductsContent() {
   const searchParams = useSearchParams();
   const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
+  const [selectedBrand, setSelectedBrand] = useState<string>(searchParams.get("brand") || "all");
   const [selectedCategory, setSelectedCategory] = useState<string>(searchParams.get("category") || "");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"name" | "priceAsc" | "priceDesc">("name");
@@ -36,6 +37,11 @@ function ProductsContent() {
       setSelectedCategory(cat);
       setCurrentPage(1);
     }
+    const br = searchParams.get("brand");
+    if (br !== null) {
+      setSelectedBrand(br);
+      setCurrentPage(1);
+    }
   }, [searchParams]);
 
   const smartHomeCount = useMemo(() => {
@@ -47,6 +53,14 @@ function ProductsContent() {
 
   const filtered = useMemo(() => {
     let result = products;
+
+    if (selectedBrand === "rangdong") {
+      result = result.filter((p) => p.brand === "Rạng Đông");
+    } else if (selectedBrand === "kingled") {
+      result = result.filter((p) => p.brand === "Kingled");
+    } else if (selectedBrand === "ledvance") {
+      result = result.filter((p) => p.brand === "Ledvance");
+    }
 
     if (selectedCategory) {
       if (selectedCategory === "smart-home") {
@@ -71,7 +85,7 @@ function ProductsContent() {
     });
 
     return result;
-  }, [products, selectedCategory, searchQuery, sortBy]);
+  }, [products, selectedCategory, selectedBrand, searchQuery, sortBy]);
 
   const paged = useMemo(() => {
     const start = (currentPage - 1) * pageSize;
@@ -111,7 +125,7 @@ function ProductsContent() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-3">
         <div className="w-8 h-8 rounded-full border-2 border-slate-300 border-t-slate-900 animate-spin" />
-        <span className="text-xs text-slate-500 font-medium">Đang nạp 1,259 sản phẩm...</span>
+        <span className="text-xs text-slate-500 font-medium">Đang nạp dữ liệu 672+ sản phẩm...</span>
       </div>
     );
   }
@@ -137,6 +151,43 @@ function ProductsContent() {
 
       {/* iOS-Style Search & Filter Bar */}
       <div className="bg-white/90 backdrop-blur-2xl rounded-3xl p-4 sm:p-5 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] space-y-4">
+        {/* Brand Selector Tabs */}
+        <div className="flex items-center gap-2 pb-2 border-b border-black/[0.05] overflow-x-auto no-scrollbar">
+          <span className="text-xs font-bold text-slate-700 whitespace-nowrap mr-1">
+            🏷️ Hãng sản xuất:
+          </span>
+          {[
+            { id: "all", name: "Tất cả các hãng", count: products.length, icon: "🌐" },
+            { id: "rangdong", name: "Rạng Đông", count: products.filter((p) => p.brand === "Rạng Đông").length, icon: "🔆" },
+            { id: "kingled", name: "Kingled", count: products.filter((p) => p.brand === "Kingled").length, icon: "👑" },
+            { id: "ledvance", name: "Ledvance", count: products.filter((p) => p.brand === "Ledvance").length, icon: "⚡" },
+          ].map((b) => {
+            const active = selectedBrand === b.id;
+            return (
+              <button
+                key={b.id}
+                onClick={() => {
+                  setSelectedBrand(b.id);
+                  setCurrentPage(1);
+                }}
+                className={`px-3 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
+                  active
+                    ? "bg-slate-900 text-white shadow-sm scale-102"
+                    : "bg-slate-100/80 text-slate-600 hover:bg-slate-200/90 hover:text-slate-900"
+                }`}
+              >
+                <span>{b.icon}</span>
+                <span>{b.name}</span>
+                <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
+                  active ? "bg-white/20 text-white" : "bg-slate-200 text-slate-700"
+                }`}>
+                  {b.count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {/* iOS Search input */}
           <div className="relative sm:col-span-2">

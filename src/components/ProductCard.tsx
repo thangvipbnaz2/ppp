@@ -22,9 +22,16 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
     >
       {/* Top Header Badge */}
       <div className="flex items-center justify-between gap-2 mb-3">
-        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-slate-100 text-slate-700 border border-black/[0.04] tracking-tight truncate max-w-[65%]">
-          {product.category}
-        </span>
+        <div className="flex items-center gap-1.5 truncate max-w-[70%]">
+          {((product.regularPrice || product.retailPrice || 0) > product.priceWithVAT) && (
+            <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-red-600 text-white shadow-xs uppercase">
+              Sale
+            </span>
+          )}
+          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-700 border border-black/[0.04] truncate">
+            {product.category}
+          </span>
+        </div>
         {product.vatRate > 0 && (
           <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/50">
             VAT {(product.vatRate * 100).toFixed(0)}%

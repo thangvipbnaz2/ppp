@@ -1,20 +1,25 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import SmartHomeSection from "@/components/SmartHomeSection";
-import BestSellersSection from "@/components/BestSellersSection";
+import BrandSidebar from "@/components/BrandSidebar";
+import BrandFilteredSection from "@/components/BrandFilteredSection";
 
 export default function HomePage() {
+  const [selectedBrand, setSelectedBrand] = useState<string>("all");
+
   const stats = [
     { label: "Sản phẩm trực tuyến", value: "672+", sub: "Từ rangdongapvina.com.vn & Excel", icon: "⚡" },
     { label: "Chiết khấu dự án", value: "15% - 42%", sub: "Ưu đãi công trình & đại lý", icon: "💎" },
-    { label: "Hotline kinh doanh", value: "0827.955.888", sub: "Hỗ trợ kỹ thuật 24/7", icon: "📞" },
+    { label: "Hotline kinh doanh", value: "0827.955.888", sub: "Hỗ trợ kỹ thuật & Zalo 24/7", icon: "📞" },
     { label: "Mã số thuế", value: "0110271235", sub: "Sở KH&ĐT TP Hà Nội cấp", icon: "🏢" },
   ];
 
   return (
     <div className="space-y-12 pb-20">
       {/* Hero Section */}
-      <section className="relative pt-16 pb-16 overflow-hidden">
+      <section className="relative pt-16 pb-14 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-gradient-to-tr from-blue-200/40 via-indigo-200/30 to-purple-200/20 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
@@ -48,7 +53,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed">
-            Công ty TNHH MTV TM Thiết Bị Điện An Phú Vina (MST: 0110271235). Chuyên tư vấn giải pháp Nhà thông minh Smart Home, đèn LED dân dụng, công trình dự án đô thị và nhà xưởng với chính sách chiết khấu tốt nhất.
+            Công ty TNHH MTV TM Thiết Bị Điện An Phú Vina (MST: 0110271235). Nhà phân phối giải pháp Nhà thông minh Smart Home, đèn LED dân dụng và công trình dự án hàng đầu với chính sách chiết khấu tốt nhất.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -86,11 +91,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 1. KHU VỰC TRƯNG BÀY SMART HOME & IOT */}
-      <SmartHomeSection />
+      {/* Main Content Layout with Left Brand Sidebar */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <div className="flex flex-col lg:flex-row items-start gap-8">
+          {/* Brand Sidebar (Sticky on Left Desktop Rail - Exactly in the Red Box) */}
+          <div className="w-full lg:w-72 shrink-0 lg:sticky lg:top-24">
+            <BrandSidebar
+              selectedBrand={selectedBrand}
+              onSelectBrand={setSelectedBrand}
+            />
+          </div>
 
-      {/* 2. KHU VỰC TRƯNG BÀY SẢN PHẨM BÁN CHẠY NHẤT (BEST SELLERS) */}
-      <BestSellersSection />
+          {/* Dynamic Content Area based on Brand Selection */}
+          <div className="flex-1 min-w-0 w-full">
+            <BrandFilteredSection
+              selectedBrand={selectedBrand}
+              onSelectBrand={setSelectedBrand}
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Callout Chuyển Hướng Menu (Dự Án / Báo Giá / So Sánh Theo Menu) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

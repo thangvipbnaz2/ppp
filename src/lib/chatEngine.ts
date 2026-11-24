@@ -59,6 +59,48 @@ export function processCustomerQuery(query: string, allProducts: Product[]): Bot
   const isTuyp = q.includes("tuýp") || q.includes("tuyp") || q.includes("t8") || q.includes("bán nguyệt") || q.includes("m16");
   const isStreet = q.includes("đường") || q.includes("duong") || q.includes("csd") || q.includes("năng lượng mặt trời") || q.includes("nlmt");
 
+  // --- 0. HÃNG SẢN XUẤT / THƯƠNG HIỆU ---
+  const isAskingBrands =
+    q.includes("hãng nào") ||
+    q.includes("các hãng") ||
+    q.includes("thương hiệu") ||
+    q.includes("nhãn hàng") ||
+    q.includes("danh mục hãng");
+
+  if (isAskingBrands) {
+    const rdCount = validProducts.filter((p) => p.brand === "Rạng Đông").length;
+    const klCount = validProducts.filter((p) => p.brand === "Kingled").length;
+    const lvCount = validProducts.filter((p) => p.brand === "Ledvance").length;
+
+    return {
+      text: `Dạ trên hệ thống website An Phú Vina hiện đang phân phối đầy đủ các hãng thiết bị chiếu sáng chính hãng gồm:
+
+1. 🔆 **Rạng Đông (Ralaco)**: **${rdCount} sản phẩm**
+   • Đèn LED dân dụng, công trình dự án và giải pháp Nhà thông minh cao cấp **Rallismart IoT** (Bluetooth Mesh & Wifi).
+2. 👑 **Kingled**: **${klCount} sản phẩm**
+   • Chuyên đèn chiếu pha ngoài trời, đèn rọi ray trang trí, đèn LED ốp trần và đèn khẩn cấp chỉ dẫn Exit.
+3. ⚡ **Ledvance (Osram - Tiêu chuẩn CHLB Đức)**: **${lvCount} sản phẩm**
+   • Dòng đèn Downlight cao cấp LDECO DL LITE và LDVAL DL ALU bền bỉ, chuẩn IP44.
+
+Anh/chị có thể bấm chọn trực tiếp vào danh mục các hãng ở cột bên trái màn hình để lọc xem từng hãng nhé!`,
+      products: validProducts
+        .filter((p) => p.brand === "Kingled" || p.brand === "Ledvance")
+        .slice(0, 4)
+        .map((p) => ({
+          id: p.id,
+          name: p.name,
+          price: p.priceWithVAT,
+          specs: `${p.brand} • ${p.category}`,
+          image: p.image || "/images/products/image281.png",
+        })),
+      suggestions: [
+        "Xem danh sách sản phẩm Kingled",
+        "Xem danh mục đèn Ledvance Đức",
+        "Smart Home Rạng Đông có những gì?",
+      ],
+    };
+  }
+
   // --- 1.1: ĐẮT NHẤT ---
   if (isMostExpensive) {
     if (isBulb) {
