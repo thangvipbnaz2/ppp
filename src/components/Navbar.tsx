@@ -7,10 +7,12 @@ import { useState } from "react";
 
 const navItems = [
   { label: "Khám phá", href: "/" },
-  { label: "Bảng giá", href: "/products" },
+  { label: "Giới thiệu", href: "/about" },
+  { label: "Sản phẩm", href: "/products" },
   { label: "Smart Home", href: "/products?category=smart-home", highlight: true },
-  { label: "Dự án thực tế", href: "/projects" },
-  { label: "Tạo báo giá", href: "/quote" },
+  { label: "Dự án", href: "/projects" },
+  { label: "Tin tức", href: "/news" },
+  { label: "Liên hệ", href: "/contact" },
 ];
 
 export default function Navbar() {

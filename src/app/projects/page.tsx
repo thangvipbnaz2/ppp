@@ -1,5 +1,6 @@
 import { completedProjects } from "@/lib/projects";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   return (
@@ -18,13 +19,24 @@ export default function ProjectsPage() {
       </div>
 
       {/* Projects Grid - Cupertino Cards */}
-      <div className="grid lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {completedProjects.map((p) => (
           <div
             key={p.id}
             className="group relative bg-white rounded-3xl p-6 sm:p-8 border border-black/[0.06] shadow-[0_12px_36px_rgba(0,0,0,0.04)] hover:shadow-[0_24px_50px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between"
           >
             <div className="space-y-4">
+              {p.image && (
+                <div className="relative h-52 w-full rounded-2xl overflow-hidden border border-black/[0.05] bg-slate-100">
+                  <Image
+                    src={p.image}
+                    alt={p.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    unoptimized
+                  />
+                </div>
+              )}
               {/* Badge & Status */}
               <div className="flex items-center justify-between gap-2">
                 <span className={`text-[11px] font-semibold px-3 py-1 rounded-full border ${p.badgeColor}`}>

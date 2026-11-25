@@ -34,7 +34,8 @@ export default function Footer() {
             </p>
 
             <div className="space-y-1.5 text-xs text-slate-300">
-              <p>📋 <strong className="text-white">Mã số thuế:</strong> 0110271235</p>
+              <p>📍 <strong className="text-white">Địa chỉ:</strong> Số 8 hẻm 02 ngách 44 ngõ 222, P. Văn Quán, Q. Hà Đông, TP. Hà Nội</p>
+              <p>📋 <strong className="text-white">Mã số thuế:</strong> 0110271235 • <strong className="text-white">Giờ làm việc:</strong> 08:30 - 17:30</p>
               <p>📞 <strong className="text-white">Hotline / Zalo:</strong> <a href="tel:0827955888" className="text-yellow-400 font-bold hover:underline">0827.955.888</a></p>
               <p>✉️ <strong className="text-white">Email:</strong> <a href="mailto:Chinh982@gmail.com" className="text-slate-300 hover:text-white">Chinh982@gmail.com</a></p>
               <p>🌐 <strong className="text-white">Website chính thức:</strong> <a href="https://rangdongapvina.com.vn/" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">rangdongapvina.com.vn</a></p>
@@ -48,13 +49,28 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
+                <Link href="/about" className="text-slate-400 hover:text-white transition-colors">
+                  Giới thiệu An Phú Vina
+                </Link>
+              </li>
+              <li>
                 <Link href="/products" className="text-slate-400 hover:text-white transition-colors">
-                  Bảng giá 672 sản phẩm
+                  Bảng giá 672+ sản phẩm
                 </Link>
               </li>
               <li>
                 <Link href="/projects" className="text-slate-400 hover:text-white transition-colors">
                   Dự án & Công trình đã bàn giao
+                </Link>
+              </li>
+              <li>
+                <Link href="/news" className="text-slate-400 hover:text-white transition-colors">
+                  Tin tức & Catalogue kỹ thuật
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
+                  Liên hệ & Đăng ký đại lý
                 </Link>
               </li>
               <li>

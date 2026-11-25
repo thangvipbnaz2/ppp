@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BrandSidebar from "@/components/BrandSidebar";
 import BrandFilteredSection from "@/components/BrandFilteredSection";
+import { newsArticles, companyInfo } from "@/lib/company";
 
 export default function HomePage() {
   const [selectedBrand, setSelectedBrand] = useState<string>("all");
@@ -108,6 +109,84 @@ export default function HomePage() {
               selectedBrand={selectedBrand}
               onSelectBrand={setSelectedBrand}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Tin Tức & Sự Kiện + Chính Sách Đại Lý (Đồng bộ từ rangdongapvina.com.vn) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 space-y-10">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-200/60 mb-2">
+              📰 Kiến Thức & Catalogue
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-950">
+              Tin Tức & Giải Pháp Chiếu Sáng
+            </h2>
+          </div>
+          <Link href="/news" className="text-xs font-bold text-blue-600 hover:underline">
+            Xem tất cả bài viết →
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {newsArticles.map((art) => (
+            <Link
+              key={art.id}
+              href="/news"
+              className="group bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_18px_36px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between space-y-4"
+            >
+              <div className="space-y-3">
+                <div className="relative h-44 w-full rounded-2xl overflow-hidden bg-slate-100">
+                  <Image
+                    src={art.image}
+                    alt={art.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    unoptimized
+                  />
+                </div>
+                <span className="inline-block text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">
+                  {art.category}
+                </span>
+                <h3 className="text-sm font-bold text-slate-950 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                  {art.title}
+                </h3>
+                <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                  {art.summary}
+                </p>
+              </div>
+              <span className="text-xs font-bold text-blue-600">Đọc chi tiết →</span>
+            </Link>
+          ))}
+        </div>
+
+        {/* Dành Cho Nhà Phân Phối / Đại Lý */}
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center md:text-left">
+            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-white/15 text-white border border-white/20">
+              🤝 Dành Cho Nhà Phân Phối / Đại Lý
+            </span>
+            <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight">
+              Đăng Ký Làm Đại Lý Chính Thức Rạng Đông & An Phú Vina
+            </h3>
+            <p className="text-xs sm:text-sm text-blue-100 max-w-xl">
+              An Phú Vina luôn có những chính sách chiết khấu dự án 15% - 42%, hỗ trợ kỹ thuật, công nợ và CO/CQ tốt nhất dành cho Nhà phân phối & Đại lý trên toàn quốc.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
+            <Link
+              href="/contact"
+              className="px-6 py-3 rounded-full text-xs font-extrabold bg-white text-blue-700 hover:bg-blue-50 shadow-md transition-all"
+            >
+              Đăng ký ngay hôm nay →
+            </Link>
+            <a
+              href={`tel:${companyInfo.hotlineRaw}`}
+              className="px-5 py-3 rounded-full text-xs font-bold bg-white/15 text-white hover:bg-white/25 border border-white/25 transition-all"
+            >
+              📞 {companyInfo.hotline}
+            </a>
           </div>
         </div>
       </section>

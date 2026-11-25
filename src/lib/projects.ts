@@ -14,9 +14,28 @@ export interface ProjectCase {
   }[];
   tag: string;
   badgeColor: string;
+  image?: string;
 }
 
 export const completedProjects: ProjectCase[] = [
+  {
+    id: "chung-cu-n04-hoang-dao-thuy",
+    title: "Chung Cư N04 Hoàng Đạo Thúy - Hà Nội",
+    client: "Ban Quản Lý & Chủ Đầu Tư Tổ Hợp N04 Trung Hòa - Nhân Chính",
+    location: "Đường Hoàng Đạo Thúy, Quận Cầu Giấy, TP. Hà Nội",
+    date: "Dự án tiêu biểu",
+    contractValue: "Hệ thống chiếu sáng tòa nhà cao tầng",
+    status: "Đạt chuẩn TCVN 7114:2008 & QCVN 09:2013/BXD",
+    scope: "Triển khai hệ thống chiếu sáng sử dụng đèn LED tiết kiệm điện cho toàn bộ khu vực căn hộ, tầng hầm, sảnh và hành lang. Đảm bảo ánh sáng tiện nghi, không nhấp nháy, không gây chói lóa hay sấp bóng.",
+    tag: "Chung cư & Tòa nhà",
+    badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+    image: "https://rangdongapvina.com.vn/wp-content/uploads/2024/10/Chung_cu_No4_Hoang_Dao_Thuy_Ha_Noi.jpg",
+    items: [
+      { name: "Đèn LED Downlight âm trần Rạng Đông AT04/AT10", quantity: 500, unit: "Bộ" },
+      { name: "Đèn LED ốp trần hành lang & sảnh chờ", quantity: 180, unit: "Cái" },
+      { name: "Bộ đèn LED tuýp chống ẩm tầng hầm & Exit sự cố", quantity: 220, unit: "Bộ" },
+    ],
+  },
   {
     id: "kdt-van-phu",
     title: "Chiếu Sáng Khu Đô Thị Văn Phú - Hà Đông",
