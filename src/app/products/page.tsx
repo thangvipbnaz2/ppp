@@ -278,7 +278,6 @@ function ProductsContent() {
               <ProductCard
                 key={product.id}
                 product={product}
-                onClick={() => setSelectedProduct(product)}
                 onAddToQuote={() => handleAddToQuote(product, 1)}
               />
             ))}

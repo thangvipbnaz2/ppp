@@ -307,7 +307,6 @@ export default function BrandFilteredSection({
                   <ProductCard
                     key={p.id}
                     product={p}
-                    onClick={() => setSelectedProduct(p)}
                     onAddToQuote={() => handleAddToQuote(p, 1)}
                   />
                 ))}

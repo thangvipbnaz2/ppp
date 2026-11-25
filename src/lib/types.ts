@@ -45,6 +45,9 @@ export interface Product {
   originalPriceVAT?: number;
   image?: string;
   images?: string[]; // Multiple gallery images
+  installationImages?: string[]; // Real-world installation & application photos
+  highlights?: string[]; // Key selling points ("Tại sao đáng mua")
+  applications?: string[]; // Suitable installation spaces
   source?: string;
   specs?: ProductSpecs;
   specsTable?: ProductSpecItem[];

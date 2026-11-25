@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@/lib/types";
@@ -9,6 +10,7 @@ import ProductModal from "./ProductModal";
 import { smartHomeFeatures, curatedSmartProducts } from "@/lib/smarthome";
 
 export default function SmartHomeSection() {
+  const router = useRouter();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
@@ -127,7 +129,7 @@ export default function SmartHomeSection() {
             {curatedSmartProducts.map((p) => (
               <div
                 key={p.id}
-                onClick={() => setSelectedProduct(p)}
+                onClick={() => router.push(`/products/${p.id}`)}
                 className="group relative bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between cursor-pointer select-none"
               >
                 {/* Badge */}

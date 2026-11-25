@@ -4,6 +4,7 @@ import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface ProductCardProps {
   product: Product;
@@ -12,12 +13,21 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, onClick, onAddToQuote }: ProductCardProps) {
+  const router = useRouter();
   const [imgError, setImgError] = useState(false);
   const specs = product.specs;
 
+  const handleCardClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      router.push(`/products/${product.id}`);
+    }
+  };
+
   return (
     <div
-      onClick={onClick}
+      onClick={handleCardClick}
       className="group relative bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-500 ease-out flex flex-col justify-between cursor-pointer select-none"
     >
       {/* Top Header Badge */}

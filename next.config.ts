@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "rangdong.com.vn",
+      },
+      {
+        protocol: "https",
         hostname: "cdn.hstatic.net",
       },
     ],
