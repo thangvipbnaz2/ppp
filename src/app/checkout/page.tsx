@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useCart } from "@/lib/cart-context";
 import { formatCurrency } from "@/lib/utils";
 import Image from "@/components/SafeImage";
+import PaymentQr from "@/components/PaymentQr";
 import Link from "next/link";
 
 interface Settings {
@@ -15,6 +16,20 @@ interface Settings {
     branch: string;
     account_number: string;
     account_name: string;
+    qr_image: string;
+  };
+}
+
+interface OrderResult {
+  orderCode: string;
+  total: number;
+  paymentMethod: "cod" | "bank_transfer";
+  bankInfo: {
+    bank: string;
+    branch?: string;
+    accountNumber: string;
+    accountName: string;
+    qrImage?: string;
   };
 }
 
@@ -28,7 +43,7 @@ export default function CheckoutPage() {
   const [paymentMethod, setPaymentMethod] = useState<"cod" | "bank_transfer">("cod");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [orderResult, setOrderResult] = useState<{ orderCode: string; total: number } | null>(null);
+  const [orderResult, setOrderResult] = useState<OrderResult | null>(null);
 
   useEffect(() => {
     fetch("/api/settings").then((r) => r.json()).then(setSettings).catch(() => {});
@@ -79,7 +94,12 @@ export default function CheckoutPage() {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Lỗi đặt hàng");
-      setOrderResult({ orderCode: data.orderCode, total: data.total });
+      setOrderResult({
+        orderCode: data.orderCode,
+        total: data.total,
+        paymentMethod: data.paymentMethod,
+        bankInfo: data.bankInfo,
+      });
       clearCart();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Có lỗi xảy ra, vui lòng thử lại hoặc gọi hotline 0827.955.888");
@@ -97,6 +117,18 @@ export default function CheckoutPage() {
           <p className="text-sm text-slate-600">Mã đơn hàng của bạn:</p>
           <p className="text-2xl font-mono font-extrabold text-blue-700">{orderResult.orderCode}</p>
           <p className="text-sm text-slate-600">Tổng thanh toán: <strong className="text-slate-900">{formatCurrency(orderResult.total)}</strong></p>
+          {orderResult.paymentMethod === "bank_transfer" && (
+            <div className="mt-4 rounded-2xl border border-blue-200 bg-blue-50 p-4 text-left space-y-3">
+              <h2 className="text-sm font-bold text-blue-950">Thông tin chuyển khoản</h2>
+              <div className="space-y-1 text-xs text-blue-900">
+                <p><strong>Ngân hàng:</strong> {orderResult.bankInfo.bank}{orderResult.bankInfo.branch ? ` - Chi nhánh ${orderResult.bankInfo.branch}` : ""}</p>
+                <p><strong>Số tài khoản:</strong> {orderResult.bankInfo.accountNumber}</p>
+                <p><strong>Chủ tài khoản:</strong> {orderResult.bankInfo.accountName}</p>
+                <p><strong>Nội dung CK:</strong> {orderResult.orderCode}</p>
+              </div>
+              <PaymentQr src={orderResult.bankInfo.qrImage} />
+            </div>
+          )}
           <p className="text-xs text-slate-500">An Phú Vina sẽ gọi xác nhận đơn hàng qua hotline 0827.955.888</p>
         </div>
         <div className="flex flex-wrap justify-center gap-3">
@@ -189,11 +221,12 @@ export default function CheckoutPage() {
               <div className="bg-blue-50 rounded-2xl p-4 border border-blue-200/60 space-y-2">
                 <h4 className="text-xs font-bold text-blue-900">Thông tin chuyển khoản:</h4>
                 <div className="text-xs text-blue-800 space-y-1">
-                  <p><strong>Ngân hàng:</strong> {settings.bank_info.bank} - Chi nhánh {settings.bank_info.branch}</p>
+                  <p><strong>Ngân hàng:</strong> {settings.bank_info.bank}{settings.bank_info.branch ? ` - Chi nhánh ${settings.bank_info.branch}` : ""}</p>
                   <p><strong>Số tài khoản:</strong> {settings.bank_info.account_number || "(Liên hệ hotline)"}</p>
                   <p><strong>Chủ tài khoản:</strong> {settings.bank_info.account_name}</p>
                   <p className="text-[11px] text-blue-600">Nội dung CK: [Mã đơn hàng] - [Họ tên] - [SĐT]</p>
                 </div>
+                <PaymentQr src={settings.bank_info.qr_image} />
               </div>
             )}
           </div>
@@ -222,7 +255,7 @@ export default function CheckoutPage() {
             <div className="pt-3 border-t border-slate-100 space-y-2 text-xs text-slate-600">
               <div className="flex justify-between"><span>Tạm tính:</span><span>{formatCurrency(subtotal)}</span></div>
               {discount > 0 && (
-                <div className="flex justify-between text-emerald-700 font-semibold"><span>Giảm 2% chuyển khoản BIDV:</span><span>-{formatCurrency(discount)}</span></div>
+                <div className="flex justify-between text-emerald-700 font-semibold"><span>Giảm 2% chuyển khoản:</span><span>-{formatCurrency(discount)}</span></div>
               )}
               <div className="flex justify-between">
                 <span>Phí vận chuyển:</span>

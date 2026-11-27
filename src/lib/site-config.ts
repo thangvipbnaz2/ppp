@@ -7,9 +7,10 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   shippingFee: 30000,
   freeShipThreshold: 1000000,
   bankInfo: {
-    bank: "BIDV",
+    bank: "MB Bank",
     branch: "",
-    accountNumber: "",
-    accountName: "CONG TY TNHH MTV TM THIET BI DIEN AN PHU VINA",
+    accountNumber: "922072005",
+    accountName: "NGUYEN VAN THANG",
+    qrImage: "/qr-thanh-toan.png",
   },
 };

@@ -290,10 +290,11 @@ async function main() {
       {
         key: "bank_info",
         value: {
-          bank: "BIDV",
+          bank: "MB Bank",
           branch: "",
-          account_number: "",
-          account_name: "CONG TY TNHH MTV TM THIET BI DIEN AN PHU VINA",
+          account_number: "922072005",
+          account_name: "NGUYEN VAN THANG",
+          qr_image: "/qr-thanh-toan.png",
         },
       },
     ],

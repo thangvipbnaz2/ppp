@@ -41,6 +41,7 @@ export async function PUT(request: Request) {
       branch?: string;
       accountNumber?: string;
       accountName?: string;
+      qrImage?: string;
     };
   };
   try {
@@ -66,6 +67,9 @@ export async function PUT(request: Request) {
     ).trim(),
     accountName: String(
       body.bankInfo?.accountName ?? current.bankInfo.accountName ?? "",
+    ).trim(),
+    qrImage: String(
+      body.bankInfo?.qrImage ?? current.bankInfo.qrImage ?? "",
     ).trim(),
   };
 

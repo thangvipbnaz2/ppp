@@ -317,6 +317,12 @@ function normalizeBankInfo(value: unknown): SiteSettings["bankInfo"] {
         : typeof bankInfo.accountName === "string"
           ? bankInfo.accountName
           : DEFAULT_SETTINGS.bankInfo.accountName,
+    qrImage:
+      typeof bankInfo.qr_image === "string"
+        ? bankInfo.qr_image
+        : typeof bankInfo.qrImage === "string"
+          ? bankInfo.qrImage
+          : DEFAULT_SETTINGS.bankInfo.qrImage,
   };
 }
 

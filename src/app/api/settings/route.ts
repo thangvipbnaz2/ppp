@@ -16,6 +16,7 @@ export async function GET() {
         branch: settings.bankInfo.branch ?? "",
         account_number: settings.bankInfo.accountNumber,
         account_name: settings.bankInfo.accountName,
+        qr_image: settings.bankInfo.qrImage ?? "",
       },
     },
     { headers: { "Cache-Control": "no-store" } },

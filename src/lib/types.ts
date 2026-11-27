@@ -137,6 +137,7 @@ export interface BankInfo {
   branch?: string;
   accountNumber: string;
   accountName: string;
+  qrImage?: string;
 }
 
 export interface SiteSettings {

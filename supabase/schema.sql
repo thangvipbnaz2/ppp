@@ -339,7 +339,7 @@ insert into public.settings (key, value) values
   ('free_ship_threshold', '1000000'::jsonb),
   ('store_email', '"Chinh982@gmail.com"'::jsonb),
   ('store_address', '"Số 8 hẻm 02 ngách 44 ngõ 222, P. Văn Quán, Q. Hà Đông, TP. Hà Nội"'::jsonb),
-  ('bank_info', '{"bank":"BIDV","branch":"","account_number":"","account_name":"CONG TY TNHH MTV TM THIET BI DIEN AN PHU VINA"}'::jsonb)
+  ('bank_info', '{"bank":"MB Bank","branch":"","account_number":"922072005","account_name":"NGUYEN VAN THANG","qr_image":"/qr-thanh-toan.png"}'::jsonb)
 on conflict (key) do nothing;
 
 -- Bucket ảnh sản phẩm; upload chỉ đi qua API server dùng service role.

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import PaymentQr from "@/components/PaymentQr";
 import type { SiteSettings } from "@/lib/types";
 
 interface SettingsForm {
@@ -13,6 +14,7 @@ interface SettingsForm {
   branch: string;
   accountNumber: string;
   accountName: string;
+  qrImage: string;
 }
 
 const EMPTY_FORM: SettingsForm = {
@@ -25,6 +27,7 @@ const EMPTY_FORM: SettingsForm = {
   branch: "",
   accountNumber: "",
   accountName: "",
+  qrImage: "",
 };
 
 export default function AdminSettingsPage() {
@@ -52,6 +55,7 @@ export default function AdminSettingsPage() {
           branch: settings.bankInfo?.branch ?? "",
           accountNumber: settings.bankInfo?.accountNumber ?? "",
           accountName: settings.bankInfo?.accountName ?? "",
+          qrImage: settings.bankInfo?.qrImage ?? "",
         });
       })
       .catch((err) => {
@@ -94,6 +98,7 @@ export default function AdminSettingsPage() {
             branch: form.branch,
             accountNumber: form.accountNumber,
             accountName: form.accountName,
+            qrImage: form.qrImage,
           },
         }),
       });
@@ -241,6 +246,22 @@ export default function AdminSettingsPage() {
                 className="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs focus:outline-none"
               />
             </label>
+            <label className="block sm:col-span-2">
+              <span className="text-[11px] font-bold text-slate-700">
+                Ảnh QR thanh toán
+              </span>
+              <input
+                value={form.qrImage}
+                onChange={(e) => update("qrImage", e.target.value)}
+                placeholder="/qr-thanh-toan.png"
+                className="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs focus:outline-none"
+              />
+            </label>
+            {form.qrImage && (
+              <div className="sm:col-span-2">
+                <PaymentQr src={form.qrImage} alt="QR thanh toán đang cấu hình" />
+              </div>
+            )}
           </div>
         </div>
 
