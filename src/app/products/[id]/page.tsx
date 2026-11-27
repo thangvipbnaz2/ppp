@@ -1,21 +1,8 @@
-import fs from "fs";
-import path from "path";
 import { notFound } from "next/navigation";
-import { Product } from "@/lib/types";
 import ProductDetailView from "@/components/ProductDetailView";
+import { getProductById, getRelatedProducts } from "@/lib/server-data";
 
-function loadProducts(): Product[] {
-  const filePath = path.join(process.cwd(), "public", "data", "products.json");
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as Product[];
-}
-
-export async function generateStaticParams() {
-  const products = loadProducts();
-  return products.map((p) => ({
-    id: String(p.id),
-  }));
-}
+export const dynamic = "force-dynamic";
 
 export default async function ProductDetailPage({
   params,
@@ -23,21 +10,13 @@ export default async function ProductDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const products = loadProducts();
-  const product = products.find((p) => String(p.id) === id);
+  const productId = Number(id);
+  if (!Number.isInteger(productId) || productId <= 0) notFound();
 
-  if (!product) {
-    notFound();
-  }
+  const product = await getProductById(productId);
+  if (!product) notFound();
 
-  // Pick 4 related products from same category or brand
-  const related = products
-    .filter(
-      (p) =>
-        p.id !== product.id &&
-        (p.category === product.category || p.brand === product.brand)
-    )
-    .slice(0, 4);
+  const related = await getRelatedProducts(product, 4);
 
   return <ProductDetailView product={product} relatedProducts={related} />;
 }

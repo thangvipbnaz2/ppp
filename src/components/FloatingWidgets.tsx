@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
+import Image from "@/components/SafeImage";
 import Link from "next/link";
 import { formatCurrency } from "@/lib/utils";
 import { processCustomerQuery } from "@/lib/chatEngine";
@@ -38,7 +38,7 @@ export default function FloatingWidgets() {
     {
       id: "welcome",
       sender: "bot",
-      text: "Xin chào Quý khách! Em là Trợ lý AI Kỹ thuật An Phú Vina. Em hiểu toàn bộ 672+ thiết bị chiếu sáng Rạng Đông trên website, có thể kiểm tra tính phù hợp với trần nhà (bê tông/thạch cao), tính toán số lượng bóng cho diện tích phòng và gợi ý giải pháp tối ưu cho anh/chị ngay ạ.",
+      text: "Xin chào Quý khách! Em là Trợ lý AI Kỹ thuật An Phú Vina. Em có thể tra cứu catalog hiện tại, kiểm tra tính phù hợp với trần nhà, tính toán số lượng bóng cho diện tích phòng và gợi ý giải pháp tối ưu cho anh/chị ngay ạ.",
       suggestions: [
         "Trần bê tông có lắp được AT04 không?",
         "Trong web có những mẫu đèn Panel nào?",
@@ -51,7 +51,7 @@ export default function FloatingWidgets() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    fetch("/data/products.json")
+    fetch("/api/products")
       .then((r) => r.json())
       .then((data) => setCatalog(data))
       .catch((err) => console.error(err));

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/SafeImage";
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import ProductCard from "./ProductCard";
@@ -29,7 +29,7 @@ export default function BrandFilteredSection({
   const pageSize = 16;
 
   useEffect(() => {
-    fetch("/data/products.json")
+    fetch("/api/products")
       .then((r) => r.json())
       .then((data: Product[]) => {
         setProducts(data);

@@ -1,8 +1,11 @@
-import Image from "next/image";
+"use client";
+import { useCatalog } from "@/lib/use-catalog";
+import Image from "@/components/SafeImage";
 import Link from "next/link";
 import { companyInfo, BRANDS } from "@/lib/company";
 
 export default function AboutPage() {
+  const catalog = useCatalog();
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-14">
       {/* Hero Section */}
@@ -28,7 +31,7 @@ export default function AboutPage() {
                 href="/products"
                 className="px-6 py-3 rounded-full text-xs font-bold bg-white text-slate-950 hover:bg-blue-50 transition-all shadow-md"
               >
-                Khám phá 672+ sản phẩm →
+                Khám phá {catalog.length} sản phẩm →
               </Link>
               <Link
                 href="/contact"
@@ -125,7 +128,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-xl font-extrabold text-slate-950">Thương Hiệu Phân Phối Chính Hãng</h2>
             <p className="text-xs text-slate-500 mt-1">
-              Đầy đủ 9 hãng thiết bị điện & chiếu sáng uy tín hàng đầu
+              Các hãng thiết bị điện & chiếu sáng có sản phẩm trong danh mục
             </p>
           </div>
           <Link href="/products" className="text-xs font-bold text-blue-600 hover:underline">
@@ -134,7 +137,7 @@ export default function AboutPage() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {BRANDS.filter((b) => b.logo).map((b) => (
+          {BRANDS.filter((b) => b.logo && catalog.some(p => p.brand === b.name || (b.id === "ledvance" && p.brand === "Ledvance"))).map((b) => (
             <Link
               key={b.id}
               href={`/products?brand=${b.id}`}

@@ -2,7 +2,9 @@
 
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
-import Image from "next/image";
+import { isContactProduct, isOutOfStock } from "@/lib/catalog";
+import { useCart } from "@/lib/cart-context";
+import Image from "@/components/SafeImage";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -14,8 +16,18 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, onClick, onAddToQuote }: ProductCardProps) {
   const router = useRouter();
+  const { addItem } = useCart();
   const [imgError, setImgError] = useState(false);
+  const [added, setAdded] = useState(false);
   const specs = product.specs;
+
+  const contact = isContactProduct(product);
+  const outOfStock = isOutOfStock(product);
+  const regularPrice = product.regularPrice || product.retailPrice || 0;
+  const hasDiscount = !contact && regularPrice > product.priceWithVAT;
+  const discountPercent = hasDiscount
+    ? Math.round(((regularPrice - product.priceWithVAT) / regularPrice) * 100)
+    : 0;
 
   const handleCardClick = () => {
     if (onClick) {
@@ -23,6 +35,22 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
     } else {
       router.push(`/products/${product.id}`);
     }
+  };
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (contact || outOfStock) return;
+    addItem({
+      productId: product.id,
+      name: product.name,
+      image: product.image ?? "",
+      price: product.priceWithVAT,
+      priceNoVat: product.priceNoVAT,
+      stockStatus: product.stockStatus ?? "instock",
+      priceStatus: product.priceStatus ?? "available",
+    });
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1600);
   };
 
   return (
@@ -33,16 +61,20 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
       {/* Top Header Badge */}
       <div className="flex items-center justify-between gap-2 mb-3">
         <div className="flex items-center gap-1.5 truncate max-w-[70%]">
-          {((product.regularPrice || product.retailPrice || 0) > product.priceWithVAT) && (
-            <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-red-600 text-white shadow-xs uppercase">
-              Sale
+          {outOfStock ? (
+            <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-slate-600 text-white shadow-xs uppercase">
+              Hết hàng
             </span>
-          )}
+          ) : hasDiscount ? (
+            <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-red-600 text-white shadow-xs uppercase">
+              -{discountPercent}%
+            </span>
+          ) : null}
           <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-700 border border-black/[0.04] truncate">
             {product.category}
           </span>
         </div>
-        {product.vatRate > 0 && (
+        {product.vatRate > 0 && !contact && (
           <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/50">
             VAT {(product.vatRate * 100).toFixed(0)}%
           </span>
@@ -58,7 +90,9 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
               alt={product.name}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              className="object-contain group-hover:scale-108 transition-transform duration-500 ease-out"
+              className={`object-contain transition-transform duration-500 ease-out ${
+                outOfStock ? "opacity-60" : "group-hover:scale-108"
+              }`}
               onError={() => setImgError(true)}
               unoptimized
             />
@@ -104,43 +138,66 @@ export default function ProductCard({ product, onClick, onAddToQuote }: ProductC
 
         {/* Pricing */}
         <div className="space-y-1.5 pt-2 border-t border-slate-100">
-          <div className="flex items-baseline justify-between">
+          <div className="flex items-baseline justify-between gap-2">
             <span className="text-xs text-slate-500">Giá có VAT:</span>
-            <span className="text-base font-bold text-slate-900 tracking-tight">
-              {product.priceWithVAT > 0 ? formatCurrency(product.priceWithVAT) : "Liên hệ"}
-            </span>
+            {contact ? (
+              <span className="text-sm font-extrabold text-amber-600">
+                Liên hệ
+              </span>
+            ) : (
+              <span className="text-base font-bold text-slate-900 tracking-tight">
+                {formatCurrency(product.priceWithVAT)}
+              </span>
+            )}
           </div>
 
-          {product.priceNoVAT > 0 && (
-            <div className="flex items-center justify-between text-xs text-slate-400">
+          {hasDiscount && (
+            <div className="flex items-center justify-between text-[11px] text-slate-400">
+              <span>Giá niêm yết:</span>
+              <span className="line-through">
+                {formatCurrency(regularPrice)}
+              </span>
+            </div>
+          )}
+
+          {!contact && product.priceNoVAT > 0 && (
+            <div className="flex items-center justify-between text-[11px] text-slate-400">
               <span>Chưa VAT:</span>
               <span>{formatCurrency(product.priceNoVAT)}</span>
             </div>
           )}
-
-          {product.retailPrice > 0 && (
-            <div className="flex items-center justify-between text-[11px] text-slate-400">
-              <span>Giá lẻ hãng:</span>
-              <span className="line-through">{formatCurrency(product.retailPrice)}</span>
-            </div>
-          )}
         </div>
 
-        {/* Action Button */}
-        {onAddToQuote && (
+        {/* Action Buttons */}
+        <div className={`mt-4 grid gap-2 ${onAddToQuote ? "grid-cols-2" : "grid-cols-1"}`}>
           <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onAddToQuote(product);
-            }}
-            className="mt-4 w-full py-2.5 px-4 rounded-xl text-xs font-semibold bg-slate-900 hover:bg-blue-600 text-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(37,99,235,0.25)] transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-98"
+            onClick={handleAddToCart}
+            disabled={contact || outOfStock}
+            className={`py-2.5 px-3 rounded-xl text-[11px] font-bold transition-all flex items-center justify-center gap-1.5 ${
+              contact || outOfStock
+                ? "bg-slate-100 text-slate-400 cursor-not-allowed"
+                : "bg-red-600 hover:bg-red-700 text-white shadow-[0_4px_12px_rgba(220,38,38,0.2)]"
+            }`}
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-            Thêm vào báo giá
+            {outOfStock ? "Hết hàng" : contact ? "Liên hệ" : added ? "Đã thêm ✓" : "Thêm giỏ"}
           </button>
-        )}
+
+          {onAddToQuote && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onAddToQuote(product);
+              }}
+              className="py-2.5 px-3 rounded-xl text-[11px] font-bold bg-slate-900 hover:bg-blue-600 text-white transition-all flex items-center justify-center gap-1.5"
+            >
+              <span>📋</span>
+              Báo giá
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

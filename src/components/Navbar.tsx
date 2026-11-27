@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/SafeImage";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
-  { label: "Khám phá", href: "/" },
+  { label: "Giỏ hàng", href: "/cart" },
+  { label: "Tra cứu đơn", href: "/track-order" },
+  { label: "Khám phá", href: "/products" },
   { label: "Giới thiệu", href: "/about" },
   { label: "Sản phẩm", href: "/products" },
   { label: "Smart Home", href: "/products?category=smart-home", highlight: true },

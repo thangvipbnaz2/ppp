@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/SafeImage";
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import ProductModal from "./ProductModal";
@@ -63,7 +63,7 @@ export default function BestSellersSection() {
             href="/products"
             className="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1"
           >
-            Xem tất cả 672+ sản phẩm <span>→</span>
+            Xem tất cả sản phẩm <span>→</span>
           </Link>
         </div>
 

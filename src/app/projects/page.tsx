@@ -1,6 +1,6 @@
 import { completedProjects } from "@/lib/projects";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/SafeImage";
 
 export default function ProjectsPage() {
   return (

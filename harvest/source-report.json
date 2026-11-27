@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-11-26T08:07:08.591Z",
+  "source": "https://rangdongapvina.com.vn",
+  "method": "Bản xuất WooCommerce API cục bộ có sẵn trong workspace",
+  "cache_file_modified_at": "2026-11-24T16:34:00.944Z",
+  "snapshot_dates": [],
+  "counts": {
+    "products": 254,
+    "categories": 29,
+    "posts": 3,
+    "pages": 6
+  },
+  "images_ok": 0,
+  "images_failed": 578,
+  "errors": [
+    "WooCommerce + WordPress REST API: https://rangdongapvina.com.vn/wp-json/wc/store/v1/products?&per_page=100&page=1: fetch failed",
+    "https://rangdongapvina.com.vn/sitemap_index.xml: fetch failed",
+    "https://rangdongapvina.com.vn/wp-sitemap.xml: fetch failed",
+    "Sitemap + scrape JSON-LD/HTML: Không đọc được sitemap",
+    "Wayback Machine CDX + snapshot: https://web.archive.org/cdx/search/cdx?url=rangdongapvina.com.vn/*&output=json&filter=statuscode:200&filter=mimetype:text/html&collapse=urlkey&fl=timestamp,original,statuscode,mimetype: 503 Service Unavailable"
+  ]
+}

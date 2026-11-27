@@ -1,12 +1,24 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
+import { useState, useEffect } from "react";
+import Image from "@/components/SafeImage";
 import Link from "next/link";
-import { newsArticles, NewsArticle } from "@/lib/company";
+import type { NewsArticle } from "@/lib/company";
 
 export default function NewsPage() {
-  const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(newsArticles[0]);
+  const [newsArticles, setNewsArticles] = useState<NewsArticle[]>([]);
+  const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(null);
+  const [error, setError] = useState("");
+  useEffect(() => {
+    fetch("/api/news").then(async response => {
+      if (!response.ok) throw new Error();
+      const data: import("@/lib/types").NewsPost[] = await response.json();
+      const posts: NewsArticle[] = data.map(post => ({ ...post, id: String(post.id), image: post.image || "/images/logo.png", date: post.date || "", readTime: post.readTime || "", sections: post.sections.map(section => ({ heading: section.heading, bullets: section.content.split("\n") })) }));
+      setNewsArticles(posts);
+      const article = new URLSearchParams(window.location.search).get("article");
+      setSelectedArticle(posts.find(p => p.id === article || data.find(d => String(d.id) === p.id)?.slug === article) ?? posts[0] ?? null);
+    }).catch(() => setError("Không tải được tin tức. Vui lòng thử lại."));
+  }, []);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
@@ -23,6 +35,7 @@ export default function NewsPage() {
         </p>
       </div>
 
+      {error && <p role="alert">{error}</p>}
       {/* Main Split View: Article List + Reader */}
       <div className="grid lg:grid-cols-12 gap-8 items-start">
         {/* Left: Article Cards */}

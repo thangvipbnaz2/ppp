@@ -1,0 +1,44 @@
+AN PHÚ VINA — CẤU HÌNH SUPABASE / VERCEL
+
+1. Trong Supabase SQL Editor chạy toàn bộ supabase/schema.sql.
+   Các bảng: products, categories, orders, order_items,
+   dealer_registrations, contact_messages, news_posts, settings.
+   contact_messages là bảng bổ sung để lưu form liên hệ.
+
+2. Điền trong .env.local và Vercel > Project > Environment Variables:
+   NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_ANON_KEY
+   SUPABASE_SERVICE_ROLE_KEY=YOUR_SERVER_ONLY_KEY
+   ADMIN_EMAIL=YOUR_SINGLE_ADMIN_EMAIL
+   Không thêm NEXT_PUBLIC_ vào service role key.
+   Không commit .env.local.
+
+3. Tạo tài khoản trong Supabase Authentication > Users, email trùng
+   ADMIN_EMAIL. Tắt đăng ký công khai trong cấu hình Supabase Auth.
+   Hoặc đặt ADMIN_PASSWORD chỉ trong .env.local rồi chạy:
+   node scripts/migrate-to-supabase.mjs --create-admin
+   Xóa ADMIN_PASSWORD khỏi .env.local sau khi tạo tài khoản.
+   Không cần ADMIN_PASSWORD trên Vercel.
+
+4. Chuyển sản phẩm từ public/data/products.json:
+   node scripts/migrate-to-supabase.mjs
+   Script upsert theo id; không chạy lại sau khi đã sửa giá trong admin
+   nếu không muốn ghi đè giá đã sửa. Dữ liệu nguồn được giữ nguyên.
+   Dữ liệu bán hàng sau làm sạch có ít hơn 672 sản phẩm do loại bản trùng
+   và hàng không thuộc thiết bị điện. Script in số lượng thực tế.
+
+5. Vào /admin/login. Kiểm tra sản phẩm, thông tin ngân hàng, phí ship
+   và ngưỡng miễn phí trong Settings trước khi mở bán.
+   Phí ship mặc định hiện là 30.000đ, ngưỡng miễn phí 1.000.000đ.
+   Thông tin ngân hàng để trống cho đến khi công ty nhập dữ liệu thật.
+
+6. Chạy npm run build rồi triển khai Vercel với Root Directory anphu-web.
+   Kiểm tra đơn COD/chuyển khoản, tra cứu đúng/sai số điện thoại,
+   đăng nhập admin, cập nhật trạng thái, form liên hệ, nhập Excel/CSV,
+   báo giá VAT 8% và in PDF trên môi trường đã kết nối database.
+
+GIỚI HẠN KIỂM CHỨNG
+Chạy build không thay thế kiểm thử với Supabase thực.
+Chưa xác minh được chính sách giao hàng/đổi trả/bảo hành từ website
+rangdongapvina.com.vn do nguồn không truy cập được khi kiểm tra.
+Không tự tạo nội dung chính sách thay cho nguồn chính thức.

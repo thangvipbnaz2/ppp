@@ -1,0 +1,263 @@
+[
+  {
+    "id": 29,
+    "name": "Đèn Khẩn Cấp Chỉ Dẫn Exit",
+    "slug": "den-khan-cap-chi-dan-exit",
+    "link": "https://rangdongapvina.com.vn/product-category/den-khan-cap-chi-dan-exit/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 248,
+    "name": "Đèn led thả",
+    "slug": "den-led-tha",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-tha/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 249,
+    "name": "Đèn led thả Kingled",
+    "slug": "den-led-tha-kingled",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-tha/den-led-tha-kingled/",
+    "description": "",
+    "image": null,
+    "parent": 248
+  },
+  {
+    "id": 235,
+    "name": "Đèn Sân Vườn",
+    "slug": "den-san-vuon",
+    "link": "https://rangdongapvina.com.vn/product-category/den-san-vuon/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 236,
+    "name": "Đèn sân vườn Kingled",
+    "slug": "den-san-vuon-kingled",
+    "link": "https://rangdongapvina.com.vn/product-category/den-san-vuon/den-san-vuon-kingled/",
+    "description": "",
+    "image": null,
+    "parent": 235
+  },
+  {
+    "id": 232,
+    "name": "Đèn chiếu pha Kingled",
+    "slug": "den-chieu-pha-kingled",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-chieu-pha/den-chieu-pha-kingled/",
+    "description": "",
+    "image": null,
+    "parent": 25
+  },
+  {
+    "id": 25,
+    "name": "Đèn LED Chiếu Pha",
+    "slug": "den-led-chieu-pha",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-chieu-pha/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 22,
+    "name": "Đèn Tuýp LED",
+    "slug": "den-tuyp-led",
+    "link": "https://rangdongapvina.com.vn/product-category/den-tuyp-led/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 220,
+    "name": "Đèn tuýp led Kingled",
+    "slug": "den-tuyp-led-kingled",
+    "link": "https://rangdongapvina.com.vn/product-category/den-tuyp-led/den-tuyp-led-kingled/",
+    "description": "",
+    "image": null,
+    "parent": 22
+  },
+  {
+    "id": 21,
+    "name": "Đèn LED Ốp Trần",
+    "slug": "den-led-op-tran",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-op-tran/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 218,
+    "name": "Đèn led ốp trần Kingled",
+    "slug": "den-led-op-tran-kingled",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-op-tran/den-led-op-tran-kingled/",
+    "description": "",
+    "image": null,
+    "parent": 21
+  },
+  {
+    "id": 20,
+    "name": "Đèn LED Bulb",
+    "slug": "den-led-bulb",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-bulb/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 208,
+    "name": "Đèn led bulb Kingled",
+    "slug": "den-led-bulb-kingled",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-bulb/den-led-bulb-kingled/",
+    "description": "",
+    "image": null,
+    "parent": 20
+  },
+  {
+    "id": 210,
+    "name": "Đèn âm trần King led",
+    "slug": "den-am-tran-king-led",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-am-tran-rang-dong/den-am-tran-king-led/",
+    "description": "",
+    "image": null,
+    "parent": 49
+  },
+  {
+    "id": 49,
+    "name": "Đèn LED Âm Trần Downlight",
+    "slug": "den-led-am-tran-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-am-tran-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 40,
+    "name": "Đèn led Bluetooth Mesh",
+    "slug": "den-led-bluetooth-mesh",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-bluetooth-mesh/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 38,
+    "name": "SẢN PHẨM SMART (REMOTE)",
+    "slug": "san-pham-smart-remote",
+    "link": "https://rangdongapvina.com.vn/product-category/san-pham-smart-remote/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 39,
+    "name": "SẢN PHẨM SMART (WIFI)",
+    "slug": "san-pham-smart-wifi",
+    "link": "https://rangdongapvina.com.vn/product-category/san-pham-smart-wifi/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 47,
+    "name": "Thiết Bị Điện Rạng Đông",
+    "slug": "thiet-bi-dien-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/thiet-bi-dien-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 34,
+    "name": "ĐÈN LED THANH GẮN TỦ",
+    "slug": "den-led-thanh-gan-tu",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-thanh-gan-tu/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 23,
+    "name": "ĐÈN LED RỌI RAY RẠNG ĐÔNG",
+    "slug": "den-led-roi-ray-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-roi-ray-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 37,
+    "name": "Đèn led dây Rạng Đông",
+    "slug": "den-led-day-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-day-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 24,
+    "name": "Đèn LED Panel Rạng Đông",
+    "slug": "den-led-panel-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-panel-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 209,
+    "name": "Đèn âm trần Rạng Đông",
+    "slug": "den-am-tran-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-am-tran-rang-dong/den-am-tran-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 49
+  },
+  {
+    "id": 35,
+    "name": "Đèn Pin Rạng Đông",
+    "slug": "den-pin-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-pin-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 26,
+    "name": "Đèn LED Nhà Xưởng Rạng Đông",
+    "slug": "den-led-nha-xuong-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-nha-xuong-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 44,
+    "name": "Đèn Năng Lượng Rạng Đông",
+    "slug": "den-nang-luong-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-nang-luong-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 28,
+    "name": "Đèn LED Gắn Tường Rạng Đông",
+    "slug": "den-led-gan-tuong-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-led-gan-tuong-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  },
+  {
+    "id": 27,
+    "name": "Đèn Đường Led",
+    "slug": "den-duong-led-rang-dong",
+    "link": "https://rangdongapvina.com.vn/product-category/den-duong-led-rang-dong/",
+    "description": "",
+    "image": null,
+    "parent": 0
+  }
+]

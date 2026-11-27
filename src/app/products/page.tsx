@@ -1,34 +1,49 @@
 "use client";
 
 import { useState, useEffect, useMemo, useCallback, Suspense } from "react";
-import { Product } from "@/lib/types";
+import { CategoryGroup, Product } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
-import ProductModal from "@/components/ProductModal";
 import { useSearchParams } from "next/navigation";
 
 function ProductsContent() {
   const searchParams = useSearchParams();
   const [products, setProducts] = useState<Product[]>([]);
-  const [categories, setCategories] = useState<string[]>([]);
-  const [selectedBrand, setSelectedBrand] = useState<string>(searchParams.get("brand") || "all");
-  const [selectedCategory, setSelectedCategory] = useState<string>(searchParams.get("category") || "");
+  const [categories, setCategories] = useState<CategoryGroup[]>([]);
+  const [selectedBrand, setSelectedBrand] = useState<string>(
+    searchParams.get("brand") || "all",
+  );
+  const [selectedCategory, setSelectedCategory] = useState<string>(
+    searchParams.get("category") || "",
+  );
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortBy, setSortBy] = useState<"name" | "priceAsc" | "priceDesc">("name");
+  const [sortBy, setSortBy] = useState<"name" | "priceAsc" | "priceDesc">(
+    "name",
+  );
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [error, setError] = useState("");
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const pageSize = 24;
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/products.json").then((r) => r.json()),
-      fetch("/data/categories.json").then((r) => r.json()),
-    ]).then(([prods, cats]) => {
-      setProducts(prods);
-      setCategories(cats);
-      setLoading(false);
-    });
+      fetch("/api/products").then((r) => {
+        if (!r.ok) throw new Error("Không tải được sản phẩm");
+        return r.json();
+      }),
+      fetch("/api/categories").then((r) => {
+        if (!r.ok) throw new Error("Không tải được danh mục");
+        return r.json();
+      }),
+    ])
+      .then(([prods, cats]) => {
+        setProducts(Array.isArray(prods) ? prods : []);
+        setCategories(Array.isArray(cats) ? cats : []);
+      })
+      .catch((err) =>
+        setError(err instanceof Error ? err.message : "Lỗi tải dữ liệu"),
+      )
+      .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {
@@ -44,12 +59,10 @@ function ProductsContent() {
     }
   }, [searchParams]);
 
-  const smartHomeCount = useMemo(() => {
-    return products.filter((p) => {
-      const text = (p.name + " " + p.category + " " + JSON.stringify(p.specs || {})).toLowerCase();
-      return ["smart", "thông minh", "mesh", "wifi", "bluetooth", "ble", "công tắc", "cảm biến", "pir", "rgb"].some((k) => text.includes(k));
-    }).length;
-  }, [products]);
+  const selectedGroup = useMemo(
+    () => categories.find((group) => group.slug === selectedCategory),
+    [categories, selectedCategory],
+  );
 
   const filtered = useMemo(() => {
     let result = products;
@@ -63,24 +76,39 @@ function ProductsContent() {
     }
 
     if (selectedCategory) {
-      if (selectedCategory === "smart-home") {
-        result = result.filter((p) => {
-          const text = (p.name + " " + p.category + " " + JSON.stringify(p.specs || {})).toLowerCase();
-          return ["smart", "thông minh", "mesh", "wifi", "bluetooth", "ble", "công tắc", "cảm biến", "pir", "rgb"].some((k) => text.includes(k));
-        });
-      } else {
-        result = result.filter((p) => p.category === selectedCategory);
-      }
+      result = result.filter(
+        (p) =>
+          p.categorySlug === selectedCategory ||
+          p.category === selectedCategory,
+      );
     }
 
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
-      result = result.filter((p) => p.name.toLowerCase().includes(q));
+      result = result.filter(
+        (p) =>
+          p.name.toLowerCase().includes(q) ||
+          (p.brand ?? "").toLowerCase().includes(q),
+      );
     }
 
+    const priceOf = (product: Product) =>
+      product.priceStatus === "contact" || product.priceWithVAT <= 0
+        ? Number.POSITIVE_INFINITY
+        : product.priceWithVAT;
+
     result.sort((a, b) => {
-      if (sortBy === "priceAsc") return a.priceWithVAT - b.priceWithVAT;
-      if (sortBy === "priceDesc") return b.priceWithVAT - a.priceWithVAT;
+      if (sortBy === "priceAsc") return priceOf(a) - priceOf(b);
+      if (sortBy === "priceDesc") {
+        const left = priceOf(a);
+        const right = priceOf(b);
+        if (left === right) return a.name.localeCompare(b.name, "vi");
+        return left === Number.POSITIVE_INFINITY
+          ? 1
+          : right === Number.POSITIVE_INFINITY
+            ? -1
+            : right - left;
+      }
       return a.name.localeCompare(b.name, "vi");
     });
 
@@ -108,14 +136,18 @@ function ProductsContent() {
     try {
       const stored = localStorage.getItem("anphu_quote_items");
       const current = stored ? JSON.parse(stored) : [];
-      const existingIdx = current.findIndex((item: { product: Product }) => item.product.id === product.id);
+      const existingIdx = current.findIndex(
+        (item: { product: Product }) => item.product.id === product.id,
+      );
       if (existingIdx >= 0) {
         current[existingIdx].quantity += quantity;
       } else {
         current.push({ product, quantity });
       }
       localStorage.setItem("anphu_quote_items", JSON.stringify(current));
-      showToast(`✓ Đã thêm ${quantity} x "${product.name.slice(0, 30)}..." vào báo giá!`);
+      showToast(
+        `✓ Đã thêm ${quantity} x "${product.name.slice(0, 30)}..." vào báo giá!`,
+      );
     } catch {
       showToast(`✓ Đã thêm vào báo giá!`);
     }
@@ -125,7 +157,9 @@ function ProductsContent() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-3">
         <div className="w-8 h-8 rounded-full border-2 border-slate-300 border-t-slate-900 animate-spin" />
-        <span className="text-xs text-slate-500 font-medium">Đang nạp dữ liệu 672+ sản phẩm...</span>
+        <span className="text-xs text-slate-500 font-medium">
+          Đang nạp dữ liệu sản phẩm...
+        </span>
       </div>
     );
   }
@@ -145,9 +179,17 @@ function ProductsContent() {
           Bảng giá sản phẩm
         </h1>
         <p className="text-sm text-slate-500 mt-1">
-          Hiển thị {filtered.length} sản phẩm {selectedCategory && `thuộc "${selectedCategory}"`} • Bấm vào sản phẩm để xem chi tiết
+          Hiển thị {filtered.length} sản phẩm
+          {selectedGroup ? ` thuộc "${selectedGroup.name}"` : ""} • Bấm vào sản
+          phẩm để xem chi tiết
         </p>
       </div>
+
+      {error && (
+        <div className="p-4 rounded-2xl bg-red-50 border border-red-200 text-sm text-red-700 font-medium">
+          ⚠️ {error}
+        </div>
+      )}
 
       {/* iOS-Style Search & Filter Bar */}
       <div className="bg-white/90 backdrop-blur-2xl rounded-3xl p-4 sm:p-5 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] space-y-4">
@@ -178,9 +220,11 @@ function ProductsContent() {
               >
                 <span>{b.icon}</span>
                 <span>{b.name}</span>
-                <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                  active ? "bg-white/20 text-white" : "bg-slate-200 text-slate-700"
-                }`}>
+                <span
+                  className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
+                    active ? "bg-white/20 text-white" : "bg-slate-200 text-slate-700"
+                  }`}
+                >
                   {b.count}
                 </span>
               </button>
@@ -233,37 +277,27 @@ function ProductsContent() {
             Tất cả ({products.length})
           </button>
 
-          {/* Special Smart Home & IoT Pill */}
-          <button
-            onClick={() => handleCategoryChange("smart-home")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-300 flex items-center gap-1.5 ${
-              selectedCategory === "smart-home"
-                ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-[0_4px_14px_rgba(37,99,235,0.35)] scale-102"
-                : "bg-blue-50 text-blue-700 hover:bg-blue-100/80 hover:text-blue-900 border border-blue-200/60"
-            }`}
-          >
-            <span>✨</span>
-            <span>Smart Home & IoT</span>
-            <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-              selectedCategory === "smart-home" ? "bg-white/20 text-white" : "bg-blue-200/60 text-blue-900"
-            }`}>
-              {smartHomeCount}
-            </span>
-          </button>
-          {categories.map((cat) => {
-            const count = products.filter((p) => p.category === cat).length;
-            const active = selectedCategory === cat;
+          {categories.map((group) => {
+            const active = selectedCategory === group.slug;
             return (
               <button
-                key={cat}
-                onClick={() => handleCategoryChange(cat)}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 ${
+                key={group.slug}
+                onClick={() => handleCategoryChange(group.slug)}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 flex items-center gap-1.5 ${
                   active
                     ? "bg-slate-900 text-white shadow-sm"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900"
                 }`}
               >
-                {cat} ({count})
+                <span>{group.icon}</span>
+                <span>{group.name}</span>
+                <span
+                  className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
+                    active ? "bg-white/20 text-white" : "bg-slate-200 text-slate-700"
+                  }`}
+                >
+                  {group.count ?? 0}
+                </span>
               </button>
             );
           })}
@@ -315,13 +349,6 @@ function ProductsContent() {
           <p className="text-xs text-slate-400 mt-1">Vui lòng thử từ khóa khác hoặc xóa bộ lọc danh mục.</p>
         </div>
       )}
-
-      {/* Product Detail Modal */}
-      <ProductModal
-        product={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
-        onAddToQuote={(prod, qty) => handleAddToQuote(prod, qty)}
-      />
     </div>
   );
 }

@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { Product } from "@/lib/types";
+import { CategoryGroup, Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
-import Image from "next/image";
+import { isContactProduct } from "@/lib/catalog";
+import Image from "@/components/SafeImage";
 
 interface QuoteItem {
   product: Product;
@@ -32,11 +33,11 @@ export default function QuotePage() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/products.json").then((r) => r.json()),
-      fetch("/data/categories.json").then((r) => r.json()),
+      fetch("/api/products").then((r) => { if (!r.ok) throw new Error(); return r.json(); }),
+      fetch("/api/categories").then((r) => r.json()),
     ]).then(([prods, cats]) => {
       setProducts(prods);
-      setCategories(cats);
+      setCategories([...new Set((prods as Product[]).map(p => p.category))]);
       
       // Load only user's explicitly added items from localStorage (NO default sample items)
       try {
@@ -44,14 +45,14 @@ export default function QuotePage() {
         if (stored) {
           const parsed = JSON.parse(stored);
           if (Array.isArray(parsed) && parsed.length > 0) {
-            setQuoteItems(parsed);
+            setQuoteItems([]);
           }
         }
       } catch (e) {
         console.error(e);
       }
       setLoading(false);
-    });
+    }).catch(() => { setToastMessage("Không tải được bảng giá. Vui lòng tải lại trang."); setLoading(false); });
   }, []);
 
   // Save changes to localStorage
@@ -115,6 +116,7 @@ export default function QuotePage() {
   }, [products, selectedCategory, searchQuery]);
 
   const addToQuote = (product: Product) => {
+    if (isContactProduct(product)) { showToast("Sản phẩm cần liên hệ để báo giá."); return; }
     setQuoteItems((prev) => {
       const existing = prev.find((item) => item.product.id === product.id);
       let updated: QuoteItem[];
@@ -172,7 +174,7 @@ export default function QuotePage() {
   };
 
   const totalVAT = quoteItems.reduce(
-    (sum, item) => sum + item.product.priceWithVAT * item.quantity,
+    (sum, item) => sum + (isContactProduct(item.product) ? 0 : item.product.priceWithVAT * item.quantity),
     0
   );
   const totalNoVAT = Math.round(totalVAT / 1.08);
@@ -230,7 +232,7 @@ export default function QuotePage() {
         <div className="lg:col-span-5 print:hidden space-y-4">
           <div className="bg-white/90 backdrop-blur-2xl rounded-3xl p-5 border border-black/[0.06] shadow-[0_10px_30px_rgba(0,0,0,0.04)] space-y-4">
             <h2 className="text-sm font-bold text-slate-900 tracking-tight flex items-center justify-between">
-              <span>Thư viện 672+ sản phẩm</span>
+              <span>Thư viện {products.length} sản phẩm</span>
               <span className="text-[11px] font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
                 Click (+) để thêm
               </span>
@@ -287,7 +289,7 @@ export default function QuotePage() {
                     </p>
                     <p className="text-[10px] text-slate-400 truncate">{p.category}</p>
                     <p className="text-xs font-bold text-slate-900 mt-0.5">
-                      {formatCurrency(p.priceWithVAT)}
+                      {isContactProduct(p) ? "Liên hệ" : formatCurrency(p.priceWithVAT)}
                     </p>
                   </div>
 

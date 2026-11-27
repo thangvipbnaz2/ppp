@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-11-26T08:08:44.547Z",
+  "source_method": "Bản xuất WooCommerce API cục bộ có sẵn trong workspace",
+  "cache_file_modified_at": "2026-11-24T16:34:00.944Z",
+  "snapshot_dates": [],
+  "source_products": 254,
+  "matched_with_original_catalog": 231,
+  "added_from_source_total": 23,
+  "added_in_this_run": 0,
+  "catalog_products_after_import": 695,
+  "images_ok": 0,
+  "images_failed": 578,
+  "missing_images": 275,
+  "price_conflicts": 20
+}

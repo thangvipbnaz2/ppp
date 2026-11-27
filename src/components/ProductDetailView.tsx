@@ -1,11 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import Image from "@/components/SafeImage";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import { companyInfo } from "@/lib/company";
+import { isContactProduct, isOutOfStock } from "@/lib/catalog";
+import { useCart } from "@/lib/cart-context";
 
 interface ProductDetailViewProps {
   product: Product;
@@ -16,6 +19,8 @@ export default function ProductDetailView({
   product,
   relatedProducts,
 }: ProductDetailViewProps) {
+  const router = useRouter();
+  const { addItem } = useCart();
   const productImages =
     product.images && product.images.length > 0
       ? product.images
@@ -41,34 +46,62 @@ export default function ProductDetailView({
     product.attributes.length > 0 &&
     product.attributes[0].options.length > 0
       ? product.attributes[0].options
-      : [
-          "Ánh sáng Trắng (6500K)",
-          "Ánh sáng Trung tính (4000K)",
-          "Ánh sáng Vàng (3000K)",
-          "Đổi 3 màu (6500K/4000K/3000K)",
-        ];
+      : [];
 
   useEffect(() => {
     setActiveIndex(0);
     setQuantity(1);
-    setSelectedOption(optionChoices[0]);
+    setSelectedOption(optionChoices[0] || "");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product.id]);
 
   const regularPrice =
-    product.regularPrice ||
-    product.retailPrice ||
-    Math.round(product.priceWithVAT * 1.35);
+    product.regularPrice || product.retailPrice || 0;
   const salePrice = product.priceWithVAT;
-  const hasDiscount = regularPrice > salePrice;
+  const contact = isContactProduct(product);
+  const outOfStock = isOutOfStock(product);
+  const hasDiscount = !contact && regularPrice > salePrice;
   const discountPercent = hasDiscount
     ? Math.round(((regularPrice - salePrice) / regularPrice) * 100)
     : 0;
-  const projectPriceEst = Math.round(salePrice * 0.85);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 2600);
+  };
+
+  const handleAddToCart = () => {
+    if (contact || outOfStock) return;
+    addItem(
+      {
+        productId: product.id,
+        name: product.name,
+        image: product.image ?? "",
+        price: product.priceWithVAT,
+        priceNoVat: product.priceNoVAT,
+        stockStatus: product.stockStatus ?? "instock",
+        priceStatus: product.priceStatus ?? "available",
+      },
+      quantity,
+    );
+    showToast(`✓ Đã thêm ${quantity} sản phẩm vào giỏ hàng!`);
+  };
+
+  const handleBuyNow = () => {
+    if (contact || outOfStock) return;
+    addItem(
+      {
+        productId: product.id,
+        name: product.name,
+        image: product.image ?? "",
+        price: product.priceWithVAT,
+        priceNoVat: product.priceNoVAT,
+        stockStatus: product.stockStatus ?? "instock",
+        priceStatus: product.priceStatus ?? "available",
+      },
+      quantity,
+    );
+    router.push("/checkout");
   };
 
   const handleAddToQuote = () => {
@@ -129,7 +162,9 @@ export default function ProductDetailView({
           </Link>
           <span>/</span>
           <Link
-            href={`/products?category=${encodeURIComponent(product.category)}`}
+            href={`/products?category=${encodeURIComponent(
+              product.categorySlug ?? product.category,
+            )}`}
             className="hover:text-blue-600"
           >
             {product.category}
@@ -152,11 +187,7 @@ export default function ProductDetailView({
           </div>
 
           <div className="flex flex-wrap items-center gap-3 text-xs">
-            <div className="flex items-center gap-1 text-amber-500 font-bold">
-              <span>★★★★★</span>
-              <span className="text-slate-800 ml-1">4.9</span>
-              <span className="text-slate-400 font-normal">(Chính hãng {product.brand || "Rạng Đông"})</span>
-            </div>
+            <div className="text-slate-600 font-semibold">Chính hãng {product.brand || "Rạng Đông"}</div>
 
             <span className="text-slate-300 hidden sm:inline">|</span>
 
@@ -430,14 +461,7 @@ export default function ProductDetailView({
                   <span>📖</span>
                   <span>Thông Tin Chi Tiết & Tư Vấn Sử Dụng</span>
                 </h2>
-                <div className="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-3">
-                  {product.description
-                    .split("\n")
-                    .filter(Boolean)
-                    .map((para, idx) => (
-                      <p key={idx}>{para}</p>
-                    ))}
-                </div>
+                <div className="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-3 prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: product.description }} />
               </div>
             )}
           </div>
@@ -445,15 +469,22 @@ export default function ProductDetailView({
           {/* RIGHT COLUMN (Sticky Price Box + Options + Stock Info + Specs Table + Actions) */}
           <div className="lg:col-span-5 lg:sticky lg:top-20 space-y-5">
             {/* Dual Price Box (CellphoneS Style) */}
-            <div className="bg-white rounded-3xl p-5 border border-black/[0.06] shadow-sm space-y-3">
+            {optionChoices.length > 0 && <div className="bg-white rounded-3xl p-5 border border-black/[0.06] shadow-sm space-y-3">
               <div className="grid grid-cols-2 gap-3 bg-slate-50 rounded-2xl p-4 border border-slate-200/70">
                 <div className="border-r border-slate-200 pr-3">
                   <span className="text-[11px] font-semibold text-slate-500 block">
-                    Giá ưu đãi (đã gồm VAT 8%)
+                    Giá bán (đã gồm VAT{" "}
+                    {Math.round((product.vatRate ?? 0.08) * 100)}%)
                   </span>
-                  <div className="text-2xl font-extrabold text-red-600 mt-0.5">
-                    {formatCurrency(salePrice)}
-                  </div>
+                  {contact ? (
+                    <div className="text-lg font-extrabold text-amber-600 mt-0.5">
+                      Liên hệ báo giá
+                    </div>
+                  ) : (
+                    <div className="text-2xl font-extrabold text-red-600 mt-0.5">
+                      {formatCurrency(salePrice)}
+                    </div>
+                  )}
                   {hasDiscount && (
                     <div className="text-xs text-slate-400 line-through font-medium">
                       {formatCurrency(regularPrice)}
@@ -465,8 +496,8 @@ export default function ProductDetailView({
                   <span className="text-[11px] font-semibold text-blue-700 block">
                     Giá dự án / Số lượng lớn
                   </span>
-                  <div className="text-lg font-extrabold text-slate-900 mt-0.5">
-                    Từ {formatCurrency(projectPriceEst)}
+                  <div className="text-sm font-extrabold text-slate-900 mt-0.5">
+                    Liên hệ để nhận giá tốt
                   </div>
                   <span className="text-[10px] text-emerald-600 font-bold">
                     Chiết khấu thêm 15% – 42%
@@ -487,7 +518,7 @@ export default function ProductDetailView({
                   Hỏi giá sỉ →
                 </a>
               </div>
-            </div>
+            </div>}
 
             {/* Phiên bản / Màu ánh sáng Selector (CellphoneS Checkmark Cards) */}
             <div className="bg-white rounded-3xl p-5 border border-black/[0.06] shadow-sm space-y-3">
@@ -517,7 +548,7 @@ export default function ProductDetailView({
                         {opt}
                       </div>
                       <div className="text-[11px] text-red-600 font-semibold mt-0.5">
-                        {formatCurrency(salePrice)}
+                        {contact ? "Liên hệ" : formatCurrency(salePrice)}
                       </div>
                     </button>
                   );
@@ -531,8 +562,14 @@ export default function ProductDetailView({
                 <span className="text-xs font-extrabold text-slate-900 flex items-center gap-1.5">
                   <span>📦</span> Sản phẩm có sẵn tại kho
                 </span>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
-                  Sẵn hàng giao ngay
+                <span
+                  className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
+                    outOfStock
+                      ? "bg-red-50 text-red-700 border-red-200"
+                      : "bg-emerald-50 text-emerald-700 border-emerald-200"
+                  }`}
+                >
+                  {outOfStock ? "Tạm hết hàng" : "Sẵn hàng giao ngay"}
                 </span>
               </div>
               <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/70 text-xs space-y-1.5">
@@ -579,22 +616,38 @@ export default function ProductDetailView({
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-2.5 pt-1">
+              <div className="grid grid-cols-3 gap-2 pt-1">
                 <button
-                  onClick={handleAddToQuote}
-                  className="py-3 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-wider shadow-md transition-all flex items-center justify-center gap-1.5"
+                  onClick={handleAddToCart}
+                  disabled={contact || outOfStock}
+                  className={`py-3 px-2 rounded-xl font-extrabold text-[11px] uppercase tracking-wide shadow-md transition-all flex items-center justify-center gap-1 ${
+                    contact || outOfStock
+                      ? "bg-slate-200 text-slate-400 cursor-not-allowed"
+                      : "bg-red-600 hover:bg-red-700 text-white"
+                  }`}
                 >
                   <span>🛒</span>
-                  <span>Thêm Báo Giá</span>
+                  <span>{outOfStock ? "Hết hàng" : "Thêm giỏ"}</span>
                 </button>
-                <Link
-                  href="/quote"
+                <button
+                  onClick={handleBuyNow}
+                  disabled={contact || outOfStock}
+                  className={`py-3 px-2 rounded-xl font-extrabold text-[11px] uppercase tracking-wide shadow-md transition-all flex items-center justify-center gap-1 ${
+                    contact || outOfStock
+                      ? "bg-slate-200 text-slate-400 cursor-not-allowed"
+                      : "bg-slate-950 hover:bg-blue-600 text-white"
+                  }`}
+                >
+                  <span>⚡</span>
+                  <span>Mua ngay</span>
+                </button>
+                <button
                   onClick={handleAddToQuote}
-                  className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-blue-600 text-white font-extrabold text-xs uppercase tracking-wider shadow-md transition-all flex items-center justify-center gap-1.5"
+                  className="py-3 px-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-[11px] uppercase tracking-wide shadow-md transition-all flex items-center justify-center gap-1"
                 >
                   <span>📋</span>
-                  <span>Lên Đơn Ngay</span>
-                </Link>
+                  <span>Báo giá</span>
+                </button>
               </div>
 
               <a
@@ -682,7 +735,9 @@ export default function ProductDetailView({
                       {rp.name}
                     </h3>
                     <div className="text-sm font-extrabold text-red-600">
-                      {formatCurrency(rp.priceWithVAT)}
+                      {isContactProduct(rp)
+                        ? "Liên hệ"
+                        : formatCurrency(rp.priceWithVAT)}
                     </div>
                   </div>
                 </Link>
@@ -711,7 +766,7 @@ export default function ProductDetailView({
                 {product.name}
               </div>
               <div className="text-[11px] text-slate-500 truncate">
-                {selectedOption} • SL: {quantity}
+                {selectedOption ? `${selectedOption} • ` : ""}SL: {quantity}
               </div>
             </div>
           </div>
@@ -719,7 +774,9 @@ export default function ProductDetailView({
           <div className="flex items-center gap-3 shrink-0">
             <div className="text-right hidden xs:block">
               <div className="text-sm sm:text-base font-extrabold text-red-600">
-                {formatCurrency(salePrice * quantity)}
+                {contact
+                  ? "Liên hệ"
+                  : formatCurrency(salePrice * quantity)}
               </div>
               {hasDiscount && (
                 <div className="text-[10px] text-slate-400 line-through">
@@ -727,12 +784,25 @@ export default function ProductDetailView({
                 </div>
               )}
             </div>
-            <button
-              onClick={handleAddToQuote}
-              className="px-4 sm:px-6 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-extrabold shadow-sm transition-all whitespace-nowrap"
-            >
-              🛒 Thêm vào báo giá
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handleAddToCart}
+                disabled={contact || outOfStock}
+                className={`px-4 sm:px-5 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all whitespace-nowrap ${
+                  contact || outOfStock
+                    ? "bg-slate-200 text-slate-400 cursor-not-allowed"
+                    : "bg-red-600 hover:bg-red-700 text-white"
+                }`}
+              >
+                🛒 Thêm vào giỏ
+              </button>
+              <button
+                onClick={handleAddToQuote}
+                className="px-4 sm:px-5 py-2.5 rounded-xl bg-slate-950 hover:bg-blue-600 text-white text-xs font-extrabold shadow-sm transition-all whitespace-nowrap"
+              >
+                📋 Báo giá
+              </button>
+            </div>
           </div>
         </div>
       </div>

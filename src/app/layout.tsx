@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWidgets from "@/components/FloatingWidgets";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "An Phú Vina - Nhà Phân Phối Thiết Bị Chiếu Sáng & Smart Home Rạng Đông",
@@ -17,10 +18,12 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body className="min-h-screen flex flex-col bg-[#fbfbfd] text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <FloatingWidgets />
+        <Providers>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+          <FloatingWidgets />
+        </Providers>
       </body>
     </html>
   );

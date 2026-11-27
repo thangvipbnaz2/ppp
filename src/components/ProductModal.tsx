@@ -2,7 +2,9 @@
 
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
-import Image from "next/image";
+import { isContactProduct, isOutOfStock } from "@/lib/catalog";
+import { useCart } from "@/lib/cart-context";
+import Image from "@/components/SafeImage";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -21,6 +23,7 @@ export default function ProductModal({
   const [activeImageUrl, setActiveImageUrl] = useState<string>("");
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [added, setAdded] = useState(false);
+  const { addItem } = useCart();
 
   const productImages = product?.images && product.images.length > 0
     ? product.images
@@ -55,12 +58,32 @@ export default function ProductModal({
     }
   };
 
-  const regularPrice = product.regularPrice || product.retailPrice || Math.round(product.priceWithVAT * 1.35);
+  const regularPrice = product.regularPrice || product.retailPrice || 0;
   const salePrice = product.priceWithVAT;
-  const hasDiscount = regularPrice > salePrice;
+  const contact = isContactProduct(product);
+  const outOfStock = isOutOfStock(product);
+  const hasDiscount = !contact && regularPrice > salePrice;
   const discountPercent = hasDiscount ? Math.round(((regularPrice - salePrice) / regularPrice) * 100) : 0;
 
   const displayMainImage = activeImageUrl || productImages[0];
+
+  const handleAddToCart = () => {
+    if (contact || outOfStock) return;
+    addItem(
+      {
+        productId: product.id,
+        name: product.name,
+        image: product.image ?? "",
+        price: product.priceWithVAT,
+        priceNoVat: product.priceNoVAT,
+        stockStatus: product.stockStatus ?? "instock",
+        priceStatus: product.priceStatus ?? "available",
+      },
+      quantity,
+    );
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1800);
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/70 backdrop-blur-md animate-fade-in overflow-y-auto">
@@ -216,22 +239,35 @@ export default function ProductModal({
 
             {/* Price Section */}
             <div className="flex flex-wrap items-baseline gap-3 pb-3 border-b border-slate-100">
-              {hasDiscount && (
-                <span className="text-base sm:text-lg text-slate-400 line-through font-semibold">
-                  {formatCurrency(regularPrice)}
+              {contact ? (
+                <span className="text-2xl sm:text-3xl font-extrabold text-amber-600">
+                  Liên hệ báo giá
+                </span>
+              ) : (
+                <>
+                  {hasDiscount && (
+                    <span className="text-base sm:text-lg text-slate-400 line-through font-semibold">
+                      {formatCurrency(regularPrice)}
+                    </span>
+                  )}
+                  <span className="text-2xl sm:text-3xl font-extrabold text-red-600">
+                    {formatCurrency(salePrice)}
+                  </span>
+                  {hasDiscount && (
+                    <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200">
+                      Tiết kiệm {discountPercent}%
+                    </span>
+                  )}
+                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    Đã gồm VAT {Math.round((product.vatRate ?? 0.08) * 100)}%
+                  </span>
+                </>
+              )}
+              {outOfStock && (
+                <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+                  Hết hàng
                 </span>
               )}
-              <span className="text-2xl sm:text-3xl font-extrabold text-red-600">
-                {formatCurrency(salePrice)}
-              </span>
-              {hasDiscount && (
-                <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200">
-                  Tiết kiệm {discountPercent}%
-                </span>
-              )}
-              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
-                Đã gồm VAT 8%
-              </span>
             </div>
 
             {/* Why Buy / Highlights Box */}
@@ -320,24 +356,33 @@ export default function ProductModal({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                 <button
-                  onClick={handleAdd}
-                  className="py-2.5 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-1.5"
+                  onClick={handleAddToCart}
+                  disabled={contact || outOfStock}
+                  className={`py-2.5 px-4 rounded-xl font-extrabold text-xs uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-1.5 ${
+                    contact || outOfStock
+                      ? "bg-slate-200 text-slate-400 cursor-not-allowed"
+                      : "bg-red-600 hover:bg-red-700 text-white"
+                  }`}
                 >
                   <span>🛒</span>
-                  <span>{added ? "✓ Đã thêm vào báo giá" : "Thêm Vào Báo Giá"}</span>
+                  <span>
+                    {outOfStock
+                      ? "Hết hàng"
+                      : contact
+                        ? "Liên hệ để mua"
+                        : added
+                          ? "✓ Đã thêm vào giỏ"
+                          : "Thêm Vào Giỏ"}
+                  </span>
                 </button>
 
-                <Link
-                  href="/quote"
-                  onClick={() => {
-                    if (onAddToQuote) onAddToQuote(product, quantity);
-                    onClose();
-                  }}
-                  className="py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-1.5"
+                <button
+                  onClick={handleAdd}
+                  className="py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-extrabold text-xs uppercase tracking-wider shadow-sm transition-all flex items-center justify-center gap-1.5"
                 >
                   <span>📋</span>
-                  <span>Lên Đơn Báo Giá Ngay</span>
-                </Link>
+                  <span>Thêm Vào Báo Giá</span>
+                </button>
               </div>
             </div>
 

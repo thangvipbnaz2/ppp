@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import { useCatalog } from "@/lib/use-catalog";
+import Image from "@/components/SafeImage";
 import { BRANDS, BrandInfo } from "@/lib/company";
 
 export { BRANDS };
@@ -18,6 +19,8 @@ export default function BrandSidebar({
   onSelectBrand,
   className = "",
 }: BrandSidebarProps) {
+  const products = useCatalog();
+  const brands = BRANDS.map(b => ({ ...b, count: products.filter(p => b.id === "all" || p.brand === b.name || (b.id === "ledvance" && p.brand === "Ledvance")).length })).filter(b => b.id === "all" || b.count > 0);
   return (
     <aside
       className={`bg-white/95 backdrop-blur-2xl rounded-3xl p-4 sm:p-5 border border-black/[0.06] shadow-[0_10px_35px_rgba(0,0,0,0.04)] ${className}`}
@@ -38,13 +41,13 @@ export default function BrandSidebar({
           </div>
         </div>
         <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-black/[0.04]">
-          9 Hãng
+          {brands.filter(b => b.id !== "all").length} Hãng
         </span>
       </div>
 
       {/* Brand Cards Grid/Stack Arranged Vertically */}
       <div className="space-y-2.5">
-        {BRANDS.map((b) => {
+        {brands.map((b) => {
           const isActive =
             selectedBrand === b.id || (b.id === "all" && !selectedBrand);
 
@@ -70,7 +73,7 @@ export default function BrandSidebar({
                       : "bg-slate-200 text-slate-700"
                   }`}
                 >
-                  672 SP
+                  {products.length} SP
                 </span>
               </button>
             );

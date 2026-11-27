@@ -3,16 +3,20 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+import { useCatalog } from "@/lib/use-catalog";
+import Image from "@/components/SafeImage";
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import ProductModal from "./ProductModal";
-import { smartHomeFeatures, curatedSmartProducts } from "@/lib/smarthome";
+import { smartHomeFeatures } from "@/lib/smarthome";
+import { isContactProduct } from "@/lib/catalog";
 
 export default function SmartHomeSection() {
+  const catalog = useCatalog();
   const router = useRouter();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const curatedSmartProducts = catalog.filter((product) => product.categorySlug === "smart-home").slice(0, 8);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -74,7 +78,7 @@ export default function SmartHomeSection() {
                 href="/products?category=smart-home"
                 className="px-6 py-3 rounded-full text-xs font-bold bg-white text-slate-950 hover:bg-blue-50 shadow-[0_4px_20px_rgba(255,255,255,0.25)] hover:scale-102 transition-all duration-300"
               >
-                Xem tất cả 85+ thiết bị Smart Home →
+                Xem tất cả {catalog.filter(p => p.categorySlug === "smart-home").length} thiết bị Smart Home →
               </Link>
               <span className="text-xs text-slate-400 flex items-center gap-1.5">
                 <span>🛡️</span> Bảo hành chính hãng 2 năm
@@ -181,7 +185,7 @@ export default function SmartHomeSection() {
                     <div className="flex items-baseline justify-between">
                       <span className="text-xs text-slate-500">Giá có VAT:</span>
                       <span className="text-base font-bold text-slate-900 tracking-tight">
-                        {p.priceWithVAT > 0 ? formatCurrency(p.priceWithVAT) : "Liên hệ"}
+                        {isContactProduct(p) ? "Liên hệ" : formatCurrency(p.priceWithVAT)}
                       </span>
                     </div>
 

@@ -1,20 +1,47 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { useCatalog } from "@/lib/use-catalog";
+import Image from "@/components/SafeImage";
 import BrandSidebar from "@/components/BrandSidebar";
 import BrandFilteredSection from "@/components/BrandFilteredSection";
-import { newsArticles, companyInfo } from "@/lib/company";
+import { companyInfo } from "@/lib/company";
+import type { CategoryGroup, NewsPost } from "@/lib/types";
 
 export default function HomePage() {
+  const catalog = useCatalog();
   const [selectedBrand, setSelectedBrand] = useState<string>("all");
+  const [categories, setCategories] = useState<CategoryGroup[]>([]);
+  const [news, setNews] = useState<NewsPost[]>([]);
+
+  useEffect(() => {
+    Promise.all([
+      fetch("/api/categories").then((response) => response.ok ? response.json() : []),
+      fetch("/api/news").then((response) => response.ok ? response.json() : []),
+    ]).then(([categoryData, newsData]) => {
+      setCategories(Array.isArray(categoryData) ? categoryData : []);
+      setNews(Array.isArray(newsData) ? newsData.slice(0, 3) : []);
+    }).catch(() => {
+      setCategories([]);
+      setNews([]);
+    });
+  }, []);
+
+  const brandCount = useMemo(
+    () => new Set(catalog.map((product) => product.brand).filter(Boolean)).size,
+    [catalog],
+  );
+  const smartHomeCount = useMemo(
+    () => catalog.filter((product) => product.categorySlug === "smart-home").length,
+    [catalog],
+  );
 
   const stats = [
-    { label: "Sản phẩm trực tuyến", value: "672+", sub: "Từ rangdongapvina.com.vn & Excel", icon: "⚡" },
-    { label: "Chiết khấu dự án", value: "15% - 42%", sub: "Ưu đãi công trình & đại lý", icon: "💎" },
-    { label: "Hotline kinh doanh", value: "0827.955.888", sub: "Hỗ trợ kỹ thuật & Zalo 24/7", icon: "📞" },
-    { label: "Mã số thuế", value: "0110271235", sub: "Sở KH&ĐT TP Hà Nội cấp", icon: "🏢" },
+    { label: "Sản phẩm trực tuyến", value: String(catalog.length), sub: "Dữ liệu catalog hiện tại", icon: "⚡" },
+    { label: "Nhóm sản phẩm", value: String(categories.length), sub: "Danh mục đang hoạt động", icon: "🗂️" },
+    { label: "Sản phẩm Smart Home", value: String(smartHomeCount), sub: "Tính trực tiếp từ catalog", icon: "🏠" },
+    { label: "Thương hiệu", value: String(brandCount), sub: "Có sản phẩm đang hiển thị", icon: "🏷️" },
   ];
 
   return (
@@ -62,7 +89,7 @@ export default function HomePage() {
               href="/products"
               className="px-7 py-3.5 rounded-full text-sm font-semibold bg-slate-950 text-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] hover:shadow-[0_16px_32px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 active:scale-98 transition-all duration-300"
             >
-              Xem toàn bộ 672+ sản phẩm →
+              Xem toàn bộ {catalog.length} sản phẩm →
             </Link>
             <Link
               href="/products?category=smart-home"
@@ -74,6 +101,27 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {categories.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">Danh mục sản phẩm</p>
+              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-950 mt-1">Tìm nhanh theo nhu cầu</h2>
+            </div>
+            <Link href="/products" className="text-xs font-bold text-blue-600 hover:underline whitespace-nowrap">Xem tất cả →</Link>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {categories.map((category) => (
+              <Link key={category.slug} href={`/products?category=${category.slug}`} className="min-h-28 rounded-2xl bg-white border border-black/[0.06] p-4 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+                <div className="text-2xl">{category.icon || "💡"}</div>
+                <h3 className="text-xs font-bold text-slate-900 mt-3 line-clamp-2">{category.name}</h3>
+                <p className="text-[11px] text-slate-500 mt-1">{category.count ?? 0} sản phẩm</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Floating Metric Badges */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
@@ -130,16 +178,16 @@ export default function HomePage() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {newsArticles.map((art) => (
+          {news.map((art) => (
             <Link
               key={art.id}
-              href="/news"
+              href={`/news?article=${art.slug}`}
               className="group bg-white rounded-3xl p-4 border border-black/[0.06] shadow-[0_8px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_18px_36px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between space-y-4"
             >
               <div className="space-y-3">
                 <div className="relative h-44 w-full rounded-2xl overflow-hidden bg-slate-100">
                   <Image
-                    src={art.image}
+                    src={art.image || "/images/logo.png"}
                     alt={art.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

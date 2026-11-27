@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
-import Image from "next/image";
+import { useCatalog } from "@/lib/use-catalog";
+import Image from "@/components/SafeImage";
 
 export default function Footer() {
+  const catalog = useCatalog();
   return (
     <footer className="border-t border-black/[0.06] bg-slate-900 text-slate-300 mt-20 print:hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
@@ -55,7 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/products" className="text-slate-400 hover:text-white transition-colors">
-                  Bảng giá 672+ sản phẩm
+                  Bảng giá {catalog.length} sản phẩm
                 </Link>
               </li>
               <li>
@@ -87,6 +90,10 @@ export default function Footer() {
               Cam Kết Chất Lượng
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
+              <li><Link href="/chinh-sach/doi-tra">Chính sách đổi trả</Link></li>
+              <li><Link href="/chinh-sach/bao-hanh">Chính sách bảo hành</Link></li>
+              <li><Link href="/chinh-sach/van-chuyen">Chính sách vận chuyển</Link></li>
+              <li><Link href="/chinh-sach/bao-mat">Thông tin bảo mật</Link></li>
               <li>✓ 100% chính hãng Rạng Đông</li>
               <li>✓ Bảo hành 2 năm tận nơi</li>
               <li>✓ Giá đại lý & chiết khấu dự án</li>
@@ -97,7 +104,7 @@ export default function Footer() {
 
         <div className="pt-8 mt-10 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} Công ty TNHH MTV TM Thiết Bị Điện An Phú Vina. Bảo lưu mọi quyền.</p>
-          <p>Hệ thống demo đồng bộ dữ liệu trực tuyến & 4 file Excel quản lý</p>
+          <p>Hệ thống tra cứu sản phẩm và báo giá trực tuyến An Phú Vina</p>
         </div>
       </div>
     </footer>

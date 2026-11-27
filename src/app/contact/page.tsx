@@ -12,14 +12,29 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (sending) return;
     if (!name.trim() || !/^(0|\+84)[0-9]{8,10}$/.test(phone.replace(/\s+/g, ""))) {
       setError("Vui lòng nhập đầy đủ Họ tên và Số điện thoại hợp lệ (10 số).");
       return;
     }
     setError("");
-    setSubmitted(true);
+    setSending(true);
+    try {
+      const dealer = /Đại lý|Nhà phân phối/i.test(interest);
+      const response = await fetch(dealer ? "/api/dealer" : "/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dealer ? { name, phone, company, interest, note } : { name, phone, subject: interest, message: note }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Không gửi được thông tin.");
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Không kết nối được. Vui lòng thử lại.");
+    } finally { setSending(false); }
   };
 
   return (

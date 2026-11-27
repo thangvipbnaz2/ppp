@@ -1,0 +1,193 @@
+[
+  {
+    "slug": "den-led-am-tran",
+    "name": "Đèn LED Âm trần / Downlight",
+    "icon": "💡",
+    "description": "Đèn LED âm trần downlight Rạng Đông, Kingled, Ledvance cho nhà ở, văn phòng, showroom.",
+    "sortOrder": 1,
+    "categories": [
+      "Đèn LED Downlight",
+      "Đèn LED Âm Trần Downlight",
+      "Đèn âm trần Rạng Đông",
+      "Đèn âm trần King led",
+      "Sản phẩm Rạng Đông"
+    ]
+  },
+  {
+    "slug": "den-led-op-tran",
+    "name": "Đèn LED Ốp trần",
+    "icon": "🔲",
+    "description": "Đèn LED ốp trần hiện đại, ánh sáng đều, lắp đặt nhanh cho mọi không gian.",
+    "sortOrder": 2,
+    "categories": [
+      "Đèn LED Ốp Trần",
+      "Đèn LED Ốp trần"
+    ]
+  },
+  {
+    "slug": "den-led-panel",
+    "name": "Đèn LED Panel",
+    "icon": "🟦",
+    "description": "Đèn LED panel vuông, tròn, âm trần và treo thả cho văn phòng, bệnh viện, trường học.",
+    "sortOrder": 3,
+    "categories": [
+      "Đèn LED Panel Rạng Đông",
+      "Đèn LED Panel"
+    ]
+  },
+  {
+    "slug": "den-led-bulb",
+    "name": "Đèn LED Bulb & Bóng đèn",
+    "icon": "💡",
+    "description": "Bóng đèn LED bulb, đèn tròn, đèn đổi màu Bluetooth tiết kiệm điện.",
+    "sortOrder": 4,
+    "categories": [
+      "Đèn LED Bulb",
+      "Bóng đèn LED"
+    ]
+  },
+  {
+    "slug": "den-tuyp-led",
+    "name": "Đèn Tuýp LED & Bán nguyệt",
+    "icon": "📏",
+    "description": "Đèn tuýp LED T5, T8, bộ đèn bán nguyệt, máng đèn và đèn liền thân.",
+    "sortOrder": 5,
+    "categories": [
+      "Đèn Tuýp LED",
+      "Đèn LED Bán nguyệt / Máng",
+      "Liền thân"
+    ]
+  },
+  {
+    "slug": "den-led-chieu-pha",
+    "name": "Đèn LED Chiếu pha",
+    "icon": "🔦",
+    "description": "Đèn LED chiếu pha ngoài trời, sân vườn, biển hiệu, công trình dân dụng và công nghiệp.",
+    "sortOrder": 6,
+    "categories": [
+      "Đèn LED Chiếu Pha",
+      "Đèn LED Chiếu pha",
+      "Đèn chiếu pha Kingled"
+    ]
+  },
+  {
+    "slug": "den-led-chieu-sang-duong",
+    "name": "Đèn LED Chiếu sáng đường & Học đường",
+    "icon": "🛣️",
+    "description": "Đèn đường LED, đèn học đường chiếu sáng công cộng, tiết kiệm điện.",
+    "sortOrder": 7,
+    "categories": [
+      "Đèn Đường Led",
+      "Đèn LED Chiếu sáng đường",
+      "Đèn LED Học đường"
+    ]
+  },
+  {
+    "slug": "den-led-nha-xuong",
+    "name": "Đèn LED Nhà xưởng / Highbay / UFO",
+    "icon": "🏭",
+    "description": "Đèn LED nhà xưởng, highbay, UFO công suất lớn cho khu công nghiệp, kho bãi.",
+    "sortOrder": 8,
+    "categories": [
+      "Đèn LED Nhà Xưởng Rạng Đông",
+      "Đèn LED Highbay",
+      "Đèn LED UFO"
+    ]
+  },
+  {
+    "slug": "den-led-san-vuon",
+    "name": "Đèn LED Sân vườn & Cảnh quan",
+    "icon": "🌳",
+    "description": "Đèn LED sân vườn, cảnh quan, cột đèn, đèn trang trí ngoài trời.",
+    "sortOrder": 9,
+    "categories": [
+      "Đèn Sân Vườn"
+    ]
+  },
+  {
+    "slug": "den-led-chong-am",
+    "name": "Đèn LED Chống ẩm",
+    "icon": "💧",
+    "description": "Đèn LED chống ẩm, chống nước cho nhà tắm, hành lang, khu vực ẩm ướt.",
+    "sortOrder": 10,
+    "categories": [
+      "Đèn LED Chống ẩm"
+    ]
+  },
+  {
+    "slug": "den-led-roi-ray",
+    "name": "Đèn LED Rọi ray & Tracklight",
+    "icon": "🎯",
+    "description": "Đèn LED rọi ray, tracklight cho showroom, cửa hàng, trưng bày sản phẩm.",
+    "sortOrder": 11,
+    "categories": [
+      "ĐÈN LED RỌI RAY RẠNG ĐÔNG"
+    ]
+  },
+  {
+    "slug": "den-led-gan-tuong",
+    "name": "Đèn LED Gắn tường",
+    "icon": "🧱",
+    "description": "Đèn LED gắn tường, đèn tường ngoài trời, đèn chiếu gương phòng tắm.",
+    "sortOrder": 12,
+    "categories": [
+      "Đèn LED Gắn Tường Rạng Đông"
+    ]
+  },
+  {
+    "slug": "den-led-trang-tri",
+    "name": "Đèn LED Trang trí / Thả / Dây",
+    "icon": "✨",
+    "description": "Đèn LED thả trần, đèn dây, đèn trang trí quán cafe, ban công, tiểu cảnh.",
+    "sortOrder": 13,
+    "categories": [
+      "Đèn led thả",
+      "Đèn led dây Rạng Đông",
+      "OEM"
+    ]
+  },
+  {
+    "slug": "den-khan-cap-pccc",
+    "name": "Đèn Khẩn cấp / Exit / PCCC",
+    "icon": "🚨",
+    "description": "Đèn khẩn cấp, đèn exit chỉ dẫn thoát hiểm, thiết bị PCCC đạt chuẩn.",
+    "sortOrder": 14,
+    "categories": [
+      "Đèn Khẩn Cấp Chỉ Dẫn Exit",
+      "Đèn PCCC & Khẩn cấp"
+    ]
+  },
+  {
+    "slug": "den-nang-luong-mat-troi",
+    "name": "Đèn Năng lượng mặt trời",
+    "icon": "☀️",
+    "description": "Đèn LED năng lượng mặt trời cho sân vườn, đường đi, khu du lịch.",
+    "sortOrder": 15,
+    "categories": [
+      "Đèn Năng lượng mặt trời"
+    ]
+  },
+  {
+    "slug": "smart-home",
+    "name": "Thiết bị Smart Home / Bluetooth Mesh",
+    "icon": "🏠",
+    "description": "Đèn, công tắc, ổ cắm, cảm biến thông minh Bluetooth Mesh, WiFi điều khiển bằng điện thoại.",
+    "sortOrder": 16,
+    "categories": [
+      "Đèn led Bluetooth Mesh",
+      "Đèn LED Smart",
+      "SẢN PHẨM SMART (WIFI)"
+    ]
+  },
+  {
+    "slug": "thiet-bi-dien-khac",
+    "name": "Thiết bị điện & Đèn bàn / Khác",
+    "icon": "🔌",
+    "description": "Đèn bàn LED, đèn chiếu sáng chuyên dụng và các thiết bị điện khác.",
+    "sortOrder": 17,
+    "categories": [
+      "Đèn LED Chiếu sáng chuyên dụng",
+      "Đèn bàn LED"
+    ]
+  }
+]
